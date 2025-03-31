@@ -5,11 +5,31 @@
   --foreground: #171717;
 }
 
+@font-face {
+  font-family: 'Lora';
+  src: url('/fonts/Lora-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('/fonts/Nunito-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-lora: "Lora", cursive;
+  --font-nunito: "Nunito", sans-serif;
+  --color-brown: #7D451B;
+  --color-green: "9BE564";
+  --color-white: "#f7f7f7";
+  --color-black: "#333333";
 }
 
 @media (prefers-color-scheme: dark) {
