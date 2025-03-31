@@ -10,7 +10,7 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({ href, children, className, variant = 'primary' }) => {
   const baseClasses = 'px-4 py-2 text-center rounded-md transition duration-300 font-semibold ';
-  const variantClasses = variant === 'primary' ? 'bg-white text-brown md:text-2xl hover:bg-brown hover:text-green' : 'bg-brown text-green md:text-2xl hover:bg-brown hover:text-green';
+  const variantClasses = variant === 'primary' ? 'bg-white text-brown border-2 border-green md:text-2xl hover:bg-brown hover:text-green' : 'bg-green text-brown border-2 border-green md:text-2xl hover:bg-brown hover:text-green';
 
   return (
     <Link href={href} className={`${baseClasses} ${variantClasses} ${className}`}>

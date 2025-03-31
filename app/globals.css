@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #f7f7f7;
   --foreground: #171717;
 }
 
@@ -27,9 +27,8 @@
   --font-lora: "Lora", cursive;
   --font-nunito: "Nunito", sans-serif;
   --color-brown: #7D451B;
-  --color-green: "9BE564";
-  --color-white: "#f7f7f7";
-  --color-black: "#333333";
+  --color-white: #f7f7f7;
+  --color-green: #9BE564;
 }
 
 @media (prefers-color-scheme: dark) {
