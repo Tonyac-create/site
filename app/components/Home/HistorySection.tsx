@@ -21,8 +21,8 @@ export default function HistorySection() {
                 >
                     <Image
                         src="/Oiseaux_SFPA.webp"
-                        width={600}
-                        height={400}
+                        width={400}
+                        height={300}
                         quality={100}
                         priority={true}
                         alt='Logo SFPA'
@@ -43,7 +43,7 @@ export default function HistorySection() {
                 >
                     <Image
                         src="/Elvis_Homme_SFPA.webp"
-                        width={600}
+                        width={500}
                         height={400}
                         quality={100}
                         priority={true}
