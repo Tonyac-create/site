@@ -44,6 +44,38 @@ body {
   color: var(--foreground);
 }
 
-.drop-shadow-3xl {
+.drop-shadow-btn {
   filter: drop-shadow(0 4px 4px rgba(155, 229, 100, 0.8));
+}
+
+.drop-shadow-cat {
+  filter: drop-shadow(4px 0px 4px rgba(125, 69, 27, 0.6))
+         drop-shadow(-4px 0px 4px rgba(125, 69, 27, 0.6))
+         drop-shadow(0px 4px 4px rgba(125, 69, 27, 0.6))
+         drop-shadow(0px -4px 4px rgba(125, 69, 27, 0.6));
+}
+
+.drop-shadow-dog {
+  filter: drop-shadow(4px 0px 4px rgba(51, 51, 51, 0.6))
+         drop-shadow(-4px 0px 4px rgba(51, 51, 51, 0.6))
+         drop-shadow(0px 4px 4px rgba(51, 51, 51, 0.6))
+         drop-shadow(0px -4px 4px rgba(51, 51, 51, 0.6));
+}
+
+.pattern {
+  position: relative;
+  overflow: hidden; 
+}
+
+.pattern:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 175px;
+  background: url(/Wave.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
 }
