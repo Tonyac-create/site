@@ -5,6 +5,7 @@
   --foreground: #171717;
 }
 
+
 @font-face {
   font-family: 'Lora';
   src: url('/fonts/Lora-Regular.ttf') format('truetype');
@@ -41,4 +42,8 @@
 body {
   background: var(--background);
   color: var(--foreground);
+}
+
+.drop-shadow-3xl {
+  filter: drop-shadow(0 4px 4px rgba(155, 229, 100, 0.8));
 }

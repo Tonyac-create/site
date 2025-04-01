@@ -18,7 +18,7 @@ export default function NavBar() {
                             height={80}
                             alt='Logo SFPA'
                         />
-                        <h1 className='text-brown font-semibold font-lora text-xl sm:text-2xl'>{`Secours Français Pour Animaux`}</h1>
+                        <h1 className='text-brown font-semibold font-lora text-xl'>{`Secours Français Pour Animaux`}</h1>
                     </div>
                     <nav className='hidden xl:flex space-x-8'>
                         <ul className='flex my-auto gap-11 text-xl ml-auto'>
