@@ -28,7 +28,7 @@ text4: |
   Chaque adoption est une victoire : en offrant un nouveau foyer à ces poules, nous leur évitons un destin cruel et leur permettons de vivre naturellement, entourées d’attention et de respect.
 text5: |
   Envie d’adopter des poules de réforme ? Rejoignez-nous !
-  Si vous souhaitez accueillir une ou plusieurs poules rescapées, contactez-nous ! Nous vo
+  Si vous souhaitez accueillir une ou plusieurs poules rescapées, contactez-nous ! Nous vous guiderons dans les étapes de l’adoption et vous donnerons tous les conseils nécessaires.
 text6: |
   Soutenez le Secours Français pour Animaux et participez à cette belle aventure en faveur du bien-être animal !
 ---
