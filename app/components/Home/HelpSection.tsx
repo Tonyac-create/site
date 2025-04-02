@@ -16,8 +16,17 @@ export default function HelpSection() {
                     className="mt-5 rounded-sm object-contain drop-shadow-cat"
                 />
                 <div className="flex flex-col my-8">
-                    <p className="text-xl mt-3 mb-5 text-black">{`Rejoignez-nous dès aujourd'hui pour offrir un avenir meilleur aux animaux en détresse. Ensemble, nous pouvons leur apporter soins, protection et amour. Agissez maintenant et faites la différence !`}</p>
-                    <Button href="/help" variant="primary" className="w-1/2">{`Je fais un don`}</Button>
+                    <p className="text-xl mt-3 mb-5 text-black w-[70%] mx-auto">
+                        {`Rejoignez-nous dès aujourd’hui pour offrir un avenir meilleur aux animaux en détresse.
+                        Chaque jour, des milliers d’animaux souffrent de l’abandon, de la maltraitance et du manque de soins.
+                        `}
+                    </p>
+                    <p className="text-xl mt-3 mb-5 text-black w-[70%] mx-auto">
+                        {` Mais ensemble, nous pouvons changer leur destin.
+                        En apportant votre soutien, vous offrez à ces êtres vulnérables une seconde chance : un refuge sûr, des soins adaptés et surtout, l’amour qu’ils méritent.  
+                        Ne restons pas spectateurs. Agissez dès maintenant et faites la différence !`}
+                    </p>
+                    <Button href="/help" variant="primary" className="w-1/2 mx-auto">{`Je fais un don`}</Button>
                 </div>
                 <Image
                     src="/Chien_Help_Transparent_2.png"

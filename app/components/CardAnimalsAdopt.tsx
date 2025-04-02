@@ -1,24 +1,13 @@
 import Image from "next/image";
-
-type CardAnimalsAdoptProps = {
-    name: string,
-    type: string,
-    age: string,
-    genre: string,
-    race: string,
-    image: string,
-    introduction: string
-    description: string,
-    adopt: boolean
-}
+import { CardAnimalsAdoptProps } from "../utils/typeCardAnimals";
 
 export default function CardAnimalsAdopt({ name, type, age, genre, race, image, introduction, description, adopt }: CardAnimalsAdoptProps) {
     return (
         <article>
             <Image
                 src={image}
-                width={200}
-                height={300}
+                width={300}
+                height={400}
                 quality={100}
                 priority={true}
                 alt={name}
