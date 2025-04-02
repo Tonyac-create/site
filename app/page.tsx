@@ -3,6 +3,7 @@ import HelpSection from "./components/Home/HelpSection";
 import HeroSection from "./components/Home/HeroSection";
 import HistorySection from "./components/Home/HistorySection";
 import LPOSection from "./components/Home/LPOSection";
+import TeamSection from "./components/Home/TeamSection";
 
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <LPOSection />
       <HelpSection />
       <AdoptSection />
+      <TeamSection />
     </main>
   );
 }
