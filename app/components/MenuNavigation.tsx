@@ -13,7 +13,7 @@ export default function MenuNavigation({ setIsMenuOpen }: MenuNavigationProps) {
     { name: "Visites pédagogiques", href: "/visits" },
     { name: "J'aide", href: "/help" },
     { name: "Adoptez nous", href: "/adopt" },
-    { name: "Actualités", href: "/actuallity" },
+    { name: "Actualités", href: "/blog" },
     { name: "Contact", href: "/contact" },
   ];
 

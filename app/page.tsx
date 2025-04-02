@@ -1,4 +1,5 @@
 import AdoptSection from "./components/Home/AdoptSection";
+import BlogSection from "./components/Home/BlogSection";
 import HelpSection from "./components/Home/HelpSection";
 import HeroSection from "./components/Home/HeroSection";
 import HistorySection from "./components/Home/HistorySection";
@@ -15,6 +16,7 @@ export default function Home() {
       <HelpSection />
       <AdoptSection />
       <TeamSection />
+      <BlogSection />
     </main>
   );
 }
