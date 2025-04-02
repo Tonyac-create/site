@@ -3,9 +3,9 @@ import Button from "../Button";
 
 export default function HelpSection() {
     return (
-        <section className="relative h-[650px] mt-14 px-6 pt-16 bg-gradient-to-br from-[#55AA66] to-[#9DE566] pattern lg:px-28">
+        <section className="relative h-[1500px] md:h-[1400px] lg:h-[900px] xl:h-[750px] mt-14 px-6 pt-16 bg-gradient-to-br from-[#55AA66] to-[#9DE566] pattern lg:px-28">
             <h2 className="text-brown text-4xl font-lora font-semibold">Comment vous pouvez nous aider ?</h2>
-            <div className="flex flex-col md:flex-row md:gap-4">
+            <div className="flex flex-col items-center lg:flex-row md:gap-4">
                 <Image
                     src="/Chat_Help_Transparent.png"
                     width={200}
