@@ -80,7 +80,7 @@ export const catsAdopt = [
         genre: "Mâle",
         race: "Roux",
         image: "/animalsAdopt/Ulysse.webp",
-        introduction: "Coucou, je m'appelle Ulysse... et je cherche une maison accueillante ! 🐾🐱.\n\n J’ai connu la vie dehors, j’ai appris à me débrouiller, mais aujourd’hui, je rêve d’un foyer chaleureux où poser enfin mes pattes. Si vous cherchez un compagnon fidèle et affectueux, je suis prêt à remplir votre quotidien de doux ronronnements.",
+        introduction: "Coucou, je m'appelle Ulysse... à la recherche d'une maison ! 🐾🐱.\n\n J’ai connu la vie dehors, j’ai appris à me débrouiller, mais aujourd’hui, je rêve d’un foyer chaleureux où poser enfin mes pattes. Si vous cherchez un compagnon fidèle et affectueux, je suis prêt à remplir votre quotidien de doux ronronnements.",
         description: "Je pèse 9 kg, j'ai toujours vécu dans la rue. Je suis castré et identifié, et je cherche une nouvelle famille qui n'a pas d'autres chats pour m'accueillir. Je suis très calin et propre. Il ne reste plus qu'à vous pour des instants de ronronnements. 💕🏡",
         adopt: false
     },

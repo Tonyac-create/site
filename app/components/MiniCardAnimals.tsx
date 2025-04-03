@@ -29,7 +29,7 @@ export default function MiniCardAnimals({ image, name, age, genre, introduction 
                 <p>{age}</p>
                 <p>{genre}</p>
                 {introduction && (
-                    <p className="text-sm px-4 mt-4 whitespace-pre-line">
+                    <p className="text-sm px-8 py-4 mt-4 whitespace-pre-line">
                         {introduction}
                     </p>
                 )}
