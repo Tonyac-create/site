@@ -7,8 +7,8 @@ export const catsAdopt = [
         genre: "Femelle",
         race: "Ecaille de tortue",
         image: "/animalsAdopt/Capucine.jpg",
-        introduction: "Moi, c’est Capucine… et je cherche une famille pour la vie. 🐾🐱.10 ans d’amour, de douceur et de sagesse féline… C’est ce que je suis prête à offrir à celui ou celle qui voudra bien m’accueillir. Avec mon magnifique pelage écaille de tortue, je suis une vraie beauté, mais ce qui me définit avant tout, c’est mon grand cœur. 💕",
-        description: "J’ai toujours vécu dehors, libre et indépendante, tout en étant entourée d’amour. Mais depuis que ma maîtresse est partie en EHPAD, ma vie a changé… Je me retrouve enfermée, sans repères, et j’attends avec espoir une nouvelle famille qui saura m’aimer comme avant. Je suis une minette bien éduquée, câline et reconnaissante. Si tu as un petit coin douillet pour moi, des caresses à offrir et un espace où je pourrai m’épanouir, alors je te promets en retour des ronrons et une présence réconfortante au quotidien. Une seconde chance, une nouvelle maison, un amour partagé… Et si c’était avec toi ? 🏡💕",
+        introduction: "Moi, c'est Capucine… et je cherche une famille pour la vie. 🐾🐱 10 ans d'amour, de douceur et de sagesse féline… C'est ce que je suis prête à offrir à celui ou celle qui voudra bien m'accueillir.\n\nAvec mon magnifique pelage écaille de tortue, je suis une vraie beauté, mais ce qui me définit avant tout, c'est mon grand cœur. 💕",
+        description: "J’ai toujours vécu dehors, libre et indépendante, tout en étant entourée d’amour. Mais depuis que ma maîtresse est partie en EHPAD, ma vie a changé… Je me retrouve enfermée, sans repères, et j’attends avec espoir une nouvelle famille qui saura m’aimer comme avant. Je suis une minette bien éduquée, câline et reconnaissante. Si tu as un petit coin douillet pour moi, des caresses à offrir et un espace où je pourrais m’épanouir, alors je te promets en retour des ronrons et une présence réconfortante au quotidien. Une seconde chance, une nouvelle maison, un amour partagé… Et si c’était avec toi ? 🏡💕",
         adopt: true
     },
     {
@@ -68,8 +68,8 @@ export const catsAdopt = [
         genre: "Mâle",
         race: "Roux / Blanc",
         image: "/animalsAdopt/Moon.jpg",
-        introduction: "Moi, c’est Moon... et je cherche une famille aimante ! 🐾🐱. ",
-        description: "💕🏡",
+        introduction: "Moi, c’est Moon... et je cherche une famille aimante ! 🐾🐱.\n\n Malgré un début de vie difficile, Moon est prêt à tourner la page et à découvrir le confort d’un vrai foyer. Ce jeune chat roux et blanc, encore marqué par son passé, n’attend plus qu’une famille douce et bienveillante pour l’accueillir.",
+        description: "Roux et blanc, poil long (la couleur noire visible sur son pelage est due à son vécu difficile sous une voiture, mais ne vous inquiétez pas, il retrouvera bientôt toute sa splendeur !); Doux, affectueux et en quête de sécurité; Une maison calme où il pourra se poser et recevoir toute l’attention qu’il mérite. Moon a déjà assez connu les épreuves de la rue, il est maintenant prêt à offrir et recevoir tout l’amour qu’il a en lui.💕🏡",
         adopt: false
     },
     {
@@ -80,7 +80,7 @@ export const catsAdopt = [
         genre: "Mâle",
         race: "Roux",
         image: "/animalsAdopt/Ulysse.webp",
-        introduction: "Moi, je m'appelle Ulysse... et je cherche une famille aimante ! 🐾🐱. ",
+        introduction: "Coucou, je m'appelle Ulysse... et je cherche une maison accueillante ! 🐾🐱.\n\n J’ai connu la vie dehors, j’ai appris à me débrouiller, mais aujourd’hui, je rêve d’un foyer chaleureux où poser enfin mes pattes. Si vous cherchez un compagnon fidèle et affectueux, je suis prêt à remplir votre quotidien de doux ronronnements.",
         description: "Je pèse 9 kg, j'ai toujours vécu dans la rue. Je suis castré et identifié, et je cherche une nouvelle famille qui n'a pas d'autres chats pour m'accueillir. Je suis très calin et propre. Il ne reste plus qu'à vous pour des instants de ronronnements. 💕🏡",
         adopt: false
     },
@@ -107,8 +107,8 @@ export const dogsAdopt = [
         genre: "Mâle",
         race: "Croisé Berger Australien",
         image: "/animalsAdopt/Ziggy.webp",
-        introduction: "Salut, moi c’est Ziggy ! 🐾🐕. Je suis un croisé Berger Australien de 5 ans, un chien intelligent et ultra affectueux une fois que j’ai confiance en toi ! 🥰 J’adore bouger et je suis un excellent compagnon de cani-cross, alors si tu es sportif, on risque de bien s’entendre ! 🏃‍♂️🐾",
-        description: "Je peux être un peu craintif au premier abord, mais attention, j’ai aussi mon petit caractère ! Il me faut du temps et un environnement de confiance pour m’ouvrir complètement. Un foyer avec de jeunes enfants ne serait pas idéal pour moi. J’ai besoin d’un humain prêt à s’investir dans mon éducation, qui puisse m’emmener en grandes balades et me donner un cadre rassurant. Je suis un chien protecteur, donc il faudra être attentif à mes réactions, surtout à la maison. Avec les autres chiens, je suis sélectif, je préfère ceux de mon gabarit (les bergers et huskies sont souvent mes meilleurs copains !). En revanche, les chats et moi, on ne s’entend pas... 😅 Et pour les balades, mieux vaut une longe parce que j’ai tendance à tirer en laisse ! Côté maison, je suis propre, non destructeur, mais si tu laisses du sucré sur la table... disons que je pourrais bien me laisser tenter ! 🍪😏 Alors, prêt à partager ta vie avec un compagnon fidèle et sportif ? 🏡❤️",
+        introduction: "Salut, moi c’est Ziggy à la recherche d'une famille ! 🐾🐕.\n\n Je suis un croisé Berger Australien de 5 ans, un chien intelligent et ultra affectueux une fois que j’ai confiance en toi ! J’adore bouger et je suis un excellent compagnon de cani-cross, alors si tu es sportif, on risque de bien s’entendre !",
+        description: "Je peux être un peu craintif au premier abord, mais attention, j’ai aussi mon petit caractère ! Il me faut du temps et un environnement de confiance pour m’ouvrir complètement. Un foyer avec de jeunes enfants ne serait pas idéal pour moi. J’ai besoin d’un humain prêt à s’investir dans mon éducation, qui puisse m’emmener en grandes balades et me donner un cadre rassurant. Je suis un chien protecteur, donc il faudra être attentif à mes réactions, surtout à la maison. Avec les autres chiens, je suis sélectif, je préfère ceux de mon gabarit (les bergers et huskies sont souvent mes meilleurs copains !). En revanche, les chats et moi, on ne s’entend pas... 😅 Et pour les balades, mieux vaut une longe parce que j’ai tendance à tirer en laisse ! Côté maison, je suis propre, non destructeur, mais si tu laisses du sucré sur la table... disons que je pourrais bien me laisser tenter ! Alors, prêt à partager ta vie avec un compagnon fidèle et sportif ? 🏡❤️",
         adopt: false
     },
 ]
