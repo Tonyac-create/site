@@ -1,6 +1,6 @@
-import HeroSectionHistory from "../components/History/HeroSectionHistory";
-import TeamSectionHistory from "../components/History/TeamSectionHistory";
-import WelcomeSection from "../components/History/WelcomeSection";
+import HeroSectionHistory from "../components/HistoryPage/HeroSectionHistory";
+import TeamSectionHistory from "../components/HistoryPage/TeamSectionHistory";
+import WelcomeSection from "../components/HistoryPage/WelcomeSection";
 
 export default function HistoryPage() {
     return (

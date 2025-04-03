@@ -1,10 +1,10 @@
-import AdoptSection from "./components/Home/AdoptSection";
-import BlogSection from "./components/Home/BlogSection";
-import HelpSection from "./components/Home/HelpSection";
-import HeroSection from "./components/Home/HeroSection";
-import HistorySection from "./components/Home/HistorySection";
-import LPOSection from "./components/Home/LPOSection";
-import TeamSection from "./components/Home/TeamSection";
+import AdoptSection from "./components/HomePage/AdoptSection";
+import BlogSection from "./components/HomePage/BlogSection";
+import HelpSection from "./components/HomePage/HelpSection";
+import HeroSection from "./components/HomePage/HeroSection";
+import HistorySection from "./components/HomePage/HistorySection";
+import LPOSection from "./components/HomePage/LPOSection";
+import TeamSection from "./components/HomePage/TeamSection";
 
 
 export default function Home() {
