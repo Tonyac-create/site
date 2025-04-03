@@ -13,6 +13,7 @@ export default function MenuNavigation({ setIsMenuOpen }: MenuNavigationProps) {
     { name: "Visites pédagogiques", href: "/visits" },
     { name: "J'aide", href: "/help" },
     { name: "Adoptez nous", href: "/adopt" },
+    { name: "L'équipe", href: "/team" },
     { name: "Actualités", href: "/blog" },
     { name: "Contact", href: "/contact" },
   ];
@@ -22,7 +23,7 @@ export default function MenuNavigation({ setIsMenuOpen }: MenuNavigationProps) {
   return (
     <>
       {navigation.map((item) => (
-        <li key={item.name} onClick={() => setIsMenuOpen(false)}>
+        <li key={item.name} className="text-center" onClick={() => setIsMenuOpen(false)}>
           <Link href={item.href} className={`hover:text-brown ${pathname === item.href ? 'text-brown' : 'text-black'}`}>{item.name}</Link>
         </li>
       ))}
