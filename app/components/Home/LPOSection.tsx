@@ -12,8 +12,8 @@ export default function LPOSection() {
     const isSecondImageInView = useInView({ ref: secondImageRef as RefObject<Element> });
 
     return (
-        <section className="mx-6 pt-16 lg:mx-28 flex flex-col 2xl:flex-row">
-            <div className=" 2xl:w-1/2">
+        <section className="mx-6 pt-16 lg:mx-28 flex flex-col 2xl:flex-row 2xl:gap-5">
+            <div className="2xl:w-1/2">
                 <h2 className="text-brown text-4xl font-lora font-semibold">Nous sommes refuge LPO</h2>
                 <p className="text-xl mt-3">{`Un Refuge LPO est un terrain privé (petit ou grand jardin, cour ou balcon…) ou public
                 (parc, espace vert, sentier…) sur lequel le propriétaire ou gestionnaire s’engage à
