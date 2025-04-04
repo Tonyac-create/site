@@ -69,7 +69,7 @@ export default function WelcomeSection() {
                     <li>{`- Offrir des assistances occasionnelles aux personnes en situation de difficulté en fonction des ressources financières de l'association.`}</li>
                     <li>{`- Proposer des aides "coup dur" aux personnes hospitalisées ou en cas de décès.`}</li>
                     <li className="mt-5">
-                        <Button href="/adopt" variant="secondary" className="w-1/2">{`Je fais un don`}</Button>
+                        <Button href="/help" variant="secondary" className="w-1/2">{`Je fais un don`}</Button>
                     </li>
                 </ul>
             </div>

@@ -30,7 +30,7 @@ export default function ArchitectureTeam() {
                                 {member.name}
                             </div>
                         </div>
-                        <p className="text-gray-600 font-medium mb-2">{member.role}</p>
+                        <p className="text-black text-lg font-medium mb-2">{member.role}</p>
                         <div className="text-sm text-gray-500">
                             {member.otheRoles.filter(role => role !== "").map((role, index) => (
                                 <p key={index} className="mb-1">{role}</p>
@@ -52,7 +52,7 @@ export default function ArchitectureTeam() {
                                 {member.name}
                             </div>
                         </div>
-                        <p className="text-gray-600 font-medium mb-2">{member.role}</p>
+                        <p className="text-black text-lg font-medium mb-2">{member.role}</p>
                         <div className="text-sm text-gray-500">
                             {member.otheRoles.filter(role => role !== "").map((role, index) => (
                                 <p key={index} className="mb-1">{role}</p>
@@ -74,7 +74,7 @@ export default function ArchitectureTeam() {
                                 {member.name}
                             </div>
                         </div>
-                        <p className="text-gray-600 font-medium mb-2">{member.role}</p>
+                        <p className="text-black text-lg font-medium mb-2">{member.role}</p>
                         <div className="text-sm text-gray-500">
                             {member.otheRoles.filter(role => role !== "").map((role, index) => (
                                 <p key={index} className="mb-1">{role}</p>

@@ -54,7 +54,7 @@ export default function HistorySection() {
                         <p className="text-xl mt-3 mb-8">Nous nous engageons à protéger et accompagner les animaux en détresse à
                             travers des actions concrètes : sauvetage, soins, sensibilisation et éducation.
                             Découvrez comment nous œuvrons chaque jour pour le bien-être des animaux et la transmission de connaissances essentielles.</p>
-                        <Button href="/history" variant="secondary" className="sm:w-[60%]">{`Toutes nos actions`}</Button>
+                        <Button href="/missions" variant="secondary" className="sm:w-[60%]">{`Toutes nos actions`}</Button>
                     </div>
                 </div>
             </div>

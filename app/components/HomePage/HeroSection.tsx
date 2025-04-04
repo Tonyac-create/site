@@ -40,7 +40,7 @@ export default function HeroSection() {
                     Rejoignez-nous pour protéger et sauver encore plus d'animaux !`}</p>
                     <div className="flex flex-col md:flex-row md:gap-14 sm:mx-auto">
                         <Button href="/adopt" variant="primary" className="mt-10">Donnez une seconde chance</Button>
-                        <Button href="/adopt" variant="secondary" className="mt-5 md:mt-10">Je deviens adhérent</Button>
+                        <Button href="/help" variant="secondary" className="mt-5 md:mt-10">Je deviens adhérent</Button>
                     </div>
                 </div>
                 <div className="flex flex-col justify-center items-center mt-8 xl:w-1/4">
