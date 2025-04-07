@@ -7,13 +7,13 @@ export default function HelpSection() {
             <h2 className="text-brown text-4xl font-lora font-semibold">Comment vous pouvez nous aider ?</h2>
             <div className="flex flex-col items-center lg:flex-row md:gap-4">
                 <Image
-                    src="/Chat_Help_Transparent.png"
+                    src="/Chat_Help_SFPA.webp"
                     width={200}
                     height={300}
                     quality={100}
                     priority={true}
                     alt='Chat'
-                    className="mt-5 rounded-sm object-contain drop-shadow-cat"
+                    className="mt-5 rounded-sm object-contain drop-shadow-help"
                 />
                 <div className="flex flex-col my-8">
                     <p className="text-xl mt-3 mb-5 text-black md:w-[70%] mx-auto">
@@ -29,13 +29,13 @@ export default function HelpSection() {
                     <Button href="/help" variant="primary" className="w-1/2 mx-auto">{`Je fais un don`}</Button>
                 </div>
                 <Image
-                    src="/Chien_Help_Transparent_2.png"
+                    src="/Chien_Help_3_SFPA.jpg"
                     width={200}
                     height={300}
                     quality={100}
                     priority={true}
                     alt='Chien'
-                    className="mt-5 rounded-sm object-contain drop-shadow-dog"
+                    className="mt-5 rounded-sm object-contain drop-shadow-help"
                 />
             </div>
         </section>
