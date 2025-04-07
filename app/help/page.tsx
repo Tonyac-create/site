@@ -1,10 +1,10 @@
-import { VisitForm } from "../components/forms/VisitForm";
+import { DonationForm } from "../components/forms/DonationForm";
 
-export default function VisitsPage() {
+export default function HelpPage() {
     return (
         <main>
             <section className="px-6 pt-32 lg:px-28 mb-12">
-                <VisitForm />
+                <DonationForm />
             </section>
         </main>
     )
