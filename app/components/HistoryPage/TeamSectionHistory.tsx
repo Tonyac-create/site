@@ -13,7 +13,7 @@ export default function TeamSectionHistory() {
                     <li>{`Notre structure :`}</li>
                     <li className="inline-flex gap-2">
                         <Image
-                            src="/check-solid.svg"
+                            src="/icons/check-solid.svg"
                             width={20}
                             height={20}
                             priority={true}
@@ -23,7 +23,7 @@ export default function TeamSectionHistory() {
                         {`Fondatrice de l’association : Nanou`}</li>
                     <li className="inline-flex gap-2">
                         <Image
-                            src="/check-solid.svg"
+                            src="/icons/check-solid.svg"
                             width={20}
                             height={20}
                             priority={true}
@@ -33,7 +33,7 @@ export default function TeamSectionHistory() {
                         {`Présidente de l’association : Kim`}</li>
                     <li className="inline-flex gap-2">
                         <Image
-                            src="/check-solid.svg"
+                            src="/icons/check-solid.svg"
                             width={20}
                             height={20}
                             priority={true}
@@ -43,7 +43,7 @@ export default function TeamSectionHistory() {
                         {`Responsable des sauvetages & interventions : Nanou et Kim`}</li>
                     <li className="inline-flex gap-2">
                         <Image
-                            src="/check-solid.svg"
+                            src="/icons/check-solid.svg"
                             width={20}
                             height={20}
                             priority={true}
@@ -53,7 +53,7 @@ export default function TeamSectionHistory() {
                         {`Chargée de l’adoption et des familles d’accueil : Nanou et Kim`}</li>
                     <li className="inline-flex gap-2">
                         <Image
-                            src="/check-solid.svg"
+                            src="/icons/check-solid.svg"
                             width={20}
                             height={20}
                             priority={true}
@@ -63,7 +63,7 @@ export default function TeamSectionHistory() {
                         {`Équipe vétérinaire partenaire : Nicolas Clinique vétérinaire de Pouilly-sous-Charlieu, Clinique vétérinaire de Chauffailles.`}</li>
                     <li className="inline-flex gap-2">
                         <Image
-                            src="/check-solid.svg"
+                            src="/icons/check-solid.svg"
                             width={20}
                             height={20}
                             priority={true}

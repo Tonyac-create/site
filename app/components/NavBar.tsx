@@ -34,7 +34,7 @@ export default function NavBar() {
                         >
                             {isMenuOpen ? (
                                 <Image
-                                    src="/xmark.svg"
+                                    src="/icons/xmark.svg"
                                     width={36}
                                     height={36}
                                     alt=""
@@ -42,7 +42,7 @@ export default function NavBar() {
                                 />
                             ) : (
                                 <Image
-                                    src="/bars.svg"
+                                    src="/icons/bars.svg"
                                     width={36}
                                     height={36}
                                     alt=""
