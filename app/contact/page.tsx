@@ -1,11 +1,15 @@
+import HeroSectionContact from "../components/ContactPage/HeroSectionContact";
+import InformationsSection from "../components/ContactPage/InformationsSection";
 import { ContactForm } from "../components/forms/ContactForm";
 
 export default function ContactPage() {
     return (
         <main>
-            <section className="px-6 pt-32 lg:px-28 mb-12">
+            <HeroSectionContact />
+            <div className="flex flex-col xl:flex-row gap-8">
+                <InformationsSection />
                 <ContactForm />
-            </section>
+            </div>
         </main>
     )
 }
