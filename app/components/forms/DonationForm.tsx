@@ -10,8 +10,24 @@ const DONATION_TYPES = [
   'Don matériel'
 ];
 
+interface Address {
+  rue: string;
+  codePostal: string;
+  ville: string;
+}
+
+interface FormData {
+  nom: string;
+  prenom: string;
+  email: string;
+  telephone: string;
+  message: string;
+  typeDon: string;
+  adresse: Address;
+}
+
 export const DonationForm: React.FC = () => {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     nom: '',
     prenom: '',
     email: '',
@@ -22,7 +38,6 @@ export const DonationForm: React.FC = () => {
       rue: '',
       codePostal: '',
       ville: '',
-      pays: 'France'
     }
   });
 
@@ -32,7 +47,7 @@ export const DonationForm: React.FC = () => {
       setFormData(prev => ({
         ...prev,
         [parent]: {
-          ...prev[parent as keyof typeof prev],
+          ...(prev[parent as keyof FormData] as Address),
           [child]: value
         }
       }));
@@ -112,23 +127,13 @@ export const DonationForm: React.FC = () => {
             </div>
           </div>
 
-          <div>
-            <label className="block text-sm font-medium text-gray-700">Pays</label>
-            <input
-              type="text"
-              value={formData.adresse.pays}
-              onChange={(e) => handleFieldChange('adresse.pays', e.target.value)}
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"
-              required
-            />
-          </div>
         </div>
       </div>
 
       <div className="mt-6">
         <button
           type="submit"
-          className="w-full bg-primary text-white py-2 px-4 rounded-md hover:bg-primary-dark transition-colors"
+          className="w-1/2 bg-brown text-green py-2 px-4 rounded-md font-semibold hover:bg-green hover:text-brown transition-colors"
         >
           Envoyer
         </button>
