@@ -1,11 +1,13 @@
 import { VisitForm } from "../components/forms/VisitForm";
+import GridMission from "../components/VisitsPage/GridMissionVisits";
+import HeroSectionVisits from "../components/VisitsPage/HeroSectionVisits";
 
 export default function VisitsPage() {
     return (
         <main>
-            <section className="px-6 pt-32 lg:px-28 mb-12">
-                <VisitForm />
-            </section>
+            <HeroSectionVisits />
+            <GridMission />
+            <VisitForm />
         </main>
     )
 }

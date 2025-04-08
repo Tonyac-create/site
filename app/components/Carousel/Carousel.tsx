@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { useCarousel } from '@/app/hooks/useCarousel';
+import Image from 'next/image';
 
 interface CarouselProps {
     items: React.ReactNode[];
@@ -11,15 +12,15 @@ interface CarouselProps {
     gap?: number;
 }
 
-export default function Carousel({ 
-    items, 
+export default function Carousel({
+    items,
     itemsToShowDesktop = 3,
     itemsToShowTablet = 2,
     itemsToShowMobile = 1,
     gap = 2.5
 }: CarouselProps) {
     const [itemsToShow, setItemsToShow] = useState(itemsToShowDesktop);
-    
+
     const {
         currentIndex,
         nextSlide,
@@ -49,15 +50,15 @@ export default function Carousel({
     return (
         <div className="relative">
             <div className="overflow-hidden">
-                <div 
+                <div
                     className="flex transition-transform duration-500 ease-in-out"
-                    style={{ 
+                    style={{
                         transform: `translateX(-${currentIndex * (100 / itemsToShow)}%)`,
                         gap: `${gap}rem`
                     }}
                 >
                     {items.map((item, index) => (
-                        <div 
+                        <div
                             key={index}
                             className="flex-none"
                             style={{ width: `calc(${100 / itemsToShow}% - ${gap * (itemsToShow - 1) / itemsToShow}rem)` }}
@@ -69,19 +70,35 @@ export default function Carousel({
             </div>
 
             {/* Navigation buttons */}
-            <button 
+            <button
                 onClick={prevSlide}
-                className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 bg-brown text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-opacity-80 transition-colors"
+                className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 bg-green text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-opacity-80 transition-colors"
                 aria-label="Previous slide"
             >
-                ←
+                <Image
+                    src="/icons/chevron-left.svg"
+                    width={15}
+                    height={15}
+                    quality={100}
+                    priority={true}
+                    alt=""
+                    className="object-contain"
+                />
             </button>
-            <button 
+            <button
                 onClick={nextSlide}
-                className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 bg-brown text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-opacity-80 transition-colors"
+                className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 bg-green text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-opacity-80 transition-colors"
                 aria-label="Next slide"
             >
-                →
+                <Image
+                    src="/icons/chevron-right.svg"
+                    width={15}
+                    height={15}
+                    quality={100}
+                    priority={true}
+                    alt=""
+                    className="object-contain"
+                />
             </button>
 
             {/* Pagination */}
@@ -92,8 +109,8 @@ export default function Carousel({
                         onClick={() => goToPage(page)}
                         className={`
                             w-8 h-8 rounded-full flex items-center justify-center transition-colors
-                            ${currentPage === page 
-                                ? 'bg-brown text-white' 
+                            ${currentPage === page
+                                ? 'bg-brown text-white'
                                 : 'bg-gray-200 text-gray-600 hover:bg-gray-300'
                             }
                         `}
