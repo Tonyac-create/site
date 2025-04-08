@@ -15,14 +15,19 @@ type Article = {
     text6: string;
 }
 
+interface ArticleBlogProps {
+    limit?: number;
+}
+
 const truncateText = (text: string, maxLength: number = 200): string => {
     if (text.length <= maxLength) return text;
     return text.slice(0, maxLength).trim() + "...";
 };
 
-export default function ArticleBlog() {
+export default function ArticleBlog({ limit }: ArticleBlogProps) {
     const articles: Article[] = getSortedArticles();
-    const displayedArticles = articles.slice(0, 5);
+    // Si limit est défini, on prend le nombre d'articles demandé, sinon on prend tous les articles
+    const displayedArticles = limit ? articles.slice(0, limit) : articles;
 
     return (
         <div className="flex flex-wrap gap-9 mt-5 mb-9">

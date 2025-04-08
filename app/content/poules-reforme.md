@@ -3,7 +3,7 @@ title: "Les poules de réforme : pourquoi et comment leur offrir une seconde vie
 slug: "poules-reforme"
 date: "28-02-2025"
 author: "Secours Français Pour Animaux"
-image: "/Poules.jpg"
+image: "/Poules.png"
 text1: |
   Les poules de réforme : un destin souvent tragique
   Dans les élevages intensifs, les poules pondeuses sont exploitées pendant 18 à 24 mois, période au cours de laquelle elles produisent des œufs à un rythme effréné. Mais une fois leur rendement jugé insuffisant, elles sont envoyées à l’abattoir, bien qu’elles puissent encore vivre plusieurs années et continuer à pondre, certes à un rythme plus naturel.
