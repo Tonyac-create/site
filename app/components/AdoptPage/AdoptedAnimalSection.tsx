@@ -3,13 +3,23 @@
 import { catsAdopt, dogsAdopt } from "@/app/utils/animalsAdopt";
 import MiniCardAnimals from "../MiniCardAnimals";
 import Carousel from "../Carousel/Carousel";
-import { shuffleArray } from "@/app/utils/arrayUtils";
-import { useMemo } from "react";
+import { useEffect, useState } from "react";
 
 export default function Adopted() {
-    const adoptedAnimals = useMemo(() => {
-        const animals = [...catsAdopt, ...dogsAdopt].filter(animal => animal.adopt);
-        return shuffleArray(animals);
+    const [adoptedAnimals, setAdoptedAnimals] = useState(() => {
+        return [...catsAdopt, ...dogsAdopt].filter(animal => animal.adopt);
+    });
+
+    useEffect(() => {
+        // Mélange les animaux seulement côté client après le premier rendu
+        setAdoptedAnimals(prevAnimals => {
+            const shuffled = [...prevAnimals];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            return shuffled;
+        });
     }, []);
     
     const carouselItems = adoptedAnimals.map((animal) => (

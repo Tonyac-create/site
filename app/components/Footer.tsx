@@ -9,6 +9,8 @@ export default function Footer() {
                     src="/Logo_FondTransparent_SFPA.webp"
                     width={80}
                     height={80}
+                    quality={100}
+                    priority={true}
                     alt='Logo SFPA'
                 />
                 <div className='flex flex-col'>

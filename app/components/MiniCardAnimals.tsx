@@ -1,5 +1,3 @@
-'use client';
-
 import Image from "next/image";
 
 interface MiniCardAnimalsProps {
@@ -21,10 +19,10 @@ export default function MiniCardAnimals({ image, name, age, genre, introduction 
                     quality={100}
                     priority={true}
                     alt={name}
-                    className="mt-5 rounded-t-2xl object-cover"
+                    className="mt-5 object-cover"
                 />
             </div>
-            <div className="bg-brown text-white flex flex-col items-center py-3 rounded-b-2xl">
+            <div className="flex flex-col items-center py-3 border-l-2 border-r-2 border-b-2 border-gray-300 rounded-sm">
                 <h3 className="font-lora text-xl font-bold tracking-widest pt-3">{name}</h3>
                 <div className="bg-green h-1 w-1/4 my-2"></div>
                 <p>{age}</p>
