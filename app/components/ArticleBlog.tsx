@@ -37,6 +37,7 @@ export default function ArticleBlog({ limit }: ArticleBlogProps) {
                         <Image
                             src={article.image}
                             fill
+                            sizes="(max-width: 300px)"
                             quality={100}
                             priority={true}
                             alt={article.title}

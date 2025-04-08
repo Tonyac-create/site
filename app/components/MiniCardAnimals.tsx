@@ -17,6 +17,7 @@ export default function MiniCardAnimals({ image, name, age, genre, introduction 
                 <Image
                     src={image}
                     fill
+                    sizes="(max-width: 300px)"
                     quality={100}
                     priority={true}
                     alt={name}
