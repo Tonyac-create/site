@@ -4,10 +4,22 @@ import React, { useState } from 'react';
 import { BaseFormFields } from './BaseFormFields';
 
 const DONATION_TYPES = [
-  'Membre bienfaiteur',
-  'Don ponctuel',
-  'Don mensuel',
-  'Don matériel'
+  {
+    price: '10 €',
+    title: 'Membre adhérent'
+  },
+  {
+    price: '25 €',
+    title: 'Membre bienfaiteur'
+  },
+  {
+    price: '75 €',
+    title: "Membre d'honneur"
+  },
+  {
+    price: '',
+    title: 'Don libre'
+  },
 ];
 
 interface Address {
@@ -66,13 +78,13 @@ export const DonationForm: React.FC = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold mb-6">Faire un don</h2>
-      <BaseFormFields 
+    <form onSubmit={handleSubmit} className="max-w-2xl mx-auto p-6 my-6 bg-white rounded-lg shadow-md">
+      <h2 className="text-2xl text-brown font-bold mb-6">Remplissez ce formulaire pour devenir membre ou faire un don libre</h2>
+      <BaseFormFields
         onFieldChange={handleFieldChange}
         values={formData}
       />
-      
+
       <div className="mt-6 space-y-4">
         <div>
           <label className="block text-sm font-medium text-gray-700">Type de don</label>
@@ -84,14 +96,14 @@ export const DonationForm: React.FC = () => {
           >
             <option value="">Sélectionnez un type de don</option>
             {DONATION_TYPES.map((type) => (
-              <option key={type} value={type}>{type}</option>
+              <option key={type.title} value={type.title}>{type.title} {type.price}</option>
             ))}
           </select>
         </div>
 
         <div className="space-y-4">
           <h3 className="text-lg font-medium">Adresse</h3>
-          
+
           <div>
             <label className="block text-sm font-medium text-gray-700">Rue</label>
             <input
@@ -131,11 +143,12 @@ export const DonationForm: React.FC = () => {
       </div>
 
       <div className="mt-6">
+        <p className='mb-2'>Vos informations vont être envoyées au Secours Francais Pour Animaux puis vous serez rediriger sur la page de paiement</p>
         <button
           type="submit"
           className="w-1/2 bg-brown text-green py-2 px-4 rounded-md font-semibold hover:bg-green hover:text-brown transition-colors"
         >
-          Envoyer
+          Envoyer et payer
         </button>
       </div>
     </form>
