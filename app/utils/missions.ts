@@ -23,7 +23,7 @@ export const missions: Mission[] = [
         description: "Les chats des rues de moins de 8 mois seront accueillis dans une famille d'accueil afin d'être adoptés. Les petits animaux de la ferme ainsi que les NAC seront regroupés au sein d'une famille d'accueil unique. Ils resteront là jusqu'à la fin de leur vie. Dans cette structure, il sera envisageable de mettre en place des visites pédagogiques. Les autres animaux seront maintenus chez leurs propriétaires ou en famille d'accueil, afin de trouver d'autres maîtres lors des abandons. ",
         imageUrl: "/animalsAdopt/Jazz.jpg",
         btn: ["Chat - Télécharger la fiche d'inscription", "Chien - Télécharger la fiche d'inscription"],
-        pdf: ["/Fiche_adoption_chat.pdf", "/Fiche_adoption_chien.pdf"]
+        pdf: ["/pdf/Fiche_adoption_chat.pdf", "/pdf/Fiche_adoption_chien.pdf"]
     },
     {
         id: 3,
