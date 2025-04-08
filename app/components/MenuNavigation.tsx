@@ -52,6 +52,11 @@ export default function MenuNavigation({ setIsMenuOpen }: MenuNavigationProps) {
     setOpenSubmenu(openSubmenu === itemName ? null : itemName);
   };
 
+  const handleLinkClick = () => {
+    setIsMenuOpen(false);
+    setOpenSubmenu(null);
+  };
+
   return (
     <div ref={menuRef} className="flex gap-11">
       {navigation.map((item) => (
@@ -63,7 +68,7 @@ export default function MenuNavigation({ setIsMenuOpen }: MenuNavigationProps) {
             <Link 
               href={item.href} 
               className={`hover:text-brown ${pathname === item.href ? 'text-brown' : 'text-black'}`}
-              onClick={() => setIsMenuOpen(false)}
+              onClick={handleLinkClick}
             >
               {item.name}
             </Link>
@@ -92,10 +97,7 @@ export default function MenuNavigation({ setIsMenuOpen }: MenuNavigationProps) {
                   <Link
                     href={subItem.href || ''}
                     className={`block ${pathname === subItem.href ? 'text-brown' : 'text-black'} hover:text-brown`}
-                    onClick={() => {
-                      setIsMenuOpen(false);
-                      setOpenSubmenu(null);
-                    }}
+                    onClick={handleLinkClick}
                   >
                     {subItem.name}
                   </Link>
