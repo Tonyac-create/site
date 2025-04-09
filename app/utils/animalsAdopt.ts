@@ -6,7 +6,7 @@ export const catsAdopt = [
         age: "10 ans",
         genre: "Femelle",
         race: "Ecaille de tortue",
-        image: "/animalsAdopt/Capucine.jpg",
+        image: "/animalsAdopt/Capucine.webp",
         introduction: "Moi, c'est Capucine… et je cherche une famille pour la vie. 🐾🐱 10 ans d'amour, de douceur et de sagesse féline… C'est ce que je suis prête à offrir à celui ou celle qui voudra bien m'accueillir.\n\nAvec mon magnifique pelage écaille de tortue, je suis une vraie beauté, mais ce qui me définit avant tout, c'est mon grand cœur. 💕",
         description: "J’ai toujours vécu dehors, libre et indépendante, tout en étant entourée d’amour. Mais depuis que ma maîtresse est partie en EHPAD, ma vie a changé… Je me retrouve enfermée, sans repères, et j’attends avec espoir une nouvelle famille qui saura m’aimer comme avant. Je suis une minette bien éduquée, câline et reconnaissante. Si tu as un petit coin douillet pour moi, des caresses à offrir et un espace où je pourrais m’épanouir, alors je te promets en retour des ronrons et une présence réconfortante au quotidien. Une seconde chance, une nouvelle maison, un amour partagé… Et si c’était avec toi ? 🏡💕",
         adopt: true
@@ -43,7 +43,7 @@ export const catsAdopt = [
         age: "4 mois",
         genre: "Mâle",
         race: "Blanc / Noir",
-        image: "/animalsAdopt/Jazz.jpg",
+        image: "/animalsAdopt/Jazz.webp",
         introduction: "Salut, moi c’est Jazz ! 🐾🐱. Regarde-moi bien… Avec mon pelage noir et blanc élégant et mes grands yeux curieux, je suis prêt à conquérir ton cœur ! 💕 Je ne suis pas un chaton sauvage, bien au contraire ! J’aime la compagnie, les câlins et découvrir le monde qui m’entoure.",
         description: "J’ai 4 mois et je viens d’une fratrie qui n’a pas eu un début de vie facile… Abandonné dans la nature avec mes frères et sœurs, j’ai dû apprendre à me débrouiller tout seul. Mais heureusement, des humains bienveillants nous ont nourris et nous ont donné une chance de trouver un vrai foyer. Je ne suis pas un chaton sauvage, bien au contraire ! J’aime la compagnie, les câlins et découvrir le monde qui m’entoure. Avec un peu de patience et beaucoup d’amour, je deviendrai ton plus fidèle compagnon 😻. Alors, tu craques pour moi ? J’attends impatiemment mon humain pour la vie ! 🏡✨",
         adopt: true
@@ -67,7 +67,7 @@ export const catsAdopt = [
         age: "10 mois",
         genre: "Mâle",
         race: "Roux / Blanc",
-        image: "/animalsAdopt/Moon.jpg",
+        image: "/animalsAdopt/Moon.webp",
         introduction: "Moi, c’est Moon... et je cherche une famille aimante ! 🐾🐱.\n\n Malgré un début de vie difficile, Moon est prêt à tourner la page et à découvrir le confort d’un vrai foyer. Ce jeune chat roux et blanc, encore marqué par son passé, n’attend plus qu’une famille douce et bienveillante pour l’accueillir.",
         description: "Roux et blanc, poil long (la couleur noire visible sur son pelage est due à son vécu difficile sous une voiture, mais ne vous inquiétez pas, il retrouvera bientôt toute sa splendeur !); Doux, affectueux et en quête de sécurité; Une maison calme où il pourra se poser et recevoir toute l’attention qu’il mérite. Moon a déjà assez connu les épreuves de la rue, il est maintenant prêt à offrir et recevoir tout l’amour qu’il a en lui.💕🏡",
         adopt: false

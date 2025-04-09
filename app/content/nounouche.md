@@ -3,7 +3,7 @@ title: "Nounouche, 14 ans, seule et apeurée… jusqu’à ce qu’elle retrouve
 slug: "nounouche"
 date: "28-02-2025"
 author: "Secours Français Pour Animaux"
-image: "/nounouche.jpg"
+image: "/nounouche.webp"
 text1: |
   Un silence pesant et une absence douloureuse
   Dans un petit bâtiment déserté, une ombre se glissait entre les cartons et les vieilles planches de bois. Chaque jour, elle attendait. Chaque jour, elle espérait.

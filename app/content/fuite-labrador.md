@@ -3,7 +3,7 @@ title: "Un labrador en fuite et une course-poursuite mémorable"
 slug: "fuite-labrador"
 date: "28-02-2025"
 author: "Secours Français Pour Animaux"
-image: "/Labrador.jpg"
+image: "/Labrador.webp"
 text1: |
   On dit souvent que la vie en association réserve son lot de surprises… mais celle-ci, on ne l’avait pas vue venir ! Le 25 février, une habitante d’Écoche nous a signalé un labrador noir en divagation, errant dans les rues sans collier et visiblement paniqué. Ni une, ni deux, on monte en voiture et c’est parti pour une véritable chasse au trésor… sauf que le trésor, lui, ne voulait pas se laisser attraper !
 text2: |

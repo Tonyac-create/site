@@ -35,7 +35,7 @@ export default function WelcomeSection() {
                     className={`transition-opacity duration-2000 ease-in-out ${isFirstImageInView ? 'opacity-100' : 'opacity-0'}`}
                 >
                     <Image
-                        src="/Lapin_SFPA.jpg"
+                        src="/Lapin_SFPA.webp"
                         width={500}
                         height={500}
                         priority={true}
@@ -51,7 +51,7 @@ export default function WelcomeSection() {
                     className={`transition-opacity duration-2000 ease-in-out ${isSecondImageInView ? 'opacity-100' : 'opacity-0'}`}
                 >
                     <Image
-                        src="/Cochondinde_SFPA.jpg"
+                        src="/Cochondinde_SFPA.webp"
                         width={500}
                         height={500}
                         priority={true}

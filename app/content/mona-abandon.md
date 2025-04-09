@@ -3,7 +3,7 @@ title: "Mona : de l’abandon à la douceur d’un foyer"
 slug: "mona-abandon"
 date: "15-02-2025"
 author: "Secours Français Pour Animaux"
-image: "/Mona.jpg"
+image: "/Mona.webp"
 text1: |
   Il y a encore quelques mois, Mona n’était qu’un petit fantôme errant, tapie dans un coin de terrain, invisible aux yeux du monde. Livrée à elle-même après avoir été abandonnée, elle survivait comme elle le pouvait, fuyant à la moindre approche, méfiante de tout contact humain.
 text2: |

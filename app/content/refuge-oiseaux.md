@@ -3,7 +3,7 @@ title: "Volières et refuges : comment protéger les oiseaux des prédateurs ?"
 slug: "refuge-oiseaux"
 date: "28-02-2025"
 author: "Secours Français Pour Animaux"
-image: "/oiseaux_article.jpg"
+image: "/oiseaux_article.webp"
 text1: |
   Un drame dans notre refuge : des rats attaquent notre volière
   La vie en refuge n’est pas toujours paisible. Récemment, nous avons été confrontés à un véritable désastre dans notre volière. Des rats ont creusé des galeries sous le sol et ont attaqué nos cailles, provoquant leur perte. Face à cette situation dramatique, nous avons immédiatement pris des mesures pour sécuriser l’espace et éviter que cela ne se reproduise.

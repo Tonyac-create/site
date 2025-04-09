@@ -26,7 +26,6 @@ const truncateText = (text: string, maxLength: number = 200): string => {
 
 export default function ArticleBlog({ limit }: ArticleBlogProps) {
     const articles: Article[] = getSortedArticles();
-    // Si limit est défini, on prend le nombre d'articles demandé, sinon on prend tous les articles
     const displayedArticles = limit ? articles.slice(0, limit) : articles;
 
     return (

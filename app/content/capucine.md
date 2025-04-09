@@ -3,7 +3,7 @@ title: "Capucine, 10 ans : une maison vendue, une famille absente… mais une no
 slug: "capucine"
 date: "28-02-2025"
 author: "Secours Français Pour Animaux"
-image: "/Capucine.jpg"
+image: "/animalsAdopt/Capucine.webp"
 text1: |
   Un foyer qui disparaît, une chatte qui se retrouve seule
   Il y a quelques jours encore, Capucine vivait tranquillement dans sa maison, aux côtés de sa maîtresse. Un endroit qu’elle connaissait par cœur, où chaque meuble portait son odeur, où chaque recoin lui était familier.

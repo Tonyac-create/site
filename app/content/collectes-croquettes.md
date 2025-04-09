@@ -3,7 +3,7 @@ title: "Les collectes de croquettes débutent : Rejoignez-nous pour aider nos ch
 slug: "collectes-croquettes"
 date: "20-02-2025"
 author: "Secours Français Pour Animaux"
-image: "/Croquettes_2.jpg"
+image: "/Croquettes_2.webp"
 text1: |
   L’Association Secours Français pour Animaux lance sa première campagne de collecte de croquettes de l’année ! 
   Nos amis félins comptent sur nous pour leur offrir un peu de réconfort et de nourriture en attendant de trouver un foyer aimant.

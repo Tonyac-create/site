@@ -3,7 +3,7 @@ title: "Bruno du Jura : 15 ans, sauvé de justesse"
 slug: "sauvetage-bruno"
 date: "28-02-2025"
 author: "Secours Français Pour Animaux"
-image: "/Bruno.jpg"
+image: "/Bruno.webp"
 text1: |
   Il y a des moments où l’on se retrouve face à l’incompréhensible. Des décisions prises trop vite, sans réflexion, sans émotion. Un vétérinaire nous a appelés. Un chien de 15 ans, en pleine forme, devait être euthanasié.
   Pourquoi ? Parce qu’il était vieux.

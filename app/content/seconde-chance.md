@@ -3,7 +3,7 @@ title: "Donner une seconde chance aux animaux âgés : pourquoi adopter un compa
 slug: "seconde-chance"
 date: "28-02-2025"
 author: "Secours Français Pour Animaux"
-image: "/Chat_cage.jpg"
+image: "/Chat_cage.webp"
 text1: |
   Les animaux seniors : des compagnons en or souvent oubliés.
   Chaque année, de nombreux chats et chiens âgés se retrouvent en refuge après la disparition ou l’hospitalisation de leur propriétaire. Malheureusement, ils sont souvent délaissés au profit des plus jeunes, alors qu’ils ont encore tant d’amour à donner.

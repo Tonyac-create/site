@@ -29,7 +29,7 @@ export default function HelpSection() {
                     <Button href="/help" variant="primary" className="w-1/2 mx-auto">{`Je fais un don`}</Button>
                 </div>
                 <Image
-                    src="/Chien_Help_3_SFPA.jpg"
+                    src="/Chien_Help_3_SFPA.webp"
                     width={200}
                     height={300}
                     quality={100}

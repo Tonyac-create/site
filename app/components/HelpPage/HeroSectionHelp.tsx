@@ -2,7 +2,7 @@ export default function HeroSectionHelp() {
 
     return (
         <section>
-            <div className="bg-[url(/chien_canape.jpg)] w-full h-[600px] bg-fixed bg-bottom bg-cover"></div>
+            <div className="bg-[url(/chien_canape.webp)] w-full h-[600px] bg-fixed bg-bottom bg-cover"></div>
             <div className="mx-6 pt-16 lg:mx-28">
                 <h2 className="text-brown text-4xl font-lora font-semibold mb-6">Chaque geste compte, chaque vie mérite d’être sauvée.</h2>
                 <p className="text-xl mt-3 mb-5 w-[80%]">Chaque jour, des milliers d’animaux sont abandonnés, maltraités ou en danger.
