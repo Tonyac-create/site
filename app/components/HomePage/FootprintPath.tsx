@@ -6,7 +6,7 @@ const FootprintPath = () => {
     const footprints = Array(5).fill(null);
 
     return (
-        <div className="hidden md:flex absolute w-full h-full pointer-events-none">
+        <div className="hidden sm:flex absolute w-full h-full pointer-events-none">
             {footprints.map((_, index) => (
                 <Image
                     key={index}
@@ -14,11 +14,11 @@ const FootprintPath = () => {
                     width={40}
                     height={40}
                     alt=""
-                    className="absolute object-contain opacity-0 animate-fadeIn"
+                    className="absolute object-contain opacity-0 animate-fadeIn rotate-90"
                     style={{
-                        left: `${50 + (index * 30)}px`,
-                        top: `${100 + (index * 40)}px`,
-                        animationDelay: `${index * 0.5}s`
+                        left: `${20 + (index * 60)}px`,
+                        bottom: `${index % 2 === 0 ? 50 : 80}px`,
+                        animationDelay: `${index * 0.5}s`,
                     }}
                 />
             ))}

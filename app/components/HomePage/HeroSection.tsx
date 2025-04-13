@@ -44,7 +44,7 @@ export default function HeroSection() {
                                 priority={true}
                                 quality={100}
                                 alt='Logo SFPA'
-                                className="object-contain absolute right-[150px] top-36 opacity-0 animate-fadeIn"
+                                className="object-contain absolute right-14 top-36 opacity-0 animate-fadeIn"
                                 style={{ animationDelay: '2.5s' }}
                             />
                         </div>
