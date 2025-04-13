@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Button from "../Button";
+import FootprintPath from './FootprintPath';
 import { RefObject, useRef } from "react";
 import { useCounter } from "@/app/hooks/useCounter";
 import { useInView } from "@/app/hooks/useInView";
@@ -23,25 +24,30 @@ export default function HeroSection() {
                 <div className="flex flex-col xl:w-3/4">
                     <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-lora font-semibold">Ensemble, </h2>
                     <h2 className="text-green text-4xl md:text-5xl lg:text-6xl font-lora font-semibold mb-10">sauvons des vies</h2>
-                    <div className="relative h-[400px] xl:hidden">
-                        <Image
-                            src="/bulle_texte_Elvis.png"
-                            width={250}
-                            height={250}
-                            priority={true}
-                            quality={100}
-                            alt=''
-                            className="object-contain absolute left-28"
-                        />
-                        <Image
-                            src="/elvis_parle.png"
-                            width={200}
-                            height={200}
-                            priority={true}
-                            quality={100}
-                            alt='Logo SFPA'
-                            className="object-contain absolute left-0 top-36"
-                        />
+                    <div className="relative h-[400px] md:hidden">
+                        <FootprintPath />
+                        <div className="relative z-10">
+                            <Image
+                                src="/bulle_texte_Elvis.png"
+                                width={250}
+                                height={250}
+                                priority={true}
+                                quality={100}
+                                alt=''
+                                className="object-contain absolute right-[-30px] opacity-0 animate-fadeIn"
+                                style={{ animationDelay: '3s' }}
+                            />
+                            <Image
+                                src="/elvis_parle.png"
+                                width={200}
+                                height={200}
+                                priority={true}
+                                quality={100}
+                                alt='Logo SFPA'
+                                className="object-contain absolute right-[150px] top-36 opacity-0 animate-fadeIn"
+                                style={{ animationDelay: '2.5s' }}
+                            />
+                        </div>
                     </div>
                     <p className="text-white text-lg w-[80%] lg:text-2xl">
                         {`Chiens, chats, NACs, animaux de ferme… Personne n'est laissé de côté !
@@ -63,7 +69,7 @@ export default function HeroSection() {
                         width={300}
                         height={300}
                         alt='Logo SFPA'
-                        className="hidden xl:flex xl:mt-5"
+                        className="hidden md:flex md:mt-5"
                     />
                 </div>
             </div>
