@@ -19,4 +19,9 @@ export const whyHelp = [
         title: "Soutenir une cause juste",
         description: "SFPA est une association à but non lucratif œuvrant pour le bien-être animal.",
     },
+    {
+        src: "/icons/hand-heart.svg",
+        title: "Une communauté solidaire",
+        description: "Nos bénévoles œuvrent chaque jour avec passion pour améliorer la vie des animaux.",
+    },
 ]

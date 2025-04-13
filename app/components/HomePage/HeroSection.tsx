@@ -22,20 +22,29 @@ export default function HeroSection() {
             <div className="mx-6 lg:mx-28 xl:flex">
                 <div className="flex flex-col xl:w-3/4">
                     <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-lora font-semibold">Ensemble, </h2>
-                    <h2 className="text-green text-4xl md:text-5xl lg:text-6xl font-lora font-semibold">sauvons des vies</h2>
-                    <Image
-                        src="/Elvis_Hero_SFPA.webp"
-                        width={200}
-                        height={200}
-                        priority={true}
-                        quality={100}
-                        alt='Logo SFPA'
-                        className="object-contain mt-5 md:ml-28 xl:hidden"
-                    />
-                    <p className="text-white text-lg lg:text-2xl mt-5">
-                        <span className="italic">Bêêêh bonjour, amis des animaux !</span> {`Je suis Elvis, le bouc mascotte de Secours Français pour Animaux.
-                    Ici, on veille sur mes copains à quatre pattes (et même ceux à plumes ou à écailles !).
-                    Chiens, chats, NACs, animaux de ferme… Personne n'est laissé de côté !
+                    <h2 className="text-green text-4xl md:text-5xl lg:text-6xl font-lora font-semibold mb-10">sauvons des vies</h2>
+                    <div className="relative h-[400px] xl:hidden">
+                        <Image
+                            src="/bulle_texte_Elvis.png"
+                            width={250}
+                            height={250}
+                            priority={true}
+                            quality={100}
+                            alt=''
+                            className="object-contain absolute left-28"
+                        />
+                        <Image
+                            src="/elvis_parle.png"
+                            width={200}
+                            height={200}
+                            priority={true}
+                            quality={100}
+                            alt='Logo SFPA'
+                            className="object-contain absolute left-0 top-36"
+                        />
+                    </div>
+                    <p className="text-white text-lg w-[80%] lg:text-2xl">
+                        {`Chiens, chats, NACs, animaux de ferme… Personne n'est laissé de côté !
                     Grâce à cette belle association, nous trouvons des familles aimantes, recevons les soins dont nous avons besoin et surtout… nous avons une seconde chance.
                     Rejoignez-nous pour protéger et sauver encore plus d'animaux !`}</p>
                     <div className="flex flex-col md:flex-row md:gap-14 sm:mx-auto">
