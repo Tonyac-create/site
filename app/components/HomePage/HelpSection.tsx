@@ -26,7 +26,7 @@ export default function HelpSection() {
                         En apportant votre soutien, vous offrez à ces êtres vulnérables une seconde chance : un refuge sûr, des soins adaptés et surtout, l’amour qu’ils méritent.  
                         Ne restons pas spectateurs. Agissez dès maintenant et faites la différence !`}
                     </p>
-                    <Button href="/help" variant="primary" className="w-1/2 mx-auto">{`Je fais un don`}</Button>
+                    <Button href="/help" variant="primary" className="w-1/2 mx-auto">{`Nous soutenir`}</Button>
                 </div>
                 <Image
                     src="/Chien_Help_3_SFPA.webp"

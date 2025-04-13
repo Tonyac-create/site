@@ -38,26 +38,26 @@ export const allTeam: Team[] = [
     },
     {
         id: 6,
-        name: "Morgann",
-        role: "Soigneuse animalière",
-        otheRoles: ["Bac pro agricole Spécialisés pour le parc des animaux de la ferme", "Assistante pour les visites pédagogiques"]
+        name: "Catherine et Nanou",
+        role: "Enquêteurs",
+        otheRoles: [""]
     },
     {
         id: 7,
-        name: "Manu",
-        role: "Soigneur animalier",
+        name: "Manu et Manon",
+        role: "Soigneurs animalier",
         otheRoles: ["Dans la structure pédagogique, il nourrit les animaux, nettoit les enclos et controle les équipements et clôtures"]
     },
     {
         id: 8,
-        name: "Karine et Nina",
+        name: "Karine, Nina et Charles",
         role: "Bénévoles",
         otheRoles: ["Responsables des collectes"]
     },
     {
         id: 9,
-        name: "Lyza et Rinala",
-        role: "Chargées de communication",
+        name: "Rinala",
+        role: "Chargée de communication",
         otheRoles: [""]
     },
     {
@@ -65,5 +65,11 @@ export const allTeam: Team[] = [
         name: "Nemo et Brandon",
         role: "Chefs des travaux et structures",
         otheRoles: ["Spécialisés dans les constructions des divers enclos et les travaux"]
+    },
+    {
+        id: 11,
+        name: "Sandrine, Nanou et Kim",
+        role: "Famille d'accueil",
+        otheRoles: [""]
     }
 ]

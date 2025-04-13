@@ -20,7 +20,7 @@ export const missions: Mission[] = [
     {
         id: 2,
         title: "Animaux à l'abandon",
-        description: "Les chats des rues de moins de 8 mois seront accueillis dans une famille d'accueil afin d'être adoptés. Les petits animaux de la ferme ainsi que les NAC seront regroupés au sein d'une famille d'accueil unique. Ils resteront là jusqu'à la fin de leur vie. Dans cette structure, il sera envisageable de mettre en place des visites pédagogiques. Les autres animaux seront maintenus chez leurs propriétaires ou en famille d'accueil, afin de trouver d'autres maîtres lors des abandons. ",
+        description: "Les chats et les chiens restent en famille d'accueil jusqu'à l'adoption. Les petits animaux de la ferme ainsi que les NAC seront regroupés au sein d'une structure d'accueil unique. Ils resteront là jusqu'à la fin de leur vie. Dans cette structure, il sera envisageable de mettre en place des visites au sein des familles d'accueil. Les autres animaux seront maintenus chez leurs propriétaires ou en famille d'accueil, afin de trouver d'autres maîtres lors des abandons. ",
         imageUrl: "/animalsAdopt/Jazz.webp",
         btn: ["Chat - Télécharger la fiche d'inscription", "Chien - Télécharger la fiche d'inscription"],
         pdf: ["/pdf/Fiche_adoption_chat.pdf", "/pdf/Fiche_adoption_chien.pdf"]
@@ -54,7 +54,7 @@ export const missions: Mission[] = [
         title: `Assurance "Coup dur"`,
         description: `Des garanties "coup dur" seront proposées par l'association pour prendre soin de leur animal en cas d'hospistalisation ou de décès. Retrouvez ci dessous les tarifs.`,
         imageUrl: "/personne_agee.webp",
-        btn: ["Demander un devis"],
+        btn: ["Demander une aide"],
         pathBtn: "/contact"
     }
 ];

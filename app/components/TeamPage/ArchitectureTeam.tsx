@@ -9,11 +9,11 @@ export default function ArchitectureTeam() {
     );
 
     const operations = allTeam.filter(member =>
-        ["Soigneuse animalière", "Soigneur animalier", "Chefs des travaux et structures"].includes(member.role)
+        ["Enquêteurs", "Soigneurs animalier", "Chefs des travaux et structures"].includes(member.role)
     );
 
     const support = allTeam.filter(member =>
-        ["Développeuse web", "Chargées de communication", "Bénévoles"].includes(member.role)
+        ["Développeuse web", "Chargées de communication", "Bénévoles", "Famille d'accueil"].includes(member.role)
     );
 
     return (
@@ -47,7 +47,7 @@ export default function ArchitectureTeam() {
                         key={member.id}
                         className="w-64 text-center mb-8"
                     >
-                        <div className="relative w-42 h-42 mx-auto mb-4 bg-green rounded-full">
+                        <div className="relative w-45 h-45 mx-auto mb-4 bg-green rounded-full">
                             <div className="absolute inset-0 flex items-center justify-center text-3xl text-brown">
                                 {member.name}
                             </div>
@@ -69,7 +69,7 @@ export default function ArchitectureTeam() {
                         key={member.id}
                         className="w-64 text-center mb-8"
                     >
-                        <div className="relative w-40 h-40 mx-auto mb-4 bg-green rounded-full">
+                        <div className="relative w-42 h-42 mx-auto mb-4 bg-green rounded-full">
                             <div className="absolute inset-0 flex items-center justify-center text-2xl text-brown">
                                 {member.name}
                             </div>

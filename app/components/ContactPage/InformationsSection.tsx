@@ -5,7 +5,7 @@ export default function InformationsSection() {
                 <div className="space-y-10">
                     <h2 className="text-brown text-2xl font-lora font-semibold mb-6">Informations utiles</h2>
                     <div>
-                        <h3 className="text-xl font-semibold mb-2">Adresse (mairie)</h3>
+                        <h3 className="text-xl font-semibold mb-2">Adresse siège social</h3>
                         <p className="text-gray-700">
                             {`7, place de l'Hôtel de Ville`}<br />
                             71170 Chauffailles
@@ -15,11 +15,15 @@ export default function InformationsSection() {
                     <div>
                         <h3 className="text-xl font-semibold mb-2">Horaires</h3>
                         <p className="font-semibold">
-                            {`Refuge "Aide aux animaux"`}
+                            {`Association "Aide aux animaux"`}
                         </p>
                         <p className="text-gray-700">
                             Lundi au Dimanche <br />
                             9h00 - 19h00
+                        </p>
+                        <p className="text-gray-700">
+                            Par téléphone <br />
+                            9h00 - 12h00 / 14h00 - 19h00
                         </p>
                         <p className="font-semibold mt-6">
                             Structure pédagogique
