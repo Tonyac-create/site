@@ -6,7 +6,7 @@ export default function HeroSectionHistory() {
     const fullText = `Très jeune impliqué dans les animaux, j'ai commencé à l'âge de 19 ans en gardant des chiens pour éviter les abandons pendant les vacances. 
                 Ensuite, dix ans plus tard, c'est lorsque j'ai découvert un chien blessé sur la route, qu'aucun vétérinaire ne voulait prendre en charge, que j'ai décidé de créer ma propre association. Aucun des propos que j'avais entendus ne m'a incité à abandonner cet animal, mais étant au RSA, je n'avais pas les ressources nécessaires pour faire opérer ce chien.
                 Alors que c'était un week-end, j'ai ramené ce chien chez moi. Dès le lundi, j'ai contacté des associations près de chez moi, mais j'ai toujours entendu le même refrain : « Vous n'avez pas les moyens, remettez-le dans la rue".  J'étais outré de constater de telles actions d'associations prétendant apporter leur soutien aux animaux.
-                Après cela, j'ai découvert une petite association fondée par une femme âgée qui s'occupait des chiens qu'elle gardait chez elle, sans aucun refuge, mais simplement sa petite maison pour apporter l'amour à tous ces abandonnés.
+                 Après cela, j'ai découvert une petite association fondée par une femme âgée qui s'occupait des chiens qu'elle gardait chez elle, sans aucun refuge, mais simplement sa petite maison pour apporter l'amour à tous ces abandonnés.
                 Lorsque je lui ai raconté mon histoire, elle n'a pas hésité à me demander "trouver un vétérinaire qui souhaite bien le soigner, envoyez-moi le devis et je vous enverrai l'argent pour la totalité de la facture". J'étais tellement heureuse de constater que ce pauvre chien que j'avais recueilli allait pouvoir être soigné. Bien sûr, je n'ai pas recontacté les vétérinaires que j'avais rencontrés le samedi, mais j'ai trouvé une jeune vétérinaire qui venait de s'installer et qui a non seulement pris en charge les soins, mais ne nous a facturé que l'essentiel sans se faire payer elle-même!
                 Après l'opération, nous avons découvert que ce chien avait été victime de maltraitance et que son handicap découle d'une fracture qui n'avait jamais été traitée. Il ne lui fallait que quelques jours pour le voir marcher correctement et surtout ne plus l'entendre pleurer à chaque pas qu'il faisait.
                 Nous prenons donc la décision de rendre visite à cette femme qui nous avait apporté son aide afin de la remercier et de lui présenter ce chien qu'elle avait pu soigner.
@@ -24,7 +24,7 @@ export default function HeroSectionHistory() {
                 <h2 className="text-brown text-4xl font-lora font-semibold mb-6">Découvrez qui nous sommes</h2>
                 <h3 className="text-green text-3xl font-semibold mb-3.5 drop-shadow-xl">Notre histoire</h3>
                 <div className="max-w-4xl">
-                    <p className="text-lg leading-relaxed">
+                    <p className="text-lg leading-relaxed whitespace-pre-line">
                         {isExpanded ? fullText : fullText.slice(0, 1000) + "..."}
                     </p>
                     <button 

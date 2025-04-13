@@ -45,21 +45,23 @@ const MissionItem = ({ visits, index }: { visits: Visits, index: number }) => {
                     <h2 className="text-3xl font-bold text-brown">{visits.title}</h2>
                     <p className="text-xl text-gray-600 whitespace-pre-line">{visits.description}</p>
                     <p className="text-xl font-semibold">{visits.price}</p>
-                    <button
-                        onClick={() => setIsGalleryOpen(true)}
-                        className="inline-flex items-center px-6 py-3 bg-brown text-white rounded-lg hover:bg-brown/90 transition-colors"
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                            <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
-                        </svg>
-                        Voir la galerie de photos
-                    </button>
+                    {visits.galleryImages && visits.galleryImages.length > 0 && (
+                        <button
+                            onClick={() => setIsGalleryOpen(true)}
+                            className="inline-flex items-center px-6 py-3 bg-brown text-white rounded-lg hover:bg-brown/90 transition-colors"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                                <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
+                            </svg>
+                            Voir la galerie de photos
+                        </button>
+                    )}
                 </div>
             </div>
             <GalleryModal
                 isOpen={isGalleryOpen}
                 onClose={() => setIsGalleryOpen(false)}
-                images={visits.galleryImages}
+                images={visits.galleryImages!}
                 title={visits.title}
             />
         </>

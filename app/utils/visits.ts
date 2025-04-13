@@ -5,7 +5,7 @@ export interface Visits {
     list?: string[];
     price: string;
     imageURL: string;
-    galleryImages: string[];
+    galleryImages?: string[];
 }
 
 export const visits: Visits[] = [
@@ -50,12 +50,6 @@ export const visits: Visits[] = [
         ],
         price: "Le coût est de 20 euros par enfant.",
         imageURL: "/bouc_sfpa_anniversaire.webp",
-        galleryImages: [
-            "/gallery/visite-simple-1.jpg",
-            "/gallery/visite-simple-2.jpg",
-            "/gallery/visite-simple-3.jpg",
-            "/gallery/visite-simple-4.jpg"
-        ]
     },
     
 ];

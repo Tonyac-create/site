@@ -21,7 +21,7 @@ export default function WelcomeSection() {
                 Entièrement autonome par rapport à tout autre organisme.`}</p>
             <div className="flex flex-col items-center md:flex-row">
                 <div className="flex flex-col md:w-1/2">
-                    <p className="text-lg">{`L'association ne compte pas d'employés, mais seulement des individus solidaires qui œuvrent en faveur des animaux.
+                    <p className="text-lg">{`L'association ne compte pas d'employés, mais seulement des personnes solidaires qui œuvrent en faveur des animaux.
                     En devenant bénévoles pour notre association, nous sommes responsables de représenter tous les animaux qui en ont besoin.
                     Devenir adhérent de notre association signifie non seulement nous soutenir dans nos missions, mais aussi apporter
                     son soutien aux animaux en situation de besoin.
