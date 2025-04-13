@@ -5,6 +5,7 @@ import HeroSection from "./components/HomePage/HeroSection";
 import HistorySection from "./components/HomePage/HistorySection";
 import LPOSection from "./components/HomePage/LPOSection";
 import TeamSection from "./components/HomePage/TeamSection";
+import PartnersSection from "./components/PartnersSection";
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <AdoptSection />
       <TeamSection />
       <BlogSection />
+      <PartnersSection />
     </main>
   );
 }

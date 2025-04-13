@@ -1,6 +1,7 @@
 import HeroSectionContact from "../components/ContactPage/HeroSectionContact";
 import InformationsSection from "../components/ContactPage/InformationsSection";
 import { ContactForm } from "../components/forms/ContactForm";
+import PartnersSection from "../components/PartnersSection";
 
 export default function ContactPage() {
     return (
@@ -10,6 +11,7 @@ export default function ContactPage() {
                 <InformationsSection />
                 <ContactForm />
             </div>
+            <PartnersSection />
         </main>
     )
 }
