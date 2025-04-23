@@ -37,15 +37,47 @@ const MissionItem = ({ mission, index }: { mission: Mission, index: number }) =>
                     />
                 </div>
             </div>
-            <div className="w-full md:w-1/2 space-y-4">
+            <div className="w-full md:w-1/2 space-y-6">
                 <h2 className="text-3xl font-bold text-brown">{mission.title}</h2>
                 <p className="text-xl text-gray-600">{mission.description}</p>
                 {mission.pathBtn ? (
                     <Button href={mission.pathBtn} variant="secondary">{mission.btn[0]}</Button>
                 ) : mission.pdf ? (
-                    <div className='flex flex-col gap-4 w-3/4'>
-                        {mission.pdf[0] && <Button href={mission.pdf[0]} variant="secondary">{mission.btn[0]}</Button>}
-                        {mission.pdf[1] && <Button href={mission.pdf[1]} variant="secondary">{mission.btn[1]}</Button>}
+                    <div className='flex flex-col gap-4'>
+                        {mission.pdf[0] && (
+                            mission.pdf[0].includes('.pdf') ? (
+                                <Button href={mission.pdf[0]} variant="pdf" className="inline-flex gap-2">
+                                    <Image
+                                        src="/icons/file_pdf.svg"
+                                        width={20}
+                                        height={20}
+                                        quality={100}
+                                        priority={true}
+                                        alt=""
+                                    />
+                                    {mission.btn[0]}
+                                </Button>
+                            ) : (
+                                <Button href={mission.pdf[0]} variant="secondary">{mission.btn[0]}</Button>
+                            )
+                        )}
+                        {mission.pdf[1] && (
+                            mission.pdf[1].includes('.pdf') ? (
+                                <Button href={mission.pdf[1]} variant="pdf" className="inline-flex gap-2">
+                                    <Image
+                                        src="/icons/file_pdf.svg"
+                                        width={20}
+                                        height={20}
+                                        quality={100}
+                                        priority={true}
+                                        alt=""
+                                    />
+                                    {mission.btn[1]}
+                                </Button>
+                            ) : (
+                                <Button href={mission.pdf[1]} variant="secondary">{mission.btn[1]}</Button>
+                            )
+                        )}
                     </div>
                 ) : null}
             </div>

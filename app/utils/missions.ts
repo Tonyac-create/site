@@ -14,15 +14,15 @@ export const missions: Mission[] = [
         title: "Prendre soin des chats errants",
         description: "En partenariat avec les communes, nous prendrons en charge les chats errants en les stérilisant, les identifiant. Remis ensuite sur leur territoire, ils deviendront ainsi des chats libres. Des bénévoles seront indispensables pour nourrir et prendre soin de ces chats. N’hésitez pas à proposer votre aide.",
         imageUrl: "/Chat_cage.webp",
-        btn: ["Rejoignez nous"],
-        pathBtn: "/help"
+        btn: ["Document pour la gestion des chats errants", "Convention des communes sur la prise en charge"],
+        pdf: ["/pdf/Gestion_chats_errants.pdf", "/pdf/Convention_prise_en_charge_et_gestion_chats_errants_BELMONT_DE_LA_LOIRE.pdf"]
     },
     {
         id: 2,
         title: "Animaux à l'abandon",
         description: "Les chats et les chiens restent en famille d'accueil jusqu'à l'adoption. Les petits animaux de la ferme ainsi que les NAC seront regroupés au sein d'une structure d'accueil unique. Ils resteront là jusqu'à la fin de leur vie. Dans cette structure, il sera envisageable de mettre en place des visites au sein des familles d'accueil. Les autres animaux seront maintenus chez leurs propriétaires ou en famille d'accueil, afin de trouver d'autres maîtres lors des abandons. ",
         imageUrl: "/animalsAdopt/Jazz.webp",
-        btn: ["Chat - Télécharger la fiche d'inscription", "Chien - Télécharger la fiche d'inscription"],
+        btn: ["Chat - Formulaire d'adoption", "Chien - Formulaire d'adoption"],
         pdf: ["/pdf/Fiche_adoption_chat.pdf", "/pdf/Fiche_adoption_chien.pdf"]
     },
     {
@@ -30,8 +30,8 @@ export const missions: Mission[] = [
         title: "Aide et soutien temporaire",
         description: "Après avoir soumis un dossier de demande d'aide, nous tenterons de soutenir temporairement les propriétaires d'animaux en situation de besoin, dans la mesure du possible. Quelles que soient vos interrogations, vous trouverez toujours une réponse auprès du SFPA pour vos questions. Si vous avez un problème avec vos voisins ou un propriétaire, le SFPA vous trouvera une solution.",
         imageUrl: "/aide_soutien.webp",
-        btn: ["J'ai une question"],
-        pathBtn: "/contact"
+        btn: ["Télécharger le dossier de demande d'aide", "J'ai une question"],
+        pdf: ["/pdf/Demande_aide_pour_soutien.pdf"]
     },
     {
         id: 4,
