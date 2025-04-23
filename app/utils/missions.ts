@@ -30,8 +30,8 @@ export const missions: Mission[] = [
         title: "Aide et soutien temporaire",
         description: "Après avoir soumis un dossier de demande d'aide, nous tenterons de soutenir temporairement les propriétaires d'animaux en situation de besoin, dans la mesure du possible. Quelles que soient vos interrogations, vous trouverez toujours une réponse auprès du SFPA pour vos questions. Si vous avez un problème avec vos voisins ou un propriétaire, le SFPA vous trouvera une solution.",
         imageUrl: "/aide_soutien.webp",
-        btn: ["Télécharger le dossier de demande d'aide", "J'ai une question"],
-        pdf: ["/pdf/Demande_aide_pour_soutien.pdf"]
+        btn: ["Télécharger le dossier de demande d'aide"],
+        pdf: ["/pdf/Demande_aide_pour_soin.pdf"]
     },
     {
         id: 4,
@@ -43,11 +43,11 @@ export const missions: Mission[] = [
     },
     {
         id: 5,
-        title: "Formation au langage canin",
+        title: "Formations canine",
         description: "A partir de 50 €, pour bien communiquer avec nos chiens, il est nécessaire de comprendre leur langage qui est très différent du nôtre. Grâce à cette formation, vous aurez une meilleure compréhension de votre chien au quotidien! En améliorant la communication, l'éducation devient plus aisée.",
         imageUrl: "/formation_langage_canin.webp",
-        btn: ["Réserver une formation"],
-        pathBtn: "/contact"
+        btn: [""],
+        pathBtn: ""
     },
     {
         id: 6,
