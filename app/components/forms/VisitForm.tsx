@@ -2,6 +2,8 @@
 
 import React, { useState } from 'react';
 import { BaseFormFields } from './BaseFormFields';
+import Link from 'next/link';
+import Image from 'next/image';
 
 const VISITE_TYPES = [
   'Visite guidée',
@@ -62,11 +64,32 @@ export const VisitForm: React.FC = () => {
   return (
     <form onSubmit={handleSubmit} className="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-md">
       <h2 className="text-2xl font-bold mb-6">Réserver une visite</h2>
-      <BaseFormFields 
+      <Link href="/contact" className="flex gap-2 text-[#0866FF] text-lg mt-3 mb-5 underline underline-offset-4 hover:text-brown">
+        En espèce sur place, prendre rendez-vous par téléphone ou envoyer un message
+      </Link>
+      <p>
+        <Image
+          src="/icons/triangle.svg"
+          width={50}
+          height={50}
+          quality={100}
+          priority={true}
+          alt="Warning"
+          className="object-contain"
+        />
+        {`Pour le paiement par virement, `}<span className='text-brown font-semibold'>{`vous recevrez la confirmation de l'événement une fois le paiement effectué. `}</span> {`Veuillez suivre ces instructions :`}
+      </p>
+      <ul className='list-disc list-inside'>
+        <li>Compte domicilié en Irlande, information importante à renseigner quand vous enregistrez le RIB</li>
+        <li>Mettre en libellé votre nom et prénom</li>
+        <li>IBAN : IE70 SUMU 9903 6511 5769 95</li>
+        <li>BIC : SUMUIE22XXX</li>
+      </ul>
+      <BaseFormFields
         onFieldChange={handleFieldChange}
         values={formData}
       />
-      
+
       <div className="mt-6 space-y-4">
         <div>
           <label className="block text-sm font-medium text-gray-700">Type de visite</label>
@@ -117,7 +140,7 @@ export const VisitForm: React.FC = () => {
               + Ajouter un enfant
             </button>
           </div>
-          
+
           {formData.enfants.map((enfant, index) => (
             <div key={index} className="mt-2 flex items-center gap-2">
               <input
