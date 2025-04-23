@@ -19,7 +19,29 @@ export default function WelcomeSection() {
                 Sous le n° W713007887
                 Siret : 938 534 476 00016
                 Entièrement autonome par rapport à tout autre organisme.`}</p>
-            <div className="flex flex-col items-center md:flex-row">
+            <Button href="/pdf/Statut.pdf" variant="pdf" className="inline-flex gap-2">
+                <Image
+                    src="/icons/file_pdf.svg"
+                    width={20}
+                    height={20}
+                    quality={100}
+                    priority={true}
+                    alt=""
+                />
+                Télécharger le statut
+            </Button>
+            <Button href="/pdf/Reglement_interieur.pdf" variant="pdf" className="inline-flex gap-2">
+                <Image
+                    src="/icons/file_pdf.svg"
+                    width={20}
+                    height={20}
+                    quality={100}
+                    priority={true}
+                    alt=""
+                />
+                Télécharger le règlement intérieur
+            </Button>
+            <div className="flex flex-col items-center md:flex-row mt-8">
                 <div className="flex flex-col md:w-1/2">
                     <p className="text-lg">{`L'association ne compte pas d'employés, mais seulement des personnes solidaires qui œuvrent en faveur des animaux.
                     En devenant bénévoles pour notre association, nous sommes responsables de représenter tous les animaux qui en ont besoin.
