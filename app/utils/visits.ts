@@ -4,7 +4,8 @@ export interface Visits {
     description: string;
     list?: string[];
     price: string;
-    imageURL: string;
+    video?: string[];
+    imageURL?: string;
     galleryImages?: string[];
 }
 
@@ -14,7 +15,7 @@ export const visits: Visits[] = [
         title: "La visite simple",
         description: "La mini-ferme est un véritable lieu de découverte et de sensibilisation aux valeurs du bien-être animal dès le plus jeune âge.\n\n Ce lieu ouvert à tous offre aux enfants accompagnés de leurs parents ou de leurs enseignants la possibilité de découvrir, de se rapprocher et d'interagir avec nos charmants résidents qui apprécient les câlins et les caresses.\n\n Outre la rencontre de cochons d'Inde, d'oiseaux, de boucs, de cochons, de canards, de poules, de lapins... devenez incollable grâce aux récits pédagogiques de votre guide qui vous enseigneront ce que les animaux mangent, leur environnement, leur cri... Il est interdit de nourrir les animaux sans notre consentement, de crier, de leur faire peur ou de courir dans l'enclos pour protéger leur bien-être. \n\nMerci pour eux.",
         price: "La visite sans animation s'élève à 10€ / personne.",
-        imageURL: "/visites_SFPA_2.webp",
+        video: ["/videos/visite.mp4"],
         galleryImages: [
             "/gallery/visitOne/visit_1.jpg",
             "/gallery/visitOne/visit_2.jpg",
@@ -49,7 +50,7 @@ export const visits: Visits[] = [
             "Encadrement de 14h à 17h."
         ],
         price: "Le coût est de 20 euros par enfant.",
-        imageURL: "/bouc_sfpa_anniversaire.webp",
+        imageURL: "/anniversaire.webp",
     },
     
 ];

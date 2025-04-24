@@ -23,12 +23,12 @@ export const VisitForm: React.FC = () => {
     telephone: '',
     message: '',
     typeVisite: '',
-    dateVisite: '',
+    dateVisite: [] as string[],
     enfants: [] as ChildInfo[],
     nombreAdultes: 1
   });
 
-  const handleFieldChange = (fieldName: string, value: string | ChildInfo[]) => {
+  const handleFieldChange = (fieldName: string, value: string | ChildInfo[] | string[]) => {
     setFormData(prev => ({
       ...prev,
       [fieldName]: value
@@ -107,14 +107,43 @@ export const VisitForm: React.FC = () => {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-gray-700">Date de visite</label>
-          <input
-            type="date"
-            value={formData.dateVisite}
-            onChange={(e) => handleFieldChange('dateVisite', e.target.value)}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"
-            required
-          />
+          <label className="block text-sm font-medium text-gray-700">Dates de visite</label>
+          <div className="space-y-2">
+            {formData.dateVisite.map((date, index) => (
+              <div key={index} className="flex items-center space-x-2">
+                <input
+                  type="date"
+                  value={date}
+                  onChange={(e) => {
+                    const newDates = [...formData.dateVisite];
+                    newDates[index] = e.target.value;
+                    handleFieldChange('dateVisite', newDates);
+                  }}
+                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"
+                  required
+                />
+                <button
+                  type="button"
+                  onClick={() => {
+                    const newDates = formData.dateVisite.filter((_, i) => i !== index);
+                    handleFieldChange('dateVisite', newDates);
+                  }}
+                  className="text-red-600 hover:text-red-800"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </svg>
+                </button>
+              </div>
+            ))}
+            <button
+              type="button"
+              onClick={() => handleFieldChange('dateVisite', [...formData.dateVisite, ''])}
+              className="mt-2 inline-flex items-center px-3 py-1.5 border border-transparent text-xs font-medium rounded-md shadow-sm text-white bg-primary hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+            >
+              Ajouter une date
+            </button>
+          </div>
         </div>
 
         <div>
