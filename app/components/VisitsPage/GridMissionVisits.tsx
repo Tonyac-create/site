@@ -19,7 +19,7 @@ const MissionItem = ({ visits, index }: { visits: Visits, index: number }) => {
 
     return (
         <>
-            <div
+            <section
                 ref={ref}
                 className={`
                     flex flex-col md:flex-row items-center gap-8 mb-7 
@@ -28,20 +28,33 @@ const MissionItem = ({ visits, index }: { visits: Visits, index: number }) => {
                     ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}
                 `}
             >
-                <div className="w-full md:w-1/2">
-                    <div className="relative aspect-video w-full overflow-hidden">
-                        <Image
-                            src={visits.imageURL}
-                            alt={visits.title}
-                            width={500}
-                            height={400}
-                            quality={100}
-                            priority={true}
-                            className="object-contain"
-                        />
+                <div className="w-full md:w-1/2 mb-12">
+                    <div className="relative aspect-video w-full">
+                        {visits.video ? (
+                            <div className="flex flex-col gap-7 items-center">
+                                {visits.video.map((video, index) => (
+                                    <video
+                                        key={index}
+                                        src={video}
+                                        controls
+                                        className="w-[300px] h-[200px] object-cover"
+                                    />
+                                ))}
+                            </div>
+                        ) : (
+                            <Image
+                                src={visits.imageURL}
+                                alt={visits.title}
+                                width={500}
+                                height={400}
+                                quality={100}
+                                priority={true}
+                                className="object-contain"
+                            />
+                        )}
                     </div>
                 </div>
-                <div className="w-full md:w-1/2 space-y-4">
+                <div className="w-full md:w-1/2 space-y-4 mb-12">
                     <h2 className="text-3xl font-bold text-brown">{visits.title}</h2>
                     <p className="text-xl text-gray-600 whitespace-pre-line">{visits.description}</p>
                     <p className="text-xl font-semibold">{visits.price}</p>
@@ -57,7 +70,7 @@ const MissionItem = ({ visits, index }: { visits: Visits, index: number }) => {
                         </button>
                     )}
                 </div>
-            </div>
+            </section>
             <GalleryModal
                 isOpen={isGalleryOpen}
                 onClose={() => setIsGalleryOpen(false)}
