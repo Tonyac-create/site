@@ -41,7 +41,7 @@ const MissionItem = ({ visits, index }: { visits: Visits, index: number }) => {
                                     />
                                 ))}
                             </div>
-                        ) : (
+                        ) : visits.imageURL ? (
                             <Image
                                 src={visits.imageURL}
                                 alt={visits.title}
@@ -51,7 +51,7 @@ const MissionItem = ({ visits, index }: { visits: Visits, index: number }) => {
                                 priority={true}
                                 className="object-contain"
                             />
-                        )}
+                        ) : null}
                     </div>
                 </div>
                 <div className="w-full md:w-1/2 space-y-4 mb-12">
