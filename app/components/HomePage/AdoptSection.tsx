@@ -2,6 +2,7 @@ import { catsAdopt, dogsAdopt } from "@/app/utils/animalsAdopt";
 import MiniCardAnimals from "../AdoptPage/MiniCardAnimals";
 import Button from "../Button";
 import Image from "next/image";
+import Link from 'next/link';
 
 export default function AdoptSection() {
     return (
@@ -38,23 +39,25 @@ export default function AdoptSection() {
             <div className="flex flex-wrap gap-10 mt-4">
                 {catsAdopt.map((cat) => (
                     !cat.adopt &&
-                    <MiniCardAnimals
-                        key={cat.id}
-                        name={cat.name}
-                        age={cat.age}
-                        genre={cat.genre}
-                        image={cat.image}
-                    />
+                    <Link href={`/adopt?animal=${cat.id}`} key={cat.id}>
+                        <MiniCardAnimals
+                            name={cat.name}
+                            age={cat.age}
+                            genre={cat.genre}
+                            image={cat.image}
+                        />
+                    </Link>
                 ))}
                 {dogsAdopt.map((dog) => (
                     !dog.adopt &&
-                    <MiniCardAnimals
-                        key={dog.id}
-                        name={dog.name}
-                        age={dog.age}
-                        genre={dog.genre}
-                        image={dog.image}
-                    />
+                    <Link href={`/adopt?animal=${dog.id}`} key={dog.id}>
+                        <MiniCardAnimals
+                            name={dog.name}
+                            age={dog.age}
+                            genre={dog.genre}
+                            image={dog.image}
+                        />
+                    </Link>
                 ))}
             </div>
         </section>

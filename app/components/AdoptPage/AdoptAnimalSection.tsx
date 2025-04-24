@@ -1,14 +1,28 @@
 'use client'
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Animal } from '@/app/types/animal';
 import MiniCardAnimals from './MiniCardAnimals';
 import DetailsAnimalSection from './DetailsAnimalSection';
 import { catsAdopt, dogsAdopt } from "@/app/utils/animalsAdopt";
+import { useSearchParams } from 'next/navigation';
 
 export default function AdoptAnimalSection() {
+    const searchParams = useSearchParams();
     const [selectedAnimal, setSelectedAnimal] = useState<Animal | null>(null);
     const animals = [...catsAdopt, ...dogsAdopt].filter(animal => !animal.adopt);
+
+    useEffect(() => {
+        const animalId = searchParams.get('animal');
+        if (animalId) {
+            const animal = [...catsAdopt, ...dogsAdopt].find(
+                a => a.id.toString() === animalId
+            );
+            if (animal) {
+                setSelectedAnimal(animal);
+            }
+        }
+    }, [searchParams]);
 
     if (selectedAnimal) {
         return (

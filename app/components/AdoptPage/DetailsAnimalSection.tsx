@@ -9,7 +9,7 @@ interface DetailsAnimalSectionProps {
 
 export default function DetailsAnimalSection({ animal, onBack }: DetailsAnimalSectionProps) {
     return (
-        <section className="mx-6 pt-16 lg:mx-28">
+        <section id='detailsAnimal' className="mx-6 pt-16 lg:mx-28">
             <button 
                 onClick={onBack}
                 className="flex items-center gap-2 text-brown hover:text-brown/80 mb-8"

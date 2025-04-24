@@ -88,7 +88,7 @@ export const catsAdopt = [
 
 export const dogsAdopt = [
     {
-        id: 1,
+        id: 10,
         name: "Sisco",
         type: "Chien",
         age: "1 an(et demi !)",
@@ -100,7 +100,7 @@ export const dogsAdopt = [
         adopt: true
     },
     {
-        id: 2,
+        id: 20,
         name: "Ziggy",
         type: "Chien",
         age: "5 ans",
