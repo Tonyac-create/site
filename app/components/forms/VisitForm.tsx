@@ -198,7 +198,7 @@ export const VisitForm: React.FC = () => {
           type="submit"
           className="w-full bg-brown text-green py-2 px-4 rounded-md hover:bg-primary-dark transition-colors"
         >
-          Réserver
+          Evoyer la demande
         </button>
       </div>
     </form>

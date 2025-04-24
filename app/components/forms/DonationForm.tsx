@@ -37,6 +37,7 @@ interface FormData {
   telephone: string;
   message: string;
   typeDon: string;
+  montant?: string;
   adresse: Address;
 }
 
@@ -48,6 +49,7 @@ export const DonationForm: React.FC = () => {
     telephone: '',
     message: '',
     typeDon: '',
+    montant: '',
     adresse: {
       rue: '',
       codePostal: '',
@@ -124,6 +126,21 @@ export const DonationForm: React.FC = () => {
           </select>
         </div>
 
+        {formData.typeDon === 'Don libre' && (
+          <div>
+            <label className="block text-sm font-medium text-gray-700">Montant du don (€)</label>
+            <input
+              type="number"
+              min="0"
+              step="0.01"
+              value={formData.montant}
+              onChange={(e) => handleFieldChange('montant', e.target.value)}
+              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"
+              required
+            />
+          </div>
+        )}
+
         <div className="space-y-4">
           <h3 className="text-lg font-medium">Adresse</h3>
 
@@ -170,7 +187,7 @@ export const DonationForm: React.FC = () => {
           type="submit"
           className="w-1/2 bg-brown text-green py-2 px-4 rounded-md font-semibold hover:bg-green hover:text-brown transition-colors"
         >
-          Envoyer et payer
+          Envoyer
         </button>
       </div>
     </form>
