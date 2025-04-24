@@ -1,5 +1,5 @@
 import { catsAdopt, dogsAdopt } from "@/app/utils/animalsAdopt";
-import MiniCardAnimals from "../MiniCardAnimals";
+import MiniCardAnimals from "./MiniCardAnimals";
 
 export default function Adopt() {
     return (

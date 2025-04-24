@@ -10,19 +10,18 @@ interface MiniCardAnimalsProps {
 
 export default function MiniCardAnimals({ image, name, age, genre, introduction }: MiniCardAnimalsProps) {
     return (
-        <article className="w-[300px]">
-            <div className="h-[400px] relative">
+        <article className="w-[300px] bg-white shadow-[6px_6px_16px_rgba(121,85,72,0.2)] group hover:cursor-pointer" title="Voir plus...">
+            <div className="h-[400px] relative overflow-hidden">
                 <Image
                     src={image}
                     fill
-                    sizes="(max-width: 300px)"
                     quality={100}
                     priority={true}
                     alt={name}
-                    className="mt-5 object-cover"
+                    className="mt-5 object-cover transition-transform duration-300 group-hover:scale-120"
                 />
             </div>
-            <div className="flex flex-col items-center py-3 border-l-2 border-r-2 border-b-2 border-gray-300 rounded-sm">
+            <div className="flex flex-col items-center py-3 rounded-sm">
                 <h3 className="font-lora text-xl font-bold tracking-widest pt-3">{name}</h3>
                 <div className="bg-green h-1 w-1/4 my-2"></div>
                 <p>{age}</p>

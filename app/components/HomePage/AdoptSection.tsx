@@ -1,5 +1,5 @@
 import { catsAdopt, dogsAdopt } from "@/app/utils/animalsAdopt";
-import MiniCardAnimals from "../MiniCardAnimals";
+import MiniCardAnimals from "../AdoptPage/MiniCardAnimals";
 import Button from "../Button";
 import Image from "next/image";
 

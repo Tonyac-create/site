@@ -1,7 +1,7 @@
 'use client';
 
 import { catsAdopt, dogsAdopt } from "@/app/utils/animalsAdopt";
-import MiniCardAnimals from "../MiniCardAnimals";
+import MiniCardAnimals from "./MiniCardAnimals";
 import Carousel from "../Carousel/Carousel";
 import { useEffect, useState } from "react";
 
