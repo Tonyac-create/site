@@ -28,14 +28,13 @@ export default function HeroSection() {
                         <FootprintPath />
                         <div className="relative z-10">
                             <Image
-                                src="/bulle_texte_Elvis.png"
-                                width={250}
-                                height={250}
+                                src="/Bulle_Elvis.png"
+                                width={550}
+                                height={550}
                                 priority={true}
                                 quality={100}
                                 alt=''
-                                className="object-contain absolute z-10 right-[-30px] opacity-0 animate-fadeIn"
-                                style={{ animationDelay: '3s' }}
+                                className="object-contain absolute z-10 right-[-60px] animate-fadeIn-bubble"
                             />
                             <Image
                                 src="/elvis_parle.png"
@@ -44,8 +43,7 @@ export default function HeroSection() {
                                 priority={true}
                                 quality={100}
                                 alt='Logo SFPA'
-                                className="object-contain absolute top-[106px] opacity-0 animate-fadeIn"
-                                style={{ animationDelay: '2.5s' }}
+                                className="object-contain absolute top-[106px] animate-fadeIn-elvis"
                             />
                         </div>
                     </div>

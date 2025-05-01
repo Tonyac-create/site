@@ -53,14 +53,17 @@ body {
   }
 }
 
-.animate-fadeIn {
+.animate-fadeIn-elvis {
   animation: fadeIn 1s ease-in-out forwards;
   animation-fill-mode: forwards;
   will-change: opacity;
 }
 
-[data-loaded="true"] .animate-fadeIn {
-  animation-play-state: running;
+.animate-fadeIn-bubble {
+  animation: fadeIn 1s ease-in-out 1s forwards;
+  animation-fill-mode: forwards;
+  will-change: opacity;
+  opacity: 0;
 }
 
 .drop-shadow-btn {
