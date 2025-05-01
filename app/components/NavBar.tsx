@@ -57,7 +57,7 @@ export default function NavBar() {
                 className={`xl:hidden pt-3 overflow-hidden transition-all duration-500 ease-in-out ${isMenuOpen ? 'max-h-[410px] opacity-100' : 'max-h-0 opacity-0'
                     }`}
             >
-                <nav className="flex flex-col items-center bg-white shadow-lg transform transition-transform duration-700 ease-in-out">
+                <nav className="flex flex-col items-center fixed w-full bg-white shadow-lg transform transition-transform duration-700 ease-in-out">
                     <ul className={`flex flex-col mr-auto pl-6 gap-5 text-2xl mb-2 transition-all duration-700 transform 
                             ${isMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'}`}>
                         <MenuNavigation setIsMenuOpen={setIsMenuOpen} />
