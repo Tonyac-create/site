@@ -8,7 +8,7 @@ const FootprintPath = () => {
             {footprints.map((_, index) => (
                 <Image
                     key={index}
-                    src="/icons/Patte_blanche.png"
+                    src="/icons/patte.png"
                     width={60}
                     height={60}
                     alt=""

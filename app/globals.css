@@ -54,23 +54,41 @@ body {
   }
 }
 
+@keyframes pop {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-pop {
+  animation: pop 1s ease-in-out 1s forwards;
+  animation-fill-mode: forwards;
+  will-change: opacity, transform;
+}
+
 .animate-fadeIn {
   animation: fadeIn 1s ease-in-out forwards;
   animation-fill-mode: forwards;
   will-change: opacity;
 }
+
 .animate-fadeIn-elvis {
   animation: fadeIn 1s ease-in-out forwards;
   animation-fill-mode: forwards;
   will-change: opacity;
 }
 
-.animate-fadeIn-bubble {
+/* .animate-fadeIn-bubble {
   animation: fadeIn 1s ease-in-out 1s forwards;
   animation-fill-mode: forwards;
   will-change: opacity;
   opacity: 0;
-}
+} */
 
 .drop-shadow-btn {
   filter: drop-shadow(0 4px 4px rgba(155, 229, 100, 0.8));

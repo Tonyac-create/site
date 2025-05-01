@@ -1,15 +1,15 @@
 'use client'
 
 import Image from "next/image";
-import { useRef, RefObject } from "react";
-import { useInView } from "@/app/hooks/useInView";
+// import { useRef, RefObject } from "react";
+// import { useInView } from "@/app/hooks/useInView";
 import Link from "next/link";
 
 export default function LPOSection() {
-    const firstImageRef = useRef<HTMLDivElement>(null);
-    const secondImageRef = useRef<HTMLDivElement>(null);
-    const isFirstImageInView = useInView({ ref: firstImageRef as RefObject<Element> });
-    const isSecondImageInView = useInView({ ref: secondImageRef as RefObject<Element> });
+    // const firstImageRef = useRef<HTMLDivElement>(null);
+    // const secondImageRef = useRef<HTMLDivElement>(null);
+    // const isFirstImageInView = useInView({ ref: firstImageRef as RefObject<Element> });
+    // const isSecondImageInView = useInView({ ref: secondImageRef as RefObject<Element> });
 
     return (
         <section className="mx-6 pt-16 lg:mx-28 flex flex-col 2xl:flex-row 2xl:gap-5">
@@ -39,9 +39,12 @@ export default function LPOSection() {
                 </Link>
             </div>
             <div className="md:flex md:gap-4 2xl:w-1/2">
-                <div
+                {/* <div
                     ref={firstImageRef}
                     className={`sm:flex sm:flex-row sm:gap-4 sm:mb-8 transition-transform duration-2000 ease-in-out ${isFirstImageInView ? 'rotate-0' : 'rotate-45'}`}
+                > */}
+                <div
+                    className={`sm:flex sm:flex-row sm:gap-4 sm:mb-8`}
                 >
                     <Image
                         src="/Oiseaux_LPO_SFPA.webp"
@@ -53,9 +56,12 @@ export default function LPOSection() {
                         className="mt-5 rounded-sm object-contain"
                     />
                 </div>
-                <div
+                {/* <div
                     ref={secondImageRef}
                     className={`sm:flex sm:flex-row sm:gap-4 sm:mb-8 transition-transform duration-2000 ease-in-out ${isSecondImageInView ? 'rotate-0' : '-rotate-45'}`}
+                > */}
+                <div
+                    className={`sm:flex sm:flex-row sm:gap-4 sm:mb-`}
                 >
                     <Image
                         src="/Affiche_LPO.webp"
