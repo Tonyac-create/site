@@ -3,7 +3,7 @@ title: "J'accueille la nature"
 slug: "LPO"
 date: "28-03-2025"
 author: "Secours Français Pour Animaux"
-image: "/Affiche_LPO_SFPA.webp"
+image: "/Affiche_LPO.webp"
 text1: |
   Qu'est-ce qu'un refuge LPO ?
   Un Refuge LPO est un terrain privé (petit ou grand jardin, cour ou balcon…) ou public (parc, espace vert, sentier…) sur lequel le propriétaire ou gestionnaire s’engage à accueillir, protéger et favoriser la nature. Pour cela, il respecte la Charte des Refuges LPO et s’appuie sur les 15 gestes favorables à la biodiversité.

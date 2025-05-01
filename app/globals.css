@@ -5,24 +5,6 @@
   --foreground: #171717;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.animate-fadeIn {
-  animation: fadeIn 1s ease-in-out forwards;
-  animation-fill-mode: forwards;
-  will-change: opacity;
-}
-
-[data-loaded="true"] .animate-fadeIn {
-  animation-play-state: running;
-}
 
 @font-face {
   font-family: 'Lora';
@@ -60,6 +42,25 @@
 body {
   background: var(--background);
   color: var(--foreground);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-fill-mode: forwards;
+  will-change: opacity;
+}
+
+[data-loaded="true"] .animate-fadeIn {
+  animation-play-state: running;
 }
 
 .drop-shadow-btn {

@@ -24,7 +24,7 @@ export default function HeroSection() {
                 <div className="flex flex-col xl:w-3/4">
                     <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-lora font-semibold">Ensemble, </h2>
                     <h2 className="text-green text-4xl md:text-5xl lg:text-6xl font-lora font-semibold mb-10">sauvons des vies</h2>
-                    <div className="relative h-[400px] md:hidden">
+                    <div className="relative h-[350px] md:hidden">
                         <FootprintPath />
                         <div className="relative z-10">
                             <Image
@@ -34,7 +34,7 @@ export default function HeroSection() {
                                 priority={true}
                                 quality={100}
                                 alt=''
-                                className="object-contain absolute right-[-30px] opacity-0 animate-fadeIn"
+                                className="object-contain absolute z-10 right-[-30px] opacity-0 animate-fadeIn"
                                 style={{ animationDelay: '3s' }}
                             />
                             <Image
@@ -44,7 +44,7 @@ export default function HeroSection() {
                                 priority={true}
                                 quality={100}
                                 alt='Logo SFPA'
-                                className="object-contain absolute right-14 top-36 opacity-0 animate-fadeIn"
+                                className="object-contain absolute top-[106px] opacity-0 animate-fadeIn"
                                 style={{ animationDelay: '2.5s' }}
                             />
                         </div>
