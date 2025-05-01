@@ -1,5 +1,3 @@
-'use client';
-
 import Image from 'next/image';
 
 const FootprintPath = () => {
@@ -10,11 +8,11 @@ const FootprintPath = () => {
             {footprints.map((_, index) => (
                 <Image
                     key={index}
-                    src="/icons/empreinte_Elvis.png"
-                    width={40}
-                    height={40}
+                    src="/icons/Patte_blanche.png"
+                    width={60}
+                    height={60}
                     alt=""
-                    className="absolute object-contain opacity-0 animate-fadeIn rotate-90"
+                    className="absolute object-contain opacity-0 animate-fadeIn rotate-90 pr-4"
                     style={{
                         left: `${20 + (index * 60)}px`,
                         bottom: `${index % 2 === 0 ? 50 : 80}px`,

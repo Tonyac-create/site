@@ -24,8 +24,9 @@ export default function HeroSection() {
                 <div className="flex flex-col xl:w-3/4">
                     <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-lora font-semibold">Ensemble, </h2>
                     <h2 className="text-green text-4xl md:text-5xl lg:text-6xl font-lora font-semibold mb-10">sauvons des vies</h2>
-                    <div className="relative h-[550px]">
+                    <div className="relative h-[500px] max-w-[550px] mx-auto">
                         <FootprintPath />
+
                         <Image
                             src="/Elvis.jpg"
                             width={500}
@@ -33,9 +34,17 @@ export default function HeroSection() {
                             priority={true}
                             quality={100}
                             alt='Elvis'
-                            className="w-[300px] h-[300px] object-cover animate-fadeIn-elvis rounded-full"
+                            className="w-[300px] h-[300px] object-cover animate-fadeIn-elvis rounded-full mx-auto"
                         />
+
+                        <div className="absolute top-3 right-2 sm:right-6 bg-white text-black p-3 font-bold rounded-4xl animate-fadeIn-bubble shadow-md text-sm sm:text-base w-44 sm:w-60 z-10">
+                            <p>
+                                Bêêêh bonjour amis des animaux ! Je m’appelle Elvis, je suis la mascotte de l’association...
+                            </p>
+                            <div className="absolute -bottom-2 left-8 w-0 h-0 border-t-8 border-t-white border-x-8 border-x-transparent"></div>
+                        </div>
                     </div>
+
                     {/* <div className="relative">
                         <div >
                             <div className="w-full h-full">
