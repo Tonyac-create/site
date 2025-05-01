@@ -24,10 +24,21 @@ export default function HeroSection() {
                 <div className="flex flex-col xl:w-3/4">
                     <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-lora font-semibold">Ensemble, </h2>
                     <h2 className="text-green text-4xl md:text-5xl lg:text-6xl font-lora font-semibold mb-10">sauvons des vies</h2>
-                    <div className="relative h-[450px] md:h-[450px] lg:h-[550px]">
+                    <div className="relative h-[550px]">
                         <FootprintPath />
-                        <div className="relative">
-                            <div className="absolute w-full h-full">
+                        <Image
+                            src="/Elvis.jpg"
+                            width={500}
+                            height={500}
+                            priority={true}
+                            quality={100}
+                            alt='Elvis'
+                            className="w-[300px] h-[300px] object-cover animate-fadeIn-elvis rounded-full"
+                        />
+                    </div>
+                    {/* <div className="relative">
+                        <div >
+                            <div className="w-full h-full">
                                 <Image
                                     src="/Bulle_Elvis.png"
                                     width={550}
@@ -37,18 +48,30 @@ export default function HeroSection() {
                                     alt="Bulle texte : Bêêêh, bonjour ami des animaux ! Je m'appelle Elvis, je suis la mascotte de l'association. Ici, on veille sur mes copains à 4 pattes (même ceux à plumes ou écailles)"
                                     className="object-contain absolute z-20 right-[-60px] w-[550px] md:w-[650px] lg:w-[550px] animate-fadeIn-bubble"
                                 />
-                                <Image
-                                    src="/elvis_parle.png"
-                                    width={200}
-                                    height={200}
-                                    priority={true}
-                                    quality={100}
-                                    alt='Elvis'
-                                    className="object-contain absolute z-20 top-[106px] w-[250px] md:w-[350px] lg:w-[200px] animate-fadeIn-elvis"
-                                />
                             </div>
                         </div>
-                    </div>
+                    </div> */}
+                    {/* <div className="relative w-full h-full mx-auto">
+                        <Image
+                            src="/elvis_parle.png"
+                            width={250}
+                            height={250}
+                            priority={true}
+                            quality={100}
+                            alt="Elvis"
+                            className="object-contain animate-fadeIn-elvis"
+                        />
+
+                        <div className="absolute top-4 right-2 sm:right-6 bg-white text-black p-3 rounded-xl shadow-md text-sm sm:text-base w-44 sm:w-60 z-10">
+                            <p>
+                                Bêêêh bonjour amis des animaux ! Je m’appelle Elvis, je suis la mascotte de
+                                l’association... Ici, on veille sur mes copains à 4 pattes (même ceux à plumes ou à écailles)
+                            </p>
+                            <div className="absolute -bottom-2 right-8 w-0 h-0 border-t-8 border-t-white border-x-8 border-x-transparent"></div>
+                        </div>
+                    </div> */}
+
+
                     <p className="text-white text-lg lg:text-2xl">
                         {`Chiens, chats, NACs, animaux de ferme… Personne n'est laissé de côté !
                     Grâce à cette belle association, nous trouvons des familles aimantes, recevons les soins dont nous avons besoin et surtout… nous avons une seconde chance.

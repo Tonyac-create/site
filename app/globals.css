@@ -42,6 +42,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
+  width: 100vw;
 }
 
 @keyframes fadeIn {
@@ -53,18 +54,23 @@ body {
   }
 }
 
+.animate-fadeIn {
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-fill-mode: forwards;
+  will-change: opacity;
+}
 .animate-fadeIn-elvis {
   animation: fadeIn 1s ease-in-out forwards;
   animation-fill-mode: forwards;
   will-change: opacity;
 }
 
-.animate-fadeIn-bubble {
+/* .animate-fadeIn-bubble {
   animation: fadeIn 1s ease-in-out 1s forwards;
   animation-fill-mode: forwards;
   will-change: opacity;
   opacity: 0;
-}
+} */
 
 .drop-shadow-btn {
   filter: drop-shadow(0 4px 4px rgba(155, 229, 100, 0.8));

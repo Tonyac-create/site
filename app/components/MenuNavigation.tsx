@@ -58,7 +58,7 @@ export default function MenuNavigation({ setIsMenuOpen }: MenuNavigationProps) {
   };
 
   return (
-    <div ref={menuRef} className="flex gap-11">
+    <div ref={menuRef} className="flex flex-col gap-11">
       {navigation.map((item) => (
         <li 
           key={item.name} 
