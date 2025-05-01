@@ -6,7 +6,7 @@ const FootprintPath = () => {
     const footprints = Array(5).fill(null);
 
     return (
-        <div className="hidden sm:flex absolute w-full h-full pointer-events-none">
+        <div className="sm:flex absolute w-full h-full pointer-events-none z-30">
             {footprints.map((_, index) => (
                 <Image
                     key={index}
