@@ -18,7 +18,7 @@ export default function InvestigationSection() {
                 </ul>
                 <Link href="https://www.cnpa-asso.fr/" target="_blank" className="flex gap-2 text-[#0866FF] text-lg mt-3 mb-8 underline underline-offset-4 hover:text-brown">
                     <Image
-                        src="/CNPA.webp"
+                        src="/partners/CNPA.png"
                         width={500}
                         height={500}
                         alt="CNPA"

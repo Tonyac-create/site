@@ -3,7 +3,7 @@ title: "Devenir enquêteur pour la protection animale : un engagement essentiel 
 slug: "enqueteur"
 date: "28-02-2025"
 author: "Secours Français Pour Animaux"
-image: "/CNPA.webp"
+image: "/partners/CNPA.png"
 text1: |
   Un rôle clé dans la lutte contre la maltraitance animale
   Chaque année, des milliers d’animaux subissent des actes de maltraitance ou vivent dans des conditions indignes. Heureusement, des associations et des enquêteurs spécialisés œuvrent quotidiennement pour les protéger et faire respecter leurs droits.

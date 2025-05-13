@@ -25,7 +25,7 @@ export default function ArchitectureTeam() {
                         key={member.id}
                         className="w-64 text-center mb-8"
                     >
-                        <div className="relative w-50 h-50 mx-auto mb-4 bg-green rounded-full">
+                        <div className="relative w-52 h-52 mx-auto mb-4 bg-green rounded-full">
                             <div className="absolute inset-0 flex items-center justify-center text-4xl text-brown">
                                 {member.name}
                             </div>
@@ -47,7 +47,7 @@ export default function ArchitectureTeam() {
                         key={member.id}
                         className="w-64 text-center mb-8"
                     >
-                        <div className="relative w-45 h-45 mx-auto mb-4 bg-green rounded-full">
+                        <div className="relative w-52 h-52 mx-auto mb-4 bg-green rounded-full">
                             <div className="absolute inset-0 flex items-center justify-center text-3xl text-brown">
                                 {member.name}
                             </div>
@@ -69,7 +69,7 @@ export default function ArchitectureTeam() {
                         key={member.id}
                         className="w-64 text-center mb-8"
                     >
-                        <div className="relative w-42 h-42 mx-auto mb-4 bg-green rounded-full">
+                        <div className="relative w-52 h-52 mx-auto mb-4 bg-green rounded-full">
                             <div className="absolute inset-0 flex items-center justify-center text-2xl text-brown">
                                 {member.name}
                             </div>

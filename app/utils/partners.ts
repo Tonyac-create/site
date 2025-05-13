@@ -51,7 +51,7 @@ export const partners = [
         id: 9,
         name: "CNPA",
         url: "https://www.cnpa-asso.fr/",
-        image: "/CNPA.webp"
+        image: "/partners/CNPA.png"
     },
     {
         id: 10,
