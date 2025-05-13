@@ -59,4 +59,10 @@ export const partners = [
         url: "https://www.free-dev.fr/",
         image: "/partners/free.png"
     },
+    {
+        id: 11,
+        name: "LMetairie",
+        url: "https://lmetairie.com/",
+        image: "/partners/Lmetairie.webp"
+    },
 ]

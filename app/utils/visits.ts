@@ -29,7 +29,7 @@ export const visits: Visits[] = [
         title: "La visite avec activités",
         description: "En règle générale, les enfants ont un intérêt et une curiosité naturels pour la nature et les animaux. En ce qui concerne leur plaisir, quoi de plus agréable qu'une balade au refuge suivie d'un atelier créatif ou culinaire ?",
         price: "La visite avec animation s'élève à 15€ / personne, incluant le gouter.",
-        imageURL: "/groupe_sfpa_gouter.webp",
+        video: ["/videos/visits/Video_activitees.mp4"],
         galleryImages: [
             "/gallery/visite-simple-1.jpg",
             "/gallery/visite-simple-2.jpg",

@@ -58,6 +58,21 @@ export default function HistorySection() {
                     </div>
                 </div>
             </div>
+            <div className="flex flex-col justify-center items-center">
+                <div className="flex flex-row justify-center items-center gap-2">
+                    <Image
+                        src="/icons/SOS.jpg"
+                        width={100}
+                        height={100}
+                        priority={true}
+                        quality={100}
+                        alt='SOS'
+                        className="animate-pulse"
+                    />
+                    <p className="text-2xl">Vous êtes témoin de maltraitance ?</p>
+                </div>
+                <Button href="/pdf/Signalement_maltraitance.pdf" variant="pdf">Signaler un cas de maltraitance (pdf)</Button>
+            </div>
         </section>
     )
 }
