@@ -15,7 +15,7 @@ export const missions: Mission[] = [
         description: "En partenariat avec les communes, nous prendrons en charge les chats errants en les stérilisant, les identifiant. Remis ensuite sur leur territoire, ils deviendront ainsi des chats libres. Des bénévoles seront indispensables pour nourrir et prendre soin de ces chats. N’hésitez pas à proposer votre aide.",
         imageUrl: "/Chat_cage.webp",
         btn: ["Document pour la gestion des chats errants", "Convention des communes sur la prise en charge"],
-        pdf: ["/pdf/Gestion_chats_errants.pdf", "/pdf/Convention_prise_en_charge_et_gestion_chats_errants_BELMONT_DE_LA_LOIRE.pdf"]
+        pdf: ["/pdf/Gestion_chats_errants.pdf", "/pdf/Convention_chats_errants.pdf"]
     },
     {
         id: 2,
@@ -35,7 +35,7 @@ export const missions: Mission[] = [
     },
     {
         id: 4,
-        title: "Visites éducatives",
+        title: "Visites pédagogiques",
         description: "Pour sensibiliser les enfants et les adultes à la question de l'abandon et de la maltraitance, nous prévoyons de faire des visites pédagogiques dans la structure qui accueille les animaux de la ferme et les NAC. Ils pourront prendre soin et nourrir les animaux.",
         imageUrl: "/visites_educatives.webp",
         btn: ["Je veux visiter"],

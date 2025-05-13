@@ -37,8 +37,8 @@ export default function HeroSectionAdopt() {
                     {`Remplir la fiche d'adoption pour un chien`}
                 </Button>
             </div>
-            <p className="text-xl mx-6 pt-6 lg:mx-28"><span className="font-semibold">{`Frais d'adoption : `}</span>Don libre min. 30 €</p>
-            <p className="text-xl mx-6 pt-6 lg:mx-28"><span className="font-semibold">{`Identification : `}</span>Participation de 50 €(tarif association)</p>
+            <p className="text-xl mx-6 pt-6 lg:mx-28"><span className="font-semibold">{`Frais d'adoption : `}</span>Chat : min. 30 € | Chien : min. 50 €</p>
+            <p className="text-xl mx-6 pt-6 lg:mx-28"><span className="font-semibold">{`Identification : `}</span>Participation de 50 €(tarif association) à la place de 100€</p>
             <p className="text-xl mx-6 pt-6 lg:mx-28">{`Peu importe si vous êtes en ville, à la campagne, en maison ou en appartement, cela n'aura aucun effet sur votre demande,
                  mais nous sommes là pour vous aider.Notre engagement est simplement de vous trouver l'animal qui vous convient le mieux
                 afin de garantir son bien-être et que vous puissiez passer de belles années.`}</p>

@@ -68,7 +68,7 @@ export const allTeam: Team[] = [
     },
     {
         id: 11,
-        name: "Sandrine, Nanou et Kim",
+        name: "Sandrine, Nanou, Kim, Manu et Emma",
         role: "Famille d'accueil",
         otheRoles: [""]
     }

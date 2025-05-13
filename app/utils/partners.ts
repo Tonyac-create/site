@@ -39,18 +39,24 @@ export const partners = [
         id: 7,
         name: "La petit atelier by jess Yerville(76)",
         url: "https://www.facebook.com/jessicasylvialgd/",
-        image: "/partners/Lapalus.png"
+        image: "/partners/atelier_jess.jpg"
     },
     {
         id: 8,
         name: "Ets Lapalus La Clayette",
         url: "https://www.pagesjaunes.fr/pros/00799948",
-        image: "/partners/atelier_jess.jpg"
+        image: "/partners/Lapalus.png"
     },
     {
         id: 9,
         name: "CNPA",
         url: "https://www.cnpa-asso.fr/",
         image: "/CNPA.webp"
+    },
+    {
+        id: 10,
+        name: "FreeDev",
+        url: "https://www.free-dev.fr/",
+        image: "/partners/free.png"
     },
 ]

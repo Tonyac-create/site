@@ -28,8 +28,8 @@ export default function AdoptSection() {
                     />
                     <p className="text-xl my-5">{`Le SFPA refuse que les animaux deviennent un "produit commercial".
                         Nous vous prions simplement de faire un don libre dans les limites du raisonnable.`}</p>
-                    <p className="text-xl my-5">{`Dans la plupart des cas, les gens versent entre 30 et 100 € en fonction de l'animal et de son âge.
-                        Il est possible que vous soyez seulement facturé le prix de l'identification pour les animaux trouvés qui n'étaient pas identifiés.`}</p>
+                    <p className="text-xl my-5">{`Pour un chat, un minimum de 30 € vous sera demandé + l'identification facturée à 50 €(prix association) à la place de 100€.`}</p>
+                    <p className="text-xl my-5">{`Pour un chien, un minimum de 50 € vous sera demandé + l'identification facturée à 50 €(prix association) à la place de 100€.`}</p>
                     <p className="text-xl my-5">{`Chaque personne aura la possibilité de faire stériliser ou castrer son animal, ce processus n'étant pas obligatoire , il est interdit de vous l'imposer.
                         Malheureusement, beaucoup d'associations ne s'y conforment pas.
                         Si vous désirez le faire, la vaccination, qui n'est pas non plus obligatoire, sera à votre charge.`}</p>
