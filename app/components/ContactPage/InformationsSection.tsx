@@ -22,7 +22,7 @@ export default function InformationsSection() {
                             9h00 - 19h00
                         </p>
                         <p className="text-gray-700">
-                            Par téléphone <br />
+                            Standard téléphonique <br />
                             9h00 - 12h00 / 14h00 - 19h00
                         </p>
                         <p className="font-semibold mt-6">
@@ -30,7 +30,7 @@ export default function InformationsSection() {
                         </p>
                         <p className="text-gray-700">
                             Mercredi ou Dimanche<br />
-                            Vacances scolaires / Jours fériés <br />
+                            Jours fériés <br />
                             Uniquement sur RDV
                         </p>
                     </div>

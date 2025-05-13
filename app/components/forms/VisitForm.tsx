@@ -2,21 +2,59 @@
 
 import React, { useState } from 'react';
 import { BaseFormFields } from './BaseFormFields';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
+
+// Jours fériés 2025
+// Fonction pour formater une date en YYYY-MM-DD sans décalage horaire
+const formatDate = (date: Date): string => {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
+};
+
+// Jours fériés 2025 avec les dates exactes
+const JOURS_FERIES_2025 = [
+  '2025-05-29', // Ascension
+  '2025-06-09', // Lundi de Pentecôte
+  '2025-07-14', // Fête nationale
+  '2025-08-15', // Assomption
+  '2025-11-01', // Toussaint
+  '2025-11-11', // Armistice 1918
+  '2025-12-25', // Noël
+].map(date => {
+  const [year, month, day] = date.split('-').map(Number);
+  return formatDate(new Date(year, month - 1, day));
+});
+
 import Link from 'next/link';
 import Image from 'next/image';
 
 const VISITE_TYPES = [
-  'Visite guidée',
-  'Visite libre',
-  'Visite thématique'
+  'Visite simple',
+  'Visite activités',
+  'Journée anniversaire'
 ];
 
 interface ChildInfo {
   age: string;
 }
 
-export const VisitForm: React.FC = () => {
-  const [formData, setFormData] = useState({
+interface VisitFormData {
+  nom: string;
+  prenom: string;
+  email: string;
+  telephone: string;
+  message: string;
+  typeVisite: string;
+  dateVisite: string[];
+  enfants: ChildInfo[];
+  nombreAdultes: number;
+}
+
+export const VisitForm = () => {
+  const [formData, setFormData] = useState<VisitFormData>({
     nom: '',
     prenom: '',
     email: '',
@@ -107,20 +145,34 @@ export const VisitForm: React.FC = () => {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-gray-700">Dates de visite</label>
+          <label className="block text-sm font-medium text-gray-700">Dates de visite <span className="text-red-500 font-semibold">(mercredi, dimanche ou jours fériés)</span></label>
           <div className="space-y-2">
             {formData.dateVisite.map((date, index) => (
               <div key={index} className="flex items-center space-x-2">
-                <input
-                  type="date"
-                  value={date}
-                  onChange={(e) => {
-                    const newDates = [...formData.dateVisite];
-                    newDates[index] = e.target.value;
-                    handleFieldChange('dateVisite', newDates);
+                <DatePicker
+                  selected={date ? new Date(date) : null}
+                  onChange={(date: Date | null) => {
+                    if (!date) return;
+                    const dateStr = formatDate(date);
+                    const dayOfWeek = date.getDay();
+
+                    if (dayOfWeek === 0 || dayOfWeek === 3 || JOURS_FERIES_2025.includes(dateStr)) {
+                      const newDates = [...formData.dateVisite];
+                      newDates[index] = dateStr;
+                      handleFieldChange('dateVisite', newDates);
+                    } else {
+                      alert('Seuls les mercredis, dimanches et jours fériés sont disponibles pour les visites.');
+                    }
                   }}
+                  filterDate={(date: Date) => {
+                    const day = date.getDay();
+                    const dateStr = formatDate(date);
+                    return day === 0 || day === 3 || JOURS_FERIES_2025.includes(dateStr);
+                  }}
+                  dateFormat="dd/MM/yyyy"
                   className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"
                   required
+                  placeholderText="Sélectionnez une date"
                 />
                 <button
                   type="button"
