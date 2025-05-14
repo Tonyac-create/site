@@ -74,14 +74,14 @@ export const catsAdopt = [
     },
     {
         id: 7,
-        name: "Ulysse",
+        name: "Garfield",
         type: "Chat",
         age: "2 ans",
         genre: "Mâle",
         race: "Roux",
         image: "/animalsAdopt/Ulysse.webp",
-        introduction: "Coucou, je m'appelle Ulysse... à la recherche d'une maison ! 🐾🐱.\n\n J’ai connu la vie dehors, j’ai appris à me débrouiller, mais aujourd’hui, je rêve d’un foyer chaleureux où poser enfin mes pattes. Si vous cherchez un compagnon fidèle et affectueux, je suis prêt à remplir votre quotidien de doux ronronnements.",
-        description: "Je pèse 9 kg, j'ai toujours vécu dans la rue. Je suis castré et identifié, et je cherche une nouvelle famille qui n'a pas d'autres chats pour m'accueillir. Je suis très calin et propre. Il ne reste plus qu'à vous pour des instants de ronronnements. 💕🏡",
+        introduction: "Coucou, je m'appelle Garfield... à la recherche d'une maison ! 🐾🐱.\n\n J’ai connu la vie dehors, j’ai appris à me débrouiller, mais aujourd’hui, je rêve d’un foyer chaleureux où poser enfin mes pattes. Si vous cherchez un compagnon fidèle et affectueux, je suis prêt à remplir votre quotidien de doux ronronnements.",
+        description: "Je pèse 7 kg, j'ai toujours vécu dans la rue. Je suis castré et identifié, et je cherche une nouvelle famille. Je suis très calin et propre. Il ne reste plus qu'à vous pour des instants de ronronnements. 💕🏡",
         adopt: false
     },
 ]
@@ -109,6 +109,6 @@ export const dogsAdopt = [
         image: "/animalsAdopt/Ziggy.webp",
         introduction: "Salut, moi c’est Ziggy à la recherche d'une famille ! 🐾🐕.\n\n Je suis un croisé Berger Australien de 5 ans, un chien intelligent et ultra affectueux une fois que j’ai confiance en toi ! J’adore bouger et je suis un excellent compagnon de cani-cross, alors si tu es sportif, on risque de bien s’entendre !",
         description: "Je peux être un peu craintif au premier abord, mais attention, j’ai aussi mon petit caractère ! Il me faut du temps et un environnement de confiance pour m’ouvrir complètement. Un foyer avec de jeunes enfants ne serait pas idéal pour moi. J’ai besoin d’un humain prêt à s’investir dans mon éducation, qui puisse m’emmener en grandes balades et me donner un cadre rassurant. Je suis un chien protecteur, donc il faudra être attentif à mes réactions, surtout à la maison. Avec les autres chiens, je suis sélectif, je préfère ceux de mon gabarit (les bergers et huskies sont souvent mes meilleurs copains !). En revanche, les chats et moi, on ne s’entend pas... 😅 Et pour les balades, mieux vaut une longe parce que j’ai tendance à tirer en laisse ! Côté maison, je suis propre, non destructeur, mais si tu laisses du sucré sur la table... disons que je pourrais bien me laisser tenter ! Alors, prêt à partager ta vie avec un compagnon fidèle et sportif ? 🏡❤️",
-        adopt: false
+        adopt: true
     },
 ]

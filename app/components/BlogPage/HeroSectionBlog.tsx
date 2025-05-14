@@ -1,4 +1,5 @@
 import ArticleBlog from "../ArticleBlog";
+import Image from "next/image";
 
 export default function HeroSectionBlog() {
 
@@ -8,6 +9,15 @@ export default function HeroSectionBlog() {
             <div className="mx-6 pt-16 lg:mx-28">
                 <h2 className="text-brown text-4xl font-lora font-semibold mb-6">Nos action et initiatives</h2>
                 <p className="text-xl mt-3 mb-5 w-[80%]">Chez Secours Français pour Animaux, nous agissons chaque jour pour secourir, soigner et offrir une nouvelle vie aux animaux en détresse. Sur cette page, retrouvez nos dernières actualités, nos histoires inspirantes et nos appels à mobilisation.</p>
+                <Image
+                    src="/article_journal.png"
+                    width={400}
+                    height={300}
+                    priority={true}
+                    quality={100}
+                    alt='article journal'
+                    className="mb-10 object-contain"
+                />
                 <ArticleBlog />
             </div>
         </section>
