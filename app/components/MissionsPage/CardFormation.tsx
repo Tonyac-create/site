@@ -16,7 +16,7 @@ type CardFormationProps = {
 
 export default function CardFormation({ id, icon, title, description1, description2, titlelist, itemsList, hours, price, meal }: CardFormationProps) {
     return (
-        <article key={id} className="border-2 border-brown rounded-sm p-5 w-1/2">
+        <article key={id} className="border-2 border-brown rounded-sm p-5 lg:w-1/2">
             <header className="flex items-center gap-3 mb-4">
                 <Image
                     src={icon}

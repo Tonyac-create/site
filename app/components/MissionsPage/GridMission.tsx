@@ -86,7 +86,7 @@ const MissionItem = ({ mission, index }: { mission: Mission, index: number }) =>
                 </div>
             </div>
             {mission.id === 5 && (
-                <div className='flex gap-9 mt-8 mb-16'>
+                <div className='flex flex-col lg:flex-row gap-9 mx-6 mt-8 mb-16'>
                     {formations.map((formation) => (
                         <CardFormation
                             key={formation.id}
