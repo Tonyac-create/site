@@ -17,7 +17,7 @@ export default function Carousel({
     itemsToShowDesktop = 3,
     itemsToShowTablet = 2,
     itemsToShowMobile = 1,
-    gap = 2.5
+    gap = 1.5
 }: CarouselProps) {
     const [itemsToShow, setItemsToShow] = useState(itemsToShowDesktop);
 
@@ -48,22 +48,26 @@ export default function Carousel({
     }, [itemsToShowDesktop, itemsToShowTablet, itemsToShowMobile]);
 
     return (
-        <div className="relative">
+        <div className="relative px-4 sm:px-16 lg:px-20">
             <div className="overflow-hidden">
                 <div
                     className="flex transition-transform duration-500 ease-in-out"
                     style={{
-                        transform: `translateX(-${currentIndex * (100 / itemsToShow)}%)`,
-                        gap: `${gap}rem`
+                        transform: `translateX(-${(currentIndex * 100) / itemsToShow}%)`
                     }}
                 >
                     {items.map((item, index) => (
                         <div
                             key={index}
                             className="flex-none"
-                            style={{ width: `calc(${100 / itemsToShow}% - ${gap * (itemsToShow - 1) / itemsToShow}rem)` }}
+                            style={{
+                                width: `${100 / itemsToShow}%`,
+                                padding: `0 ${gap}rem`
+                            }}
                         >
-                            {item}
+                            <div className="h-full w-full flex items-center justify-center">
+                                {item}
+                            </div>
                         </div>
                     ))}
                 </div>
@@ -72,7 +76,7 @@ export default function Carousel({
             {/* Navigation buttons */}
             <button
                 onClick={prevSlide}
-                className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 bg-green text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-opacity-80 transition-colors"
+                className="absolute left-2 sm:-left-12 lg:-left-16 top-1/2 -translate-y-1/2 bg-green text-white w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center hover:bg-opacity-80 transition-colors z-10"
                 aria-label="Previous slide"
             >
                 <Image
@@ -87,7 +91,7 @@ export default function Carousel({
             </button>
             <button
                 onClick={nextSlide}
-                className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 bg-green text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-opacity-80 transition-colors"
+                className="absolute right-2 sm:-right-12 lg:-right-16 top-1/2 -translate-y-1/2 bg-green text-white w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center hover:bg-opacity-80 transition-colors z-10"
                 aria-label="Next slide"
             >
                 <Image
