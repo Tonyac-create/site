@@ -1,6 +1,7 @@
 export interface Formule {
     id: string,
     title: string,
+    price: string,
     line1: string,
     line2: string,
     line3: string,
@@ -12,37 +13,21 @@ export const arrayFormules = [
     {
         id: 1,
         title: "Formule 1",
-        line1: "Prise en charge de l'animal en cas d'hospitalisation",
-        line2: "XXXX",
-        line3: "XXXX",
-        line4: "XXXX",
-        line5: "25 €/ mois"
+        price: "15 € / mois",
+        line1: "Garde temporaire de votre animal",
+        line2: "pendant votre hospitalisation",
+        line3: "lors de votre convalescence",
+        line4: "après votre sortie de l'hôpital si nécessaire",
+        line5: "Durée limitée - retour chez vous prévu"
     },
     {
         id: 2,
         title: "Formule 2",
-        line1: "Prise en charge de l'animal en cas d'hospitalisation",
-        line2: "Prise en charge lors de la convalescence",
-        line3: "XXXX",
-        line4: "XXXX",
-        line5: "35 €/ mois"
-    },
-    {
-        id: 3,
-        title: "Formule 3",
-        line1: "Prise en charge de l'animal en cas d'hospitalisation",
-        line2: "Prise en charge lors de la convalescence",
-        line3: "Prise en charge lors de décès",
-        line4: "XXXX",
-        line5: "60 €/ mois"
-    },
-    {
-        id: 4,
-        title: "Formule 4",
-        line1: "Prise en charge de l'animal en cas d'hospitalisation",
-        line2: "Prise en charge lors de la convalescence",
-        line3: "Prise en charge lors de décès",
-        line4: "Aide à la recherche d'un animal perdu",
-        line5: "70 €/ mois"
+        price: "30 € / mois",
+        line1: "Placement définitf de votre animal / Tous les services de la formule 1 PLUS",
+        line2: "",
+        line3: "accueil en cas d'entrée en maison de retraite / EPHAD",
+        line4: "prise encharge définitive en cas de décès",
+        line5: "Aucune limite de durée - nous trouvons une solution permanente"
     }
 ]
