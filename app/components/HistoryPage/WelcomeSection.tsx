@@ -13,7 +13,7 @@ export default function WelcomeSection() {
 
     return (
         <section className="mx-6 pt-16 lg:mx-28">
-            <h2 className="text-green text-4xl font-lora font-semibold mb-6 drop-shadow-xl">Bienvenue</h2>
+            <h2 className="text-brown text-4xl font-lora font-semibold mb-6">Bienvenue</h2>
             <h3 className="text-3xl mb-3.5">Nous sommes leur voix. Vous êtes leur espoir.</h3>
             <p className="text-xl mt-3 mb-5 w-[80%]">{`L'association Secours Français Pour Animaux est une association loi 1901 qui a été déclaré en préfecture en décembre 2024.
                 Sous le n° W713007887
@@ -41,8 +41,8 @@ export default function WelcomeSection() {
                 />
                 Télécharger le règlement intérieur
             </Button>
-            <div className="flex flex-col items-center md:flex-row mt-8">
-                <div className="flex flex-col md:w-1/2">
+            <div className="flex flex-col items-center gap-6 lg:flex-row mt-8">
+                <div className="flex flex-col lg:w-1/2">
                     <p className="text-lg">{`L'association ne compte pas d'employés, mais seulement des personnes solidaires qui œuvrent en faveur des animaux.
                     En devenant bénévoles pour notre association, nous sommes responsables de représenter tous les animaux qui en ont besoin.
                     Devenir adhérent de notre association signifie non seulement nous soutenir dans nos missions, mais aussi apporter
@@ -63,11 +63,11 @@ export default function WelcomeSection() {
                         priority={true}
                         quality={100}
                         alt='Logo SFPA'
-                        className="object-contain rounded-sm mt-5 md:ml-28"
+                        className="object-contain rounded-sm mt-5"
                     />
                 </div>
             </div>
-            <div className="flex flex-col-reverse items-center md:flex-row mt-7">
+            <div className="flex flex-col-reverse items-center gap-6 lg:flex-row mt-7">
                 <div
                     ref={secondImageRef}
                     className={`transition-opacity duration-2000 ease-in-out ${isSecondImageInView ? 'opacity-100' : 'opacity-0'}`}
@@ -79,10 +79,10 @@ export default function WelcomeSection() {
                         priority={true}
                         quality={100}
                         alt='Logo SFPA'
-                        className="object-contain rounded-sm mt-5 md:mr-28"
+                        className="object-contain rounded-sm mt-5"
                     />
                 </div>
-                <ul className="text-lg md:w-1/2">
+                <ul className="text-lg lg:w-1/2">
                     <li>{`- Assister les animaux qui sont en détresse, maltraités et/ou abandonnés.`}</li>
                     <li>{`- De l'assistance, de l'aide et du secours aux animaux sous toutes ses formes.`}</li>
                     <li>{`- Mettre en place des conventions avec les communes pour s'occuper des chats errants.`}</li>

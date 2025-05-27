@@ -22,7 +22,7 @@ export default function HeroSectionHistory() {
             <div className="bg-[url(/Elvis_mange.webp)] w-full h-[600px] bg-fixed bg-center bg-cover"></div>
             <div className="mx-6 pt-16 lg:mx-28">
                 <h2 className="text-brown text-4xl font-lora font-semibold mb-6">Découvrez qui nous sommes</h2>
-                <h3 className="text-green text-3xl font-semibold mb-3.5 drop-shadow-xl">Notre histoire</h3>
+                <h3 className="text-brown text-3xl font-semibold mb-3.5">Notre histoire</h3>
                 <div className="max-w-4xl">
                     <p className="text-lg leading-relaxed whitespace-pre-line">
                         {isExpanded ? fullText : fullText.slice(0, 1000) + "..."}
