@@ -52,14 +52,13 @@ export default function ArticleBlog({ limit }: ArticleBlogProps) {
     const displayedArticles = limit ? articles.slice(0, limit) : articles;
 
     return (
-        <div className="flex flex-wrap gap-9 mt-5 mb-9">
+        <div className="flex flex-wrap gap-8 justify-center mt-5 mb-9">
             {displayedArticles.map((article) => (
                 <article key={article.slug} className="w-[300px]">
-                    <div className="relative w-[300px] h-[200px]">
+                    <div className="relative w-[300px] h-[300px]">
                         <Image
                             src={article.image}
                             fill
-                            sizes="(max-width: 300px)"
                             quality={100}
                             priority={true}
                             alt={article.title}
