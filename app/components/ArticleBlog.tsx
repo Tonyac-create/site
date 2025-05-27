@@ -45,15 +45,17 @@ export default function ArticleBlog({ limit }: ArticleBlogProps) {
         return <div className="text-center py-4">Chargement des articles...</div>;
     }
 
-    if (selectedArticle) {
-        return <ArticleDetails article={selectedArticle} onBack={() => setSelectedArticle(null)} />;
-    }
-
     const displayedArticles = limit ? articles.slice(0, limit) : articles;
 
     return (
-        <div className="flex flex-wrap gap-8 justify-center mt-5 mb-9">
-            {displayedArticles.map((article) => (
+        <div className="w-full min-h-screen flex flex-col">
+            {selectedArticle ? (
+                <div className="flex-grow bg-white">
+                    <ArticleDetails article={selectedArticle} onBack={() => setSelectedArticle(null)} />
+                </div>
+            ) : (
+                <div className="flex-grow flex flex-wrap gap-8 justify-center mt-5 mb-9">
+                    {displayedArticles.map((article) => (
                 <article key={article.slug} className="w-[300px]">
                     <div className="relative w-[300px] h-[300px]">
                         <Image
@@ -77,7 +79,9 @@ export default function ArticleBlog({ limit }: ArticleBlogProps) {
                         Voir plus
                     </button>
                 </article>
-            ))}
+                ))}
+                </div>
+            )}
         </div>
     )
 }

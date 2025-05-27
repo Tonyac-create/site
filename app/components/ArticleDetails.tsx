@@ -1,3 +1,5 @@
+'use client';
+
 import Image from "next/image";
 import type { Article } from "../lib/articles";
 
@@ -31,15 +33,15 @@ export default function ArticleDetails({ article, onBack }: ArticleDetailsProps)
             </button>
 
             <article className="max-w-3xl mx-auto">
-                <div className="relative w-full h-[400px] mb-6">
+                <div className="relative w-full aspect-[4/3] max-w-3xl mx-auto mb-6">
                     <Image
                         src={article.image}
                         fill
-                        sizes="(max-width: 768px) 100vw, 768px"
+                        sizes="(max-width: 768px) 100vw, 1024px"
                         quality={100}
                         priority={true}
                         alt={article.title}
-                        className="rounded-sm object-cover"
+                        className="rounded-sm object-contain"
                     />
                 </div>
                 <h1 className="font-lora text-3xl font-semibold mb-4">{article.title}</h1>
