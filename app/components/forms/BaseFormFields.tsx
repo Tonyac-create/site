@@ -25,7 +25,7 @@ export const BaseFormFields: React.FC<BaseFormFieldsProps> = ({ onFieldChange, v
             name="nom"
             value={values.nom}
             onChange={(e) => onFieldChange('nom', e.target.value)}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"
+            className="mt-1 block w-full rounded-md pl-2 py-1 border border-brown shadow-sm focus:outline-none focus:ring-2 focus:ring-green focus:border-green transition-colors sm:text-sm"
             required
           />
         </div>
@@ -39,7 +39,7 @@ export const BaseFormFields: React.FC<BaseFormFieldsProps> = ({ onFieldChange, v
             name="prenom"
             value={values.prenom}
             onChange={(e) => onFieldChange('prenom', e.target.value)}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"
+            className="mt-1 block w-full rounded-md pl-2 py-1 border border-brown shadow-sm focus:outline-none focus:ring-2 focus:ring-green focus:border-green transition-colors sm:text-sm"
             required
           />
         </div>
@@ -54,7 +54,7 @@ export const BaseFormFields: React.FC<BaseFormFieldsProps> = ({ onFieldChange, v
           name="email"
           value={values.email}
           onChange={(e) => onFieldChange('email', e.target.value)}
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"
+          className="mt-1 block w-full rounded-md pl-2 py-1 border border-brown shadow-sm focus:outline-none focus:ring-2 focus:ring-green focus:border-green transition-colors sm:text-sm"
           required
         />
       </div>
@@ -69,7 +69,7 @@ export const BaseFormFields: React.FC<BaseFormFieldsProps> = ({ onFieldChange, v
             name="telephone"
             value={values.telephone}
             onChange={(e) => onFieldChange('telephone', e.target.value)}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"
+            className="mt-1 block w-full rounded-md pl-2 py-1 border border-brown shadow-sm focus:outline-none focus:ring-2 focus:ring-green focus:border-green transition-colors sm:text-sm"
           />
         </div>
       )}
@@ -84,7 +84,7 @@ export const BaseFormFields: React.FC<BaseFormFieldsProps> = ({ onFieldChange, v
             rows={4}
             value={values.message}
             onChange={(e) => onFieldChange('message', e.target.value)}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"
+            className="mt-1 block w-full rounded-md pl-2 py-1 border border-brown shadow-sm focus:outline-none focus:ring-2 focus:ring-green focus:border-green transition-colors sm:text-sm"
           />
         </div>
       )}

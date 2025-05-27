@@ -134,7 +134,7 @@ export const VisitForm = () => {
           <select
             value={formData.typeVisite}
             onChange={(e) => handleFieldChange('typeVisite', e.target.value)}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"
+            className="mt-1 block w-full rounded-md py-1 border border-brown shadow-sm focus:outline-none focus:ring-2 focus:ring-green focus:border-green transition-colors sm:text-sm"
             required
           >
             <option value="">Sélectionnez un type de visite</option>
@@ -170,7 +170,7 @@ export const VisitForm = () => {
                     return day === 0 || day === 3 || JOURS_FERIES_2025.includes(dateStr);
                   }}
                   dateFormat="dd/MM/yyyy"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"
+                  className="mt-1 block w-full rounded-md py-1 border border-brown shadow-sm focus:outline-none focus:ring-2 focus:ring-green focus:border-green transition-colors sm:text-sm"
                   required
                   placeholderText="Sélectionnez une date"
                 />
@@ -191,7 +191,7 @@ export const VisitForm = () => {
             <button
               type="button"
               onClick={() => handleFieldChange('dateVisite', [...formData.dateVisite, ''])}
-              className="mt-2 inline-flex items-center px-3 py-1.5 border border-transparent text-xs font-medium rounded-md shadow-sm text-white bg-primary hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+              className="mt-2 inline-flex items-center px-3 py-1 border border-brown text-xs font-medium rounded-md shadow-sm text-white bg-primary hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
             >
               Ajouter une date
             </button>
@@ -205,7 +205,7 @@ export const VisitForm = () => {
             min="1"
             value={formData.nombreAdultes}
             onChange={(e) => handleFieldChange('nombreAdultes', e.target.value)}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"
+            className="mt-1 block w-full rounded-md py-1 pl-2 border border-brown shadow-sm focus:outline-none focus:ring-2 focus:ring-green focus:border-green transition-colors sm:text-sm"
             required
           />
         </div>
@@ -231,7 +231,7 @@ export const VisitForm = () => {
                 max="17"
                 value={enfant.age}
                 onChange={(e) => handleChildrenChange(index, e.target.value)}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"
+                className="mt-1 block w-full rounded-md py-1 pl-2 border border-brown shadow-sm focus:outline-none focus:ring-2 focus:ring-green focus:border-green transition-colors sm:text-sm"
               />
               <button
                 type="button"

@@ -116,7 +116,7 @@ export const DonationForm: React.FC = () => {
           <select
             value={formData.typeDon}
             onChange={(e) => handleFieldChange('typeDon', e.target.value)}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"
+            className="mt-1 block w-full rounded-md border py-1 border-brown shadow-sm focus:outline-none focus:ring-2 focus:ring-green focus:border-green transition-colors sm:text-sm"
             required
           >
             <option value="">Sélectionnez un type de don</option>
@@ -135,7 +135,7 @@ export const DonationForm: React.FC = () => {
               step="0.01"
               value={formData.montant}
               onChange={(e) => handleFieldChange('montant', e.target.value)}
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"
+              className="mt-1 block w-full rounded-md pl-2 py-1 border border-brown shadow-sm focus:outline-none focus:ring-2 focus:ring-green focus:border-green transition-colors sm:text-sm"
               required
             />
           </div>
@@ -150,7 +150,7 @@ export const DonationForm: React.FC = () => {
               type="text"
               value={formData.adresse.rue}
               onChange={(e) => handleFieldChange('adresse.rue', e.target.value)}
-              className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"
+              className="mt-1 block w-full rounded-md pl-2 py-1 border border-brown shadow-sm focus:outline-none focus:ring-2 focus:ring-green focus:border-green transition-colors sm:text-sm"
               required
             />
           </div>
@@ -162,7 +162,7 @@ export const DonationForm: React.FC = () => {
                 type="text"
                 value={formData.adresse.codePostal}
                 onChange={(e) => handleFieldChange('adresse.codePostal', e.target.value)}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"
+                className="mt-1 block w-full rounded-md pl-2 py-1 border border-brown shadow-sm focus:outline-none focus:ring-2 focus:ring-green focus:border-green transition-colors sm:text-sm"
                 required
               />
             </div>
@@ -173,7 +173,7 @@ export const DonationForm: React.FC = () => {
                 type="text"
                 value={formData.adresse.ville}
                 onChange={(e) => handleFieldChange('adresse.ville', e.target.value)}
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"
+                className="mt-1 block w-full rounded-md pl-2 py-1 border border-brown shadow-sm focus:outline-none focus:ring-2 focus:ring-green focus:border-green transition-colors sm:text-sm"
                 required
               />
             </div>
