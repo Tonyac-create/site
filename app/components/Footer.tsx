@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function Footer() {
     return (
         <footer className='flex flex-col xl:flex-row justify-between items-center p-8'>
-            <div className='flex justify-center items-center gap-1'>
+            <div className='flex flex-col justify-center items-center sm:flex-row gap-1'>
                 <Image
                     src="/Logo_FondTransparent_SFPA.webp"
                     width={80}
