@@ -19,12 +19,6 @@ export const ContactForm: React.FC = () => {
     }));
   };
 
-  // const handleSubmit = async (e: React.FormEvent) => {
-  //   e.preventDefault();
-  //   // Ici, ajoutez la logique pour envoyer les données du formulaire
-  //   console.log('Données du formulaire de contact:', formData);
-  // };
-
   return (
     <form action="https://formsubmit.co/erepocangele@gmail.com" method="POST" className="max-w-2xl mx-auto mt-16 px-6 bg-white">
       <h2 className="text-2xl text-brown font-bold mb-6">Une question ? Une envie d’aider ? Nous sommes là pour vous !</h2>

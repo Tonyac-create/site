@@ -71,14 +71,8 @@ export default function AssuranceForm() {
         }));
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        // Traitement du formulaire
-        console.log(formData);
-    };
-
     return (
-        <form onSubmit={handleSubmit} className="max-w-2xl mx-auto mt-16 px-6 bg-white">
+        <form action="https://formsubmit.co/erepocangele@gmail.com" method="POST" className="max-w-2xl mx-auto mt-16 px-6 bg-white">
             <h2 className="text-2xl text-brown font-bold mb-6">Formulaire d&apos;assurance coup dur</h2>
             
             {/* Champs de base */}
@@ -100,6 +94,7 @@ export default function AssuranceForm() {
                 </label>
                 <select
                     id="formule"
+                    name="formuleId"
                     value={formData.formuleId}
                     onChange={(e) => handleFieldChange('formuleId', e.target.value)}
                     className="mt-1 block w-full rounded-md py-1 border border-brown shadow-sm focus:outline-none focus:ring-2 focus:ring-green focus:border-green transition-colors sm:text-sm"
@@ -125,6 +120,7 @@ export default function AssuranceForm() {
                         <input
                             type="text"
                             id="animal.nom"
+                            name="animal.nom"
                             value={formData.animal.nom}
                             onChange={(e) => handleFieldChange('animal.nom', e.target.value)}
                             className="mt-1 block w-full rounded-md pl-2 py-1 border border-brown shadow-sm focus:outline-none focus:ring-2 focus:ring-green focus:border-green transition-colors sm:text-sm"
@@ -138,6 +134,7 @@ export default function AssuranceForm() {
                         <input
                             type="text"
                             id="animal.race"
+                            name="animal.race"
                             value={formData.animal.race}
                             onChange={(e) => handleFieldChange('animal.race', e.target.value)}
                             className="mt-1 block w-full rounded-md pl-2 py-1 border border-brown shadow-sm focus:outline-none focus:ring-2 focus:ring-green focus:border-green transition-colors sm:text-sm"
@@ -151,6 +148,7 @@ export default function AssuranceForm() {
                         <input
                             type="text"
                             id="animal.identification"
+                            name="animal.identification"
                             value={formData.animal.identification}
                             onChange={(e) => handleFieldChange('animal.identification', e.target.value)}
                             className="mt-1 block w-full rounded-md pl-2 py-1 border border-brown shadow-sm focus:outline-none focus:ring-2 focus:ring-green focus:border-green transition-colors sm:text-sm"
@@ -164,6 +162,7 @@ export default function AssuranceForm() {
                         <input
                             type="text"
                             id="animal.age"
+                            name="animal.age"
                             value={formData.animal.age}
                             onChange={(e) => handleFieldChange('animal.age', e.target.value)}
                             className="mt-1 block w-full rounded-md pl-2 py-1 border border-brown shadow-sm focus:outline-none focus:ring-2 focus:ring-green focus:border-green transition-colors sm:text-sm"
@@ -176,6 +175,7 @@ export default function AssuranceForm() {
                         </label>
                         <select
                             id="animal.genre"
+                            name="animal.genre"
                             value={formData.animal.genre}
                             onChange={(e) => handleFieldChange('animal.genre', e.target.value)}
                             className="mt-1 block w-full rounded-md py-1 border border-brown shadow-sm focus:outline-none focus:ring-2 focus:ring-green focus:border-green transition-colors sm:text-sm"
@@ -192,6 +192,7 @@ export default function AssuranceForm() {
                         <input
                             type="date"
                             id="animal.dateNaissance"
+                            name="animal.dateNaissance"
                             value={formData.animal.dateNaissance}
                             onChange={(e) => handleFieldChange('animal.dateNaissance', e.target.value)}
                             className="mt-1 block w-full rounded-md pl-2 py-1 border border-brown shadow-sm focus:outline-none focus:ring-2 focus:ring-green focus:border-green transition-colors sm:text-sm"

@@ -75,14 +75,8 @@ export const DonationForm: React.FC = () => {
     }
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    // Ici, ajoutez la logique pour envoyer les données du formulaire
-    console.log('Données du formulaire de don:', formData);
-  };
-
   return (
-    <form onSubmit={handleSubmit} className="max-w-2xl mx-auto p-6 my-6 bg-white rounded-lg shadow-md">
+    <form action="https://formsubmit.co/erepocangele@gmail.com" method="POST" className="max-w-2xl mx-auto p-6 my-6 bg-white rounded-lg shadow-md">
       <h2 className="text-2xl text-brown font-bold mb-6">Remplissez ce formulaire pour devenir membre ou faire un don libre</h2>
       <Link href="/contact" className="flex gap-2 text-[#0866FF] text-lg mt-3 mb-5 underline underline-offset-4 hover:text-brown">
         En espèce sur place, prendre rendez-vous par téléphone ou envoyer un message
@@ -114,6 +108,7 @@ export const DonationForm: React.FC = () => {
         <div>
           <label className="block text-sm font-medium text-gray-700">Type de don</label>
           <select
+            name="typeDon"
             value={formData.typeDon}
             onChange={(e) => handleFieldChange('typeDon', e.target.value)}
             className="mt-1 block w-full rounded-md border py-1 border-brown shadow-sm focus:outline-none focus:ring-2 focus:ring-green focus:border-green transition-colors sm:text-sm"
@@ -148,6 +143,7 @@ export const DonationForm: React.FC = () => {
             <label className="block text-sm font-medium text-gray-700">Rue</label>
             <input
               type="text"
+              name="adresse.rue"
               value={formData.adresse.rue}
               onChange={(e) => handleFieldChange('adresse.rue', e.target.value)}
               className="mt-1 block w-full rounded-md pl-2 py-1 border border-brown shadow-sm focus:outline-none focus:ring-2 focus:ring-green focus:border-green transition-colors sm:text-sm"
@@ -160,6 +156,7 @@ export const DonationForm: React.FC = () => {
               <label className="block text-sm font-medium text-gray-700">Code postal</label>
               <input
                 type="text"
+                name="adresse.codePostal"
                 value={formData.adresse.codePostal}
                 onChange={(e) => handleFieldChange('adresse.codePostal', e.target.value)}
                 className="mt-1 block w-full rounded-md pl-2 py-1 border border-brown shadow-sm focus:outline-none focus:ring-2 focus:ring-green focus:border-green transition-colors sm:text-sm"
@@ -171,6 +168,7 @@ export const DonationForm: React.FC = () => {
               <label className="block text-sm font-medium text-gray-700">Ville</label>
               <input
                 type="text"
+                name="adresse.ville"
                 value={formData.adresse.ville}
                 onChange={(e) => handleFieldChange('adresse.ville', e.target.value)}
                 className="mt-1 block w-full rounded-md pl-2 py-1 border border-brown shadow-sm focus:outline-none focus:ring-2 focus:ring-green focus:border-green transition-colors sm:text-sm"

@@ -93,14 +93,8 @@ export const VisitForm = () => {
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    // Ici, ajoutez la logique pour envoyer les données du formulaire
-    console.log('Données du formulaire de visite:', formData);
-  };
-
   return (
-    <form onSubmit={handleSubmit} className="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-md">
+    <form action="https://formsubmit.co/erepocangele@gmail.com" method="POST" className="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-md">
       <h2 className="text-2xl font-bold mb-6">Réserver une visite</h2>
       <Link href="/contact" className="flex gap-2 text-[#0866FF] text-lg mt-3 mb-5 underline underline-offset-4 hover:text-brown">
         En espèce sur place, prendre rendez-vous par téléphone ou envoyer un message
@@ -132,6 +126,7 @@ export const VisitForm = () => {
         <div>
           <label className="block text-sm font-medium text-gray-700">Type de visite</label>
           <select
+            name="typeVisite"
             value={formData.typeVisite}
             onChange={(e) => handleFieldChange('typeVisite', e.target.value)}
             className="mt-1 block w-full rounded-md py-1 border border-brown shadow-sm focus:outline-none focus:ring-2 focus:ring-green focus:border-green transition-colors sm:text-sm"
@@ -150,6 +145,7 @@ export const VisitForm = () => {
             {formData.dateVisite.map((date, index) => (
               <div key={index} className="flex items-center space-x-2">
                 <DatePicker
+                  name={`dateVisite[${index}]`}
                   selected={date ? new Date(date) : null}
                   onChange={(date: Date | null) => {
                     if (!date) return;
@@ -202,6 +198,7 @@ export const VisitForm = () => {
           <label className="block text-sm font-medium text-gray-700">{`Nombre d'adultes`}</label>
           <input
             type="number"
+            name="nombreAdultes"
             min="1"
             value={formData.nombreAdultes}
             onChange={(e) => handleFieldChange('nombreAdultes', e.target.value)}
@@ -226,6 +223,7 @@ export const VisitForm = () => {
             <div key={index} className="mt-2 flex items-center gap-2">
               <input
                 type="number"
+                name={`enfants[${index}].age`}
                 placeholder="Âge"
                 min="0"
                 max="17"
