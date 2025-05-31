@@ -121,7 +121,7 @@ export const FormationForm: React.FC<FormationFormProps> = ({ initialFormationTy
               />
               <div>
                 <p className="text-yellow-800 font-medium mb-2">
-                  Documents à fournir obligatoirement :
+                  {`Documents à fournir obligatoirement pour le certificat d'aptitude :`}
                 </p>
                 <ul className="list-disc list-inside text-yellow-800">
                   <li>{`Copie de votre pièce d'identité`}</li>

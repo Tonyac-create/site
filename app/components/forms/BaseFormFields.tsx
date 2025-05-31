@@ -101,7 +101,7 @@ export const BaseFormFields: React.FC<BaseFormFieldsProps> = ({ onFieldChange, v
             value={values.message}
             onChange={(e) => onFieldChange('message', e.target.value)}
             className="mt-1 block w-full rounded-md pl-2 py-1 border border-brown shadow-sm focus:outline-none focus:ring-2 focus:ring-green focus:border-green transition-colors sm:text-sm"
-            required
+            required={requiredFields.message !== false}
           />
         </div>
       )}

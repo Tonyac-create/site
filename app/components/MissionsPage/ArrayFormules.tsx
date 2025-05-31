@@ -7,9 +7,9 @@ export default function ArrayFormules() {
 
     return (
         <div className="w-full px-4 py-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="flex flex-col md:flex-row justify-center gap-4">
                 {formules.map((formule) => (
-                    <div key={formule.id} className="bg-white border border-brown rounded-lg shadow-md overflow-hidden">
+                    <div key={formule.id} className="bg-white border border-brown rounded-lg shadow-md overflow-hidden  max-w-[350px]">
                         <div className="flex justify-between bg-brown text-white p-4">
                             <h3 className="text-lg font-semibold">{formule.title}</h3>
                             <p className="text-lg font-bold italic text-green">{formule.price}</p>
