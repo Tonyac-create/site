@@ -102,11 +102,18 @@ export const DonationForm: React.FC = () => {
       <BaseFormFields
         onFieldChange={handleFieldChange}
         values={formData}
+        requiredFields={{
+          nom: true,
+          prenom: true,
+          email: true,
+          telephone: true,
+          message: false
+        }}
       />
 
       <div className="mt-6 space-y-4">
         <div>
-          <label className="block text-sm font-medium text-gray-700">Type de don</label>
+          <label className="block text-sm font-medium text-gray-700">Type de don *</label>
           <select
             name="typeDon"
             value={formData.typeDon}
@@ -137,7 +144,7 @@ export const DonationForm: React.FC = () => {
         )}
 
         <div className="space-y-4">
-          <h3 className="text-lg font-medium">Adresse</h3>
+          <h3 className="text-lg font-medium">Adresse *</h3>
 
           <div>
             <label className="block text-sm font-medium text-gray-700">Rue</label>

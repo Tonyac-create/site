@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface BaseFormFieldsProps {
-  onFieldChange: (fieldName: string, value: string) => void;
+  onFieldChange: (field: string, value: string) => void;
   values: {
     nom: string;
     prenom: string;
@@ -9,15 +9,29 @@ interface BaseFormFieldsProps {
     telephone?: string;
     message?: string;
   };
+  requiredFields?: {
+    nom?: boolean;
+    prenom?: boolean;
+    email?: boolean;
+    telephone?: boolean;
+    message?: boolean;
+  };
 }
 
-export const BaseFormFields: React.FC<BaseFormFieldsProps> = ({ onFieldChange, values }) => {
+export const BaseFormFields: React.FC<BaseFormFieldsProps> = ({ onFieldChange, values, requiredFields = {
+  nom: true,
+  prenom: true,
+  email: true,
+  telephone: true,
+  message: true
+} }) => {
   return (
     <div className="space-y-4">
+      <p className='text-brown font-semibold mt-3'>* Champs obligatoires</p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
           <label htmlFor="nom" className="block text-sm font-medium text-gray-700">
-            Nom
+            Nom *
           </label>
           <input
             type="text"
@@ -31,7 +45,7 @@ export const BaseFormFields: React.FC<BaseFormFieldsProps> = ({ onFieldChange, v
         </div>
         <div>
           <label htmlFor="prenom" className="block text-sm font-medium text-gray-700">
-            Prénom
+            Prénom *
           </label>
           <input
             type="text"
@@ -46,7 +60,7 @@ export const BaseFormFields: React.FC<BaseFormFieldsProps> = ({ onFieldChange, v
       </div>
       <div>
         <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-          Email
+          Email *
         </label>
         <input
           type="email"
@@ -55,13 +69,13 @@ export const BaseFormFields: React.FC<BaseFormFieldsProps> = ({ onFieldChange, v
           value={values.email}
           onChange={(e) => onFieldChange('email', e.target.value)}
           className="mt-1 block w-full rounded-md pl-2 py-1 border border-brown shadow-sm focus:outline-none focus:ring-2 focus:ring-green focus:border-green transition-colors sm:text-sm"
-          required
+          required={requiredFields.email !== false}
         />
       </div>
       {values.telephone !== undefined && (
         <div>
           <label htmlFor="telephone" className="block text-sm font-medium text-gray-700">
-            Téléphone
+            Téléphone *
           </label>
           <input
             type="tel"
@@ -78,7 +92,7 @@ export const BaseFormFields: React.FC<BaseFormFieldsProps> = ({ onFieldChange, v
       {values.message !== undefined && (
         <div>
           <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-            Message
+            Message {requiredFields.message !== false && '*'}
           </label>
           <textarea
             id="message"

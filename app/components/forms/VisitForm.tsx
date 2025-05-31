@@ -124,7 +124,7 @@ export const VisitForm = () => {
 
       <div className="mt-6 space-y-4">
         <div>
-          <label className="block text-sm font-medium text-gray-700">Type de visite</label>
+          <label className="block text-sm font-medium text-gray-700">Type de visite *</label>
           <select
             name="typeVisite"
             value={formData.typeVisite}
@@ -140,7 +140,7 @@ export const VisitForm = () => {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-gray-700">Dates de visite <span className="text-red-500 font-semibold">(mercredi, dimanche ou jours fériés)</span></label>
+          <label className="block text-sm font-medium text-gray-700">Dates de visite *<span className="text-red-500 font-semibold">(mercredi, dimanche ou jours fériés)</span></label>
           <div className="space-y-2">
             {formData.dateVisite.map((date, index) => (
               <div key={index} className="flex items-center space-x-2">
@@ -195,7 +195,7 @@ export const VisitForm = () => {
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-gray-700">{`Nombre d'adultes`}</label>
+          <label className="block text-sm font-medium text-gray-700">{`Nombre d'adultes *`}</label>
           <input
             type="number"
             name="nombreAdultes"
@@ -209,7 +209,7 @@ export const VisitForm = () => {
 
         <div>
           <div className="flex justify-between items-center">
-            <label className="block text-sm font-medium text-gray-700">Enfants</label>
+            <label className="block text-sm font-medium text-gray-700">Enfants *</label>
             <button
               type="button"
               onClick={addChild}
