@@ -1,5 +1,9 @@
-import Image from "next/image"
-import Button from "../Button"
+'use client';
+
+import React, { useState } from 'react';
+import Image from 'next/image';
+import Button from "../Button";
+import { FormationModal } from '../modals/FormationModal';
 
 type CardFormationProps = {
     id: number,
@@ -14,7 +18,10 @@ type CardFormationProps = {
     meal: string
 }
 
-export default function CardFormation({ id, icon, title, description1, description2, titlelist, itemsList, hours, price, meal }: CardFormationProps) {
+export const CardFormation = ({ id, icon, title, description1, description2, titlelist, itemsList, hours, price, meal }: CardFormationProps) => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const formationType = id === 1 ? 'langage_canin' : 'certificat_aptitude';
     return (
         <article key={id} className="border-2 border-brown rounded-sm p-5 lg:w-1/2">
             <header className="flex items-center gap-3 mb-4">
@@ -46,7 +53,12 @@ export default function CardFormation({ id, icon, title, description1, descripti
                 <p className="text-xl font-semibold">{price} € / pers.</p>
             </div>
             <div className="flex justify-center mt-10">
-                <Button href="/contact#formation" variant="secondary">Réserver cette formation</Button>
+                <Button href="#" onClick={() => setIsModalOpen(true)} variant="secondary">Réserver cette formation</Button>
+                <FormationModal
+                    isOpen={isModalOpen}
+                    onClose={() => setIsModalOpen(false)}
+                    formationType={formationType}
+                />
             </div>
         </article>
     )

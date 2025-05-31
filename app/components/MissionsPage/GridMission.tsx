@@ -4,9 +4,9 @@ import Image from 'next/image';
 import { useInView } from '@/app/hooks/useInView';
 import { Mission, missions } from '@/app/utils/missions';
 import Button from '../Button';
-import CardFormation from './CardFormation';
 import { formations } from '@/app/utils/formations';
 import AssuranceForm from '../forms/AssuranceForm';
+import { CardFormation } from './CardFormation';
 
 /**
  * Mission Item component

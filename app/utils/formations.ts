@@ -33,7 +33,7 @@ export const formations = [
             "Si votre chien, en grandissant, acquiert les caractéristiques morphologiques d’un chien de 1ère ou 2ème catégorie (American bully, races non reconnues, etc…)",
             "Quelle que soit la race du chien s’il a mordu quelqu’un (article L211-14 du code rural), cela peut donc être pour un berger, un chien primitif, un bichon et même un chien croisé.",
             "Quelle que soit la race du chien, s’il présente un danger selon les autorités (juge, maire, prefet…)",
-            "Pour tous les membres de la famille qui promènent régulièrement le chien."
+            "Valable pour une personne - Tous les membres de la famille qui promènent régulièrement le chien doivent avoir le certificat d'aptitude."
         ],
         hours: "8h30 - 12h00 / 13h30 - 17h00",
         price: "90",
