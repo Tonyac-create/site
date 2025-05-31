@@ -9,7 +9,7 @@ export default function AdoptSection() {
         <section className="px-6 pt-16 lg:px-28 mb-12">
             <h2 className="text-brown text-4xl font-lora font-semibold">Ils cherchent une famille</h2>
             <div className="flex flex-col lg:flex-row gap-14">
-                <div className="w-1/2">
+                <div className="lg:w-1/2">
                     <p className="text-xl my-5">{`Chaque animal a une histoire, un passé parfois difficile, mais surtout un immense amour à donner.
                         Chez Secours Français pour Animaux, nous aidons des compagnons en quête d’un foyer chaleureux et
                         d’une famille bienveillante.`}</p>
@@ -18,7 +18,7 @@ export default function AdoptSection() {
                         une vie et offrez une nouvelle page à écrire, pleine de bonheur et de tendresse.
                         Peut-être que votre futur compagnon vous attend déjà… Découvrez nos animaux à l’adoption et laissez votre cœur parler !`}</p>
                 </div>
-                <div className="w-1/2">
+                <div className="lg:w-1/2">
                     <Image
                         src="/icons/triangle.svg"
                         width={50}

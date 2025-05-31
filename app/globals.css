@@ -120,12 +120,26 @@ body {
 .pattern:before {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -4px;
   left: 0;
   width: 110%;
-  height:215px;
+  height: 215px;
   background: url(/Wave_SFPA.webp);
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .pattern:before {
+    height: 150px;
+    width: 120%;
+  }
+}
+
+@media (max-width: 480px) {
+  .pattern:before {
+    height: 100px;
+    width: 130%;
+  }
 }
