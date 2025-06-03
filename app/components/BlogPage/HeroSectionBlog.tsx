@@ -17,7 +17,7 @@ export default function HeroSectionBlog() {
                 <div className="flex flex-col lg:flex-row gap-10">
                     <div className="cursor-pointer hover:scale-110 transition-transform" onClick={() => setSelectedImage('/article_journal.png')}>
                         <Image
-                            src="/article_journal.png"
+                            src="/article_journal.webp"
                             width={400}
                             height={300}
                             priority={true}

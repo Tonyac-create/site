@@ -3,7 +3,7 @@ title: "Accueil d'un couple d'Omnicolores"
 slug: "omnicolores"
 date: "31-03-2025"
 author: "Secours Français Pour Animaux"
-image: "/Omnicolores.jpg"
+image: "/Omnicolores.webp"
 text1: |
   Les perruches omnicolores impressionnent par la variété et la beauté de leurs couleurs. Mais ce n’est pas là leur seul atout charme ! En effet, elles sont assez robustes et s’apprivoisent facilement. Elles représentent donc des oiseaux de compagnie très agréables à vivre et à regarder.
 text2: |
