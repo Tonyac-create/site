@@ -61,7 +61,7 @@ export default function HistorySection() {
             <div className="flex flex-col justify-center items-center">
                 <div className="flex flex-row justify-center items-center gap-2">
                     <Image
-                        src="/icons/SOS.jpg"
+                        src="/icons/SOS.webp"
                         width={100}
                         height={100}
                         priority={true}

@@ -15,19 +15,19 @@ export const partners = [
         id: 3,
         name: "R Spa Coiffure Bien-être Charlieu",
         url: "https://www.facebook.com/profile.php?id=61558944477677",
-        image: "/partners/r_spa_charlieu.jpg"
+        image: "/partners/r_spa_charlieu.webp"
     },
     {
         id: 4,
         name: "R Prestige Chauffailles",
         url: "https://www.facebook.com/profile.php?id=100057591723523",
-        image: "/partners/r_prestige.jpg"
+        image: "/partners/r_prestige.webp"
     },
     {
         id: 5,
         name: "Marie Style Varennes-sous-Dun",
         url: "https://www.facebook.com/p/MARIE-STYLE-100063657309027/?locale=fr_FR",
-        image: "/partners/marie_coiffure.jpg"
+        image: "/partners/marie_coiffure.webp"
     },
     {
         id: 6,
