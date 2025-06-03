@@ -40,13 +40,11 @@ export default function Footer() {
             <div>
                 <Link
                     href="/mentions"
-                    target="_blank"
                     className="flex gap-2 text-brown text-lg underline underline-offset-4 hover:text-black">
                     Mentions légales
                 </Link>
                 <Link
                     href="/politics"
-                    target="_blank"
                     className="flex gap-2 text-brown text-lg underline underline-offset-4 hover:text-black">
                     Politique de confidentialité
                 </Link>
