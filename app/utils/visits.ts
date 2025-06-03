@@ -21,7 +21,12 @@ export const visits: Visits[] = [
             "/gallery/visitOne/visit_2.jpg",
             "/gallery/visitOne/visit_3.jpg",
             "/gallery/visitOne/visit_4.jpg",
-            "/gallery/visitOne/visit_5.jpg"
+            "/gallery/visitOne/visit_5.jpg",
+            "/gallery/visitOne/visit_6.jpg",
+            "/gallery/visitOne/visit_7.jpg",
+            "/gallery/visitOne/visit_8.jpg",
+            "/gallery/visitOne/visit_9.jpg",
+            "/gallery/visitOne/visit_10.jpg"
         ]
     },
     {
@@ -31,10 +36,13 @@ export const visits: Visits[] = [
         price: "La visite avec animation s'élève à 15€ / personne, incluant le gouter.",
         video: ["/videos/visits/Video_activitees.mp4"],
         galleryImages: [
-            "/gallery/visite-simple-1.jpg",
-            "/gallery/visite-simple-2.jpg",
-            "/gallery/visite-simple-3.jpg",
-            "/gallery/visite-simple-4.jpg"
+            "/gallery/visitTwo/visit_two_1.jpg",
+            "/gallery/visitTwo/visit_two_2.jpg",
+            "/gallery/visitTwo/visit_two_3.jpg",
+            "/gallery/visitTwo/visit_two_4.jpg",
+            "/gallery/visitTwo/visit_two_5.jpg",
+            "/gallery/visitTwo/visit_two_6.jpg",
+            "/gallery/visitTwo/visit_two_7.jpg",
         ]
     },
     {
