@@ -15,7 +15,7 @@ export default function HeroSectionBlog() {
                 <p className="text-xl mt-3 mb-5 w-[80%]">Chez Secours Français pour Animaux, nous agissons chaque jour pour secourir, soigner et offrir une nouvelle vie aux animaux en détresse. Sur cette page, retrouvez nos dernières actualités, nos histoires inspirantes et nos appels à mobilisation.</p>
                 <h3 className="text-brown text-2xl font-lora font-semibold mb-6">Articles de journaux</h3>
                 <div className="flex flex-col lg:flex-row gap-10">
-                    <div className="cursor-pointer" onClick={() => setSelectedImage('/article_journal.png')}>
+                    <div className="cursor-pointer hover:scale-110 transition-transform" onClick={() => setSelectedImage('/article_journal.png')}>
                         <Image
                             src="/article_journal.png"
                             width={400}
@@ -26,7 +26,7 @@ export default function HeroSectionBlog() {
                             className="mb-10 object-contain hover:opacity-90 transition-opacity"
                         />
                     </div>
-                    <div className="cursor-pointer" onClick={() => setSelectedImage('/article_journal_2.jpg')}>
+                    <div className="cursor-pointer hover:scale-110 transition-transform" onClick={() => setSelectedImage('/article_journal_2.jpg')}>
                         <Image
                             src="/article_journal_2.jpg"
                             width={400}
