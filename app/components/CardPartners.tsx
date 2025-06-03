@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { CardPartnersProps } from "../utils/typeCardPartners"
+import { CardPartnersProps } from "../types/typeCardPartners"
 import Link from "next/link"
 
 export default function CardPartners({ id, name, url, image }: CardPartnersProps) {

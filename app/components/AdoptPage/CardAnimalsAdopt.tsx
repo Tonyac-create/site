@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { CardAnimalsAdoptProps } from "../../utils/typeCardAnimals";
+import { CardAnimalsAdoptProps } from "../../types/typeCardAnimals";
 import Button from "../Button";
 
 export default function CardAnimalsAdopt({ name, type, age, genre, race, image, introduction, description, adopt }: CardAnimalsAdoptProps) {
