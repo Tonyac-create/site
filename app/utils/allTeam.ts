@@ -44,7 +44,7 @@ export const allTeam: Team[] = [
     },
     {
         id: 7,
-        name: "Manu et Manon",
+        name: "Manu, Damien, Sarah et Yohann",
         role: "Soigneurs animalier",
         otheRoles: ["Dans la structure pédagogique, il nourrit les animaux, nettoit les enclos et controle les équipements et clôtures"]
     },
@@ -56,15 +56,15 @@ export const allTeam: Team[] = [
     },
     {
         id: 9,
-        name: "Rinala",
+        name: "Elodie",
         role: "Chargée de communication",
         otheRoles: [""]
     },
     {
         id: 10,
-        name: "Nemo et Brandon",
-        role: "Chefs des travaux et structures",
-        otheRoles: ["Spécialisés dans les constructions des divers enclos et les travaux"]
+        name: "Nemo",
+        role: "Chef des travaux et structures",
+        otheRoles: ["Spécialisé dans les constructions des divers enclos et les travaux"]
     },
     {
         id: 11,

@@ -20,7 +20,7 @@ export const ContactForm: React.FC = () => {
   };
 
   return (
-    <form action="https://formsubmit.co/erepocangele@gmail.com" method="POST" className="max-w-2xl mx-auto mt-16 px-6 bg-white">
+    <form action="https://formsubmit.co/secoursfrancaispouranimaux@gmail.com" method="POST" className="max-w-2xl mx-auto mt-16 px-6 bg-white">
       <h2 className="text-2xl text-brown font-bold mb-6">Une question ? Une envie d’aider ? Nous sommes là pour vous !</h2>
       <BaseFormFields 
         onFieldChange={handleFieldChange}

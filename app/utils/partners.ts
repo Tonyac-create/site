@@ -65,4 +65,10 @@ export const partners = [
         url: "https://lmetairie.com/",
         image: "/partners/Lmetairie.webp"
     },
+    {
+        id: 12,
+        name: "Bar-tabac Le Cracovie",
+        url: "https://bureautabac.fr/42/mars/le-cracovie-d6a",
+        image: "/partners/enseigne_tabac.jpg"
+    }
 ]

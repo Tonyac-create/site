@@ -90,7 +90,7 @@ export default function AssuranceForm() {
             {/* Choix de la formule */}
             <div className="mt-6">
                 <label htmlFor="formule" className="block text-sm font-medium text-gray-700">
-                    Choisir votre formule
+                    Choisir votre formule *
                 </label>
                 <select
                     id="formule"
@@ -115,7 +115,7 @@ export default function AssuranceForm() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                         <label htmlFor="animal.nom" className="block text-sm font-medium text-gray-700">
-                            Nom de l&apos;animal
+                            Nom de l&apos;animal *
                         </label>
                         <input
                             type="text"
@@ -129,7 +129,7 @@ export default function AssuranceForm() {
                     </div>
                     <div>
                         <label htmlFor="animal.race" className="block text-sm font-medium text-gray-700">
-                            Race
+                            Race *
                         </label>
                         <input
                             type="text"
@@ -143,7 +143,7 @@ export default function AssuranceForm() {
                     </div>
                     <div>
                         <label htmlFor="animal.identification" className="block text-sm font-medium text-gray-700">
-                            Numéro d&apos;identification
+                            Numéro d&apos;identification *
                         </label>
                         <input
                             type="text"
@@ -157,7 +157,7 @@ export default function AssuranceForm() {
                     </div>
                     <div>
                         <label htmlFor="animal.age" className="block text-sm font-medium text-gray-700">
-                            Âge
+                            Âge *
                         </label>
                         <input
                             type="text"
@@ -171,7 +171,7 @@ export default function AssuranceForm() {
                     </div>
                     <div>
                         <label htmlFor="animal.genre" className="block text-sm font-medium text-gray-700">
-                            Genre
+                            Genre *  
                         </label>
                         <select
                             id="animal.genre"
@@ -187,7 +187,7 @@ export default function AssuranceForm() {
                     </div>
                     <div>
                         <label htmlFor="animal.dateNaissance" className="block text-sm font-medium text-gray-700">
-                            Date de naissance (si connue)
+                            Date de naissance (si connue)   
                         </label>
                         <input
                             type="date"
@@ -201,10 +201,10 @@ export default function AssuranceForm() {
                 </div>
             </div>
 
-            {/* Message vaccinations */}
+            {/* Message identification */}
             <div className="mt-6 p-4 bg-yellow-50 border border-yellow-200 rounded-md">
                 <p className="text-yellow-800 font-medium">
-                    ⚠️ Vaccinations obligatoires
+                    ⚠️ Identifications obligatoires
                 </p>
             </div>
 
