@@ -1,11 +1,5 @@
 @import "tailwindcss";
 
-:root {
-  --background: #f7f7f7;
-  --foreground: #171717;
-}
-
-
 @font-face {
   font-family: 'Lora';
   src: url('/fonts/Lora-Regular.ttf') format('truetype');
@@ -21,8 +15,8 @@
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: #f7f7f7;
+  --color-foreground: #171717;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-lora: "Lora", cursive;
@@ -32,12 +26,7 @@
   --color-green: #9BE564;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+
 
 body {
   background: var(--background);
