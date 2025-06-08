@@ -69,8 +69,8 @@ export default function HeroSection() {
                             Grâce à cette belle association, nous trouvons des familles aimantes, recevons les soins dont nous avons besoin et surtout… nous avons une seconde chance.
                             Rejoignez-nous pour protéger et sauver encore plus d'animaux !`}</p>
                             <div className="flex flex-col gap-5 mx-6 sm:flex-row sm:gap-10 sm:justify-center lg:flex-col lg:gap-5">
-                                <Button href="/adopt" variant="primary" className="w-full sm:w-1/2 lg:w-full xl:w-3/4 mt-10">Donnez une seconde chance</Button>
-                                <Button href="/help" variant="secondary" className="w-full sm:w-1/2 lg:w-full xl:w-3/4 sm:mt-10 lg:mt-0">Je deviens adhérent</Button>
+                                <Button href="/adopt" variant="primary" className="w-full sm:w-1/2 lg:w-full xl:w-[60%] mt-10">Donnez une seconde chance</Button>
+                                <Button href="/help" variant="secondary" className="w-full sm:w-1/2 lg:w-full xl:w-[60%] sm:mt-10 lg:mt-0">Je deviens adhérent</Button>
                             </div>
                         </div>
                     </div>

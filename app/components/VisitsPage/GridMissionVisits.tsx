@@ -61,7 +61,7 @@ const MissionItem = ({ visits, index }: { visits: Visits, index: number }) => {
                     {visits.galleryImages && visits.galleryImages.length > 0 && (
                         <button
                             onClick={() => setIsGalleryOpen(true)}
-                            className="inline-flex items-center px-6 py-3 bg-brown text-white rounded-lg hover:bg-brown/90 transition-colors"
+                            className="w-full md:w-auto inline-flex items-center justify-center px-6 py-3 bg-brown text-white rounded-lg hover:bg-brown/90 active:bg-brown/80 transition-colors text-sm md:text-base"
                         >
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
                                 <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
