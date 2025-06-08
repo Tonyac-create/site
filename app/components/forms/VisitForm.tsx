@@ -94,7 +94,7 @@ export const VisitForm = () => {
   };
 
   return (
-    <form action="https://formsubmit.co/erepocangele@gmail.com" method="POST" className="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-md">
+    <form action="https://formsubmit.co/secoursfrancaispouranimaux@gmail.com" method="POST" className="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-md">
       <h2 className="text-2xl font-bold mb-6">Réserver une visite</h2>
       <Link href="/contact" className="flex gap-2 text-[#0866FF] text-lg mt-3 mb-5 underline underline-offset-4 hover:text-brown">
         En espèce sur place, prendre rendez-vous par téléphone ou envoyer un message

@@ -43,7 +43,7 @@ export const FormationForm: React.FC<FormationFormProps> = ({ initialFormationTy
   };
 
   return (
-    <form action="https://formsubmit.co/erepocangele@gmail.com" method="POST" className="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-md">
+    <form action="https://formsubmit.co/secoursfrancaispouranimaux@gmail.com" method="POST" className="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-md">
       <h2 className="text-2xl text-brown font-bold mb-6">Demande de Formation</h2>
 
       <BaseFormFields

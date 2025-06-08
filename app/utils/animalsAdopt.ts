@@ -86,14 +86,14 @@ export const catsAdopt = [
     },
     {
         id: 8,
-        name: "Chipie",
+        name: "Side",
         type: "Chat",
         age: "18 mois",
         genre: "Femelle",
         race: "Tigrée",
-        image: "/animalsAdopt/Chatte.jpg",
-        introduction: "Coucou, je m'appelle Chipie... douce et caline ! 🐾🐱.\n\n Chipie est une adorable chatte arrivée récemment chez une dame bienveillante qui l’a recueillie. Malheureusement, nous n’avons aucun historique sur cette petite boule de poils : nous ne connaissons ni son âge exact, ni son passé.",
-        description: "Ce que nous savons en revanche, c’est que Chipie porte bien son nom : c’est une minette pleine de tendresse, qui aime les caresses et cherche le contact. Douce, discrète et attachante, elle saura faire fondre le cœur de la personne qui lui offrira une seconde chance. Elle mérite un foyer stable, calme et aimant, où elle pourra s’épanouir en toute confiance. Que vous viviez en appartement ou en maison, tant qu’elle est entourée de douceur, Chipie sera comblée. 💕🏡",
+        image: "/animalsAdopt/Side.webp",
+        introduction: "Coucou, je m'appelle Side... douce et caline ! 🐾🐱.\n\n Side est une adorable chatte arrivée récemment chez une dame bienveillante qui l’a recueillie. Malheureusement, nous n’avons aucun historique sur cette petite boule de poils : nous ne connaissons ni son âge exact, ni son passé.",
+        description: "Ce que nous savons en revanche : c’est une minette pleine de tendresse, qui aime les caresses et est à l'aise avec les autres animaux et les enfants. Douce, discrète et attachante, elle saura faire fondre le cœur de la personne qui lui offrira une seconde chance. Elle mérite un foyer stable, calme et aimant, où elle pourra s’épanouir en toute confiance. Que vous viviez en appartement ou en maison, tant qu’elle est entourée de douceur, Side sera comblée. 💕🏡",
         adopt: false
     },
 ]
