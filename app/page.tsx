@@ -6,19 +6,21 @@ import HistorySection from "./components/HomePage/HistorySection";
 import LPOSection from "./components/HomePage/LPOSection";
 import TeamSection from "./components/HomePage/TeamSection";
 import PartnersSection from "./components/PartnersSection";
-
+import PlausibleProvider from "next-plausible";
 
 export default function Home() {
   return (
-    <main>
-      <HeroSection />
-      <HistorySection />
-      <LPOSection />
-      <HelpSection />
-      <AdoptSection />
-      <TeamSection />
-      <BlogSection />
-      <PartnersSection />
-    </main>
+    <PlausibleProvider domain="sfpa71.fr">
+      <main>
+        <HeroSection />
+        <HistorySection />
+        <LPOSection />
+        <HelpSection />
+        <AdoptSection />
+        <TeamSection />
+        <BlogSection />
+        <PartnersSection />
+      </main>
+    </PlausibleProvider>
   );
 }
