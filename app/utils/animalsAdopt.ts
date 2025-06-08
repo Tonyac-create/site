@@ -96,6 +96,18 @@ export const catsAdopt = [
         description: "Ce que nous savons en revanche : c’est une minette pleine de tendresse, qui aime les caresses et est à l'aise avec les autres animaux et les enfants. Douce, discrète et attachante, elle saura faire fondre le cœur de la personne qui lui offrira une seconde chance. Elle mérite un foyer stable, calme et aimant, où elle pourra s’épanouir en toute confiance. Que vous viviez en appartement ou en maison, tant qu’elle est entourée de douceur, Side sera comblée. 💕🏡",
         adopt: false
     },
+    {
+        id: 9,
+        name: "Chatons",
+        type: "Chat",
+        age: "2 mois",
+        genre: "Femelle ou male",
+        race: "",
+        image: "/animalsAdopt/Chatons_adopt.webp",
+        introduction: "🐾 Adoptez un petit cœur abandonné 🐾\n\n Comme chaque année à cette période, les abandons de chatons se multiplient… Notre association recueille de nombreux bébés chatons trouvés seuls, vulnérables et en quête d’un foyer aimant.",
+        description: "Ces petites boules de poils, âgées de quelques semaines, attendent aujourd’hui une famille pour la vie. \n\n Vous pouvez réserver dès aujourd'hui, et le récupérer quand il aura l'âge de 2 mois minimum. En cette période estivale, nous pouvons les garder jusqu'à votre retour. \n\nFournis : contrat d'adoption, attestation vétérinaire, certificat d'engagement et de reconnaissance, carte d'identification Icad. 💕🏡",
+        adopt: false
+    },
 ]
 
 export const dogsAdopt = [

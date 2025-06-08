@@ -10,9 +10,9 @@ export default function HeroSectionHelp() {
                     100% des dons et adhésions servent à financer nos actions de sauvetage, de soins et d’adoption.
                     Chaque euro compte : même un petit don fait une grande différence !</p>
             </div>
-            <div className="flex flex-col justify-center pt-5 ml-6 lg:flex-row gap-11">
-                <video src="/videos/pub.mp4" controls className="w-[500px] h-[300px]"></video>
-                <video src="/videos/Renard.mp4" controls className="w-[500px] h-[300px]"></video>
+            <div className="flex flex-col justify-center pt-5 mx-6 lg:flex-row gap-11">
+                <video src="/videos/pub.mp4" controls className="md:w-[500px] md:h-[300px] w-[350px] h-[200px]"></video>
+                <video src="/videos/Renard.mp4" controls className="md:w-[500px] md:h-[300px] w-[350px] h-[200px]"></video>
             </div>
         </section>
     );

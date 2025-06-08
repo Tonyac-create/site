@@ -37,7 +37,7 @@ const MissionItem = ({ visits, index }: { visits: Visits, index: number }) => {
                                         key={index}
                                         src={video}
                                         controls
-                                        className="w-[400px] h-[300px] object-cover"
+                                        className="w-[350px] h-[200px] md:w-[500px] md:h-[300px] object-cover"
                                     />
                                 ))}
                             </div>

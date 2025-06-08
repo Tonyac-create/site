@@ -106,7 +106,7 @@ export default function Carousel({
             </button>
 
             {/* Pagination */}
-            <div className="flex justify-center gap-2 mt-6">
+            <div className="flex flex-wrap justify-center gap-2 mt-6">
                 {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
                     <button
                         key={page}

@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function HeroSectionHistory() {
     const [isExpanded, setIsExpanded] = useState(false);
@@ -18,8 +19,20 @@ export default function HeroSectionHistory() {
                 Et pour honorer cette femme extraordinaire que je garderai toujours en mémoire, j'ai souhaité donner à notre association un nom qui me rappelle le sien, sans pour autant le reproduire.`;
 
     return (
-        <section>
-            <div className="bg-[url(/Elvis_mange.webp)] w-full h-[600px] bg-fixed bg-center bg-cover"></div>
+        <section className="mt-24">
+            <div className="relative w-full">
+                <div className="hidden sm:block w-full h-[500px] bg-[url(/Elvis_mange.webp)] bg-fixed bg-center bg-cover bg-no-repeat"></div>
+                <Image
+                    src="/Elvis_mange.webp"
+                    width={1024}
+                    height={500}
+                    quality={100}
+                    priority={true}
+                    alt="Elvis mange"
+                    className="block sm:hidden w-full h-auto object-cover"
+                />
+            </div>
+
             <div className="mx-6 pt-16 lg:mx-28">
                 <h2 className="text-brown text-4xl font-lora font-semibold mb-6">Découvrez qui nous sommes</h2>
                 <h3 className="text-brown text-3xl font-semibold mb-3.5">Notre histoire</h3>
@@ -27,7 +40,7 @@ export default function HeroSectionHistory() {
                     <p className="text-lg leading-relaxed whitespace-pre-line">
                         {isExpanded ? fullText : fullText.slice(0, 1000) + "..."}
                     </p>
-                    <button 
+                    <button
                         onClick={() => setIsExpanded(!isExpanded)}
                         className="cursor-pointer mt-4 px-6 py-2 text-brown rounded-md hover:text-green transition-colors"
                     >

@@ -9,11 +9,11 @@ export default function ArchitectureTeam() {
     );
 
     const operations = allTeam.filter(member =>
-        ["Enquêteurs", "Soigneurs animalier", "Chefs des travaux et structures"].includes(member.role)
+        ["Enquêteurs", "Soigneurs animalier", "Chef des travaux et structures"].includes(member.role)
     );
 
     const support = allTeam.filter(member =>
-        ["Développeuse web", "Chargées de communication", "Bénévoles", "Famille d'accueil"].includes(member.role)
+        ["Développeuse web", "Chargée de communication", "Bénévoles", "Familles d'accueil"].includes(member.role)
     );
 
     return (

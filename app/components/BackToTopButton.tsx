@@ -31,7 +31,7 @@ export default function BackToTopButton() {
             {isVisible && (
                 <button
                     onClick={scrollToTop}
-                    className="fixed bottom-[8.5rem] right-8 bg-brown rounded-full p-3 hover:scale-110 transition-all duration-300 z-50"
+                    className="fixed bottom-[8.5rem] right-8 bg-brown border border-green rounded-full p-3 hover:scale-110 transition-all duration-300 z-50"
                     aria-label="Retour en haut de page"
                 >
                     <Image
