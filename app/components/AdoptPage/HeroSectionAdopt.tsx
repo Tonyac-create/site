@@ -4,7 +4,18 @@ import Image from "next/image";
 export default function HeroSectionAdopt() {
     return (
         <section>
-            <div className="bg-[url(/Lapin_Adopt.jpg)] w-full h-[600px] bg-fixed bg-center bg-cover"></div>
+            <div className="relative w-full mt-24">
+                            <div className="hidden sm:block w-full h-[500px] bg-[url(/Lapin_Adopt.jpg)] bg-fixed bg-center bg-cover bg-no-repeat"></div>
+                            <Image
+                                src="/Lapin_Adopt.jpg"
+                                width={1024}
+                                height={500}
+                                quality={100}
+                                priority={true}
+                                alt="Lapin Adopt"
+                                className="block sm:hidden w-full h-auto object-cover"
+                            />
+                        </div>
             <div className="mx-6 pt-16 lg:mx-28">
                 <h2 className="text-brown text-4xl font-lora font-semibold">{`Nous attendons notre famille pour la vie !`}</h2>
             </div>
