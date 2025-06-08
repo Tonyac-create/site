@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 const FootprintPath = () => {
-    const footprints = Array(7).fill(null);
+    const footprints = Array(5).fill(null);
 
     return (
         <div className="absolute inset-0 -left-20 lg:-left-32 pointer-events-none z-30">
