@@ -1,4 +1,3 @@
-import ArrayFormules from "./ArrayFormules";
 import GridMission from "./GridMission";
 
 export default function HeroSectionMissions() {
@@ -8,8 +7,7 @@ export default function HeroSectionMissions() {
             <div className="mx-6 pt-16 lg:mx-28">
                 <h2 className="text-brown text-4xl font-lora font-semibold mb-6">Chaque action compte : voici les nôtres</h2>
             </div>
-            <GridMission />
-            <ArrayFormules />
+            <GridMission />     
         </section>
     )
 }

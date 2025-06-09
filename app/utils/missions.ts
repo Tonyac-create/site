@@ -43,7 +43,7 @@ export const missions: Mission[] = [
     },
     {
         id: 5,
-        title: "Formations canine(en attente d'agrément)",
+        title: "Formations canine",
         description: "A partir de 50 €, pour bien communiquer avec nos chiens, il est nécessaire de comprendre leur langage qui est très différent du nôtre. Grâce à cette formation, vous aurez une meilleure compréhension de votre chien au quotidien! En améliorant la communication, l'éducation devient plus aisée.",
         imageUrl: "/formation_langage_canin.webp",
         btn: [""],

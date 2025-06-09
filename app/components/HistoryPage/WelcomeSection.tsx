@@ -50,7 +50,7 @@ export default function WelcomeSection() {
                     Nous sommes nouvellement créés et nous ne bénéficions actuellement d'aucune aide publique ni de subvention.
                     Notre objectif est de devenir une association reconnue d'utilité publique, ce qui nécessite votre participation,
                     car il est nécessaire d'avoir 200 membres.`}</p>
-                    <Button href="/adopt" variant="secondary" className="w-1/2 mt-5">{`J'adopte`}</Button>
+                    <Button href="/help" variant="secondary" className="w-1/2 mt-5">{`Je deviens adhérent`}</Button>
                 </div>
                 <div
                     ref={firstImageRef}

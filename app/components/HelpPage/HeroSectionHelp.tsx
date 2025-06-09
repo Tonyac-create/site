@@ -11,7 +11,7 @@ export default function HeroSectionHelp() {
                     Chaque euro compte : même un petit don fait une grande différence !</p>
             </div>
             <div className="flex flex-col justify-center pt-5 mx-6 lg:flex-row gap-11">
-                <video src="/videos/pub.mp4" controls className="md:w-[500px] md:h-[300px] w-[350px] h-[200px]"></video>
+                <video src="/videos/Pub.mp4" controls className="md:w-[500px] md:h-[300px] w-[350px] h-[200px]"></video>
                 <video src="/videos/Renard.mp4" controls className="md:w-[500px] md:h-[300px] w-[350px] h-[200px]"></video>
             </div>
         </section>

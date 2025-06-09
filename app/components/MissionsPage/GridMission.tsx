@@ -7,6 +7,7 @@ import Button from '../Button';
 import { formations } from '@/app/utils/formations';
 import AssuranceForm from '../forms/AssuranceForm';
 import { CardFormation } from './CardFormation';
+import ArrayFormules from './ArrayFormules';
 
 /**
  * Mission Item component
@@ -24,7 +25,7 @@ const MissionItem = ({ mission, index, onOpenForm }: { mission: Mission, index: 
             <div
                 ref={ref}
                 className={`
-                flex flex-col md:flex-row items-center gap-8 mb-8 
+                flex flex-col md:flex-row items-center gap-8 
                 ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}
                 transition-all duration-1000 ease-out
                 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}
@@ -44,6 +45,7 @@ const MissionItem = ({ mission, index, onOpenForm }: { mission: Mission, index: 
                 <div className="w-full md:w-1/2 space-y-6">
                     <h2 className="text-3xl font-bold text-brown">{mission.title}</h2>
                     <p className="text-xl text-gray-600">{mission.description}</p>
+                    {mission.id === 6 && <ArrayFormules />}
                     {mission.pathBtn ? (
                         <Button
                             onClick={mission.id === 6 ? onOpenForm : undefined}

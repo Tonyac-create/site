@@ -67,7 +67,7 @@ export const partners = [
     },
     {
         id: 12,
-        name: "Bar-tabac Le Cracovie",
+        name: "Bar-tabac Le Cracovie - Mars(42)",
         url: "https://bureautabac.fr/42/mars/le-cracovie-d6a",
         image: "/partners/enseigne_tabac.jpg"
     }

@@ -13,7 +13,7 @@ export default function LPOSection() {
                 (parc, espace vert, sentier…) sur lequel le propriétaire ou gestionnaire s’engage à
                 accueillir, protéger et favoriser la nature. Pour cela, il respecte la Charte des Refuges
                 LPO et s’appuie sur les 15 gestes favorables à la biodiversité.`}</p>
-                <p className="text-xl mt-3">{`Cela nous permet, entre autres, de faire une animation de `}
+                <p className="text-xl mt-3">{`Cela nous a permis, entre autres, de faire une animation de `}
                     <span className="bg-gradient-to-r from-brown to-amber-700 inline-block text-transparent bg-clip-text font-semibold drop-shadow-sm"> construction dun hôtel à insectes </span>
                     {` au mois d'avril 2025.`}</p>
                 <Link

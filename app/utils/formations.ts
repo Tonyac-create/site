@@ -24,7 +24,7 @@ export const formations = [
     {
         id: 2,
         icon: "/icons/graduation.svg",
-        title: "Formation pour l'obtention du certificat d'aptitude",
+        title: "Formation pour l'obtention du certificat d'aptitude (en attente d'agrément)",
         description1: "Cette formation obligatoire se compose d'une partie théorique (réglementation des chiens catégorisés, prévention des morsures, modes de communication, etc.) et d'une partie pratique comprenant des mises en situation ainsi qu'une initiation à l'éducation canine en douceur. L'attestation d'aptitude pour chien dit dangereux peut être délivrée par tout formateur agréé. Les formateurs sont généralement des comportementalistes canins ou des éducateurs.",
         description2: "L’attestation d’aptitude pour chiens catégorisés ou chiens dits « dangereux » se destine uniquement aux particuliers pour lesquels elle est OBLIGATOIRE :",
         titlelist: "Pourquoi un certifcat d'aptitude ?",
