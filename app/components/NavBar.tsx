@@ -8,7 +8,7 @@ export default function NavBar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <header className="bg-white fixed w-full top-0 z-50 pt-5 xl:py-5">
+        <header className="bg-white fixed w-full top-0 z-[100] pt-5 xl:py-5">
             <div className="px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     <div className='flex justify-center items-center gap-1'>
@@ -54,10 +54,9 @@ export default function NavBar() {
                 </div>
             </div>
             <div
-                className={`xl:hidden pt-3 overflow-hidden transition-all duration-500 ease-in-out ${isMenuOpen ? 'max-h-[410px] opacity-100' : 'max-h-0 opacity-0'
-                    }`}
+                className={`xl:hidden pt-3 overflow-hidden transition-all duration-500 ease-in-out ${isMenuOpen ? 'max-h-[410px] opacity-100 pointer-events-auto' : 'max-h-0 opacity-0 pointer-events-none'}`}
             >
-                <nav className="flex flex-col items-center fixed w-full bg-white shadow-lg transform transition-transform duration-700 ease-in-out">
+                <nav className="flex flex-col items-center w-full bg-white shadow-lg transform transition-transform duration-700 ease-in-out">
                     <ul className={`flex flex-col mr-auto pl-6 gap-5 text-2xl mb-2 transition-all duration-700 transform 
                             ${isMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'}`}>
                         <MenuNavigation setIsMenuOpen={setIsMenuOpen} />
