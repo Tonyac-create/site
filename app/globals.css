@@ -14,6 +14,25 @@
   font-style: normal;
 }
 
+@keyframes swipe {
+  0% { transform: translateX(-40px); opacity: 0; }
+  15% { transform: translateX(-40px); opacity: 1; }
+  45% { transform: translateX(40px); opacity: 1; }
+  55% { transform: translateX(40px); opacity: 1; }
+  85% { transform: translateX(-40px); opacity: 1; }
+  100% { transform: translateX(-40px); opacity: 0; }
+}
+
+.animate-swipe {
+  animation: swipe 3s ease-in-out;
+}
+
+.swipe-indicator {
+  background-color: rgba(155, 229, 100, 0.5);
+  border-radius: 100%;
+  padding: 1rem;
+}
+
 @theme inline {
   --color-background: #f7f7f7;
   --color-foreground: #171717;
