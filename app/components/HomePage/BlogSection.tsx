@@ -1,3 +1,5 @@
+'use client';
+
 import ArticleBlog from "../ArticleBlog";
 import Button from "../Button";
 import { usePlausible } from "next-plausible";

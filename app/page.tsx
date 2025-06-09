@@ -1,3 +1,5 @@
+'use client';
+
 import AdoptSection from "./components/HomePage/AdoptSection";
 import BlogSection from "./components/HomePage/BlogSection";
 import HelpSection from "./components/HomePage/HelpSection";

@@ -1,3 +1,5 @@
+'use client'
+
 import Link from "next/link";
 import { usePathname } from 'next/navigation'
 import { useState, useEffect, useRef } from 'react';
@@ -14,25 +16,25 @@ export default function MenuNavigation({ setIsMenuOpen }: MenuNavigationProps) {
   const plausible = usePlausible();
 
   const navigation = [
-    { name: "Accueil", href: "/", onClick: () => plausible('menu-home') },
+    { name: "Accueil", href: "/"},
     { 
       name: "L'association", 
       subItems: [
-        { name: "Notre histoire", href: "/history", onClick: () => plausible('menu-history') },
-        { name: "Nos missions", href: "/missions", onClick: () => plausible('menu-missions') },
+        { name: "Notre histoire", href: "/history" },
+        { name: "Nos missions", href: "/missions" },
         { name: "L'équipe", href: "/team" },
       ]
     },
     { 
       name: "Agir avec nous", 
       subItems: [
-        { name: "S'engager", href: "/help", onClick: () => plausible('menu-help') },
-        { name: "Adoptez nous", href: "/adopt", onClick: () => plausible('menu-adopt') },
-        { name: "Visites pédagogiques", href: "/visits", onClick: () => plausible('menu-visits') },
+        { name: "S'engager", href: "/help" },
+        { name: "Adoptez nous", href: "/adopt" },
+        { name: "Visites pédagogiques", href: "/visits" },
       ]
     },
-    { name: "Actualités", href: "/blog", onClick: () => plausible('menu-blog') },
-    { name: "Contact", href: "/contact", onClick: () => plausible('menu-contact') },
+    { name: "Actualités", href: "/blog" },
+    { name: "Contact", href: "/contact" },
   ];
 
   const pathname = usePathname();
@@ -72,7 +74,7 @@ export default function MenuNavigation({ setIsMenuOpen }: MenuNavigationProps) {
               className={`hover:text-brown ${pathname === item.href ? 'text-brown' : 'text-black'}`}
               onClick={() => {
                 handleLinkClick();
-                plausible('menu-click', { props: { label: item.name } });
+                plausible(item.href);
               }}
             >
               {item.name}
@@ -104,7 +106,7 @@ export default function MenuNavigation({ setIsMenuOpen }: MenuNavigationProps) {
                     className={`block ${pathname === subItem.href ? 'text-brown' : 'text-black'} hover:text-brown`}
                     onClick={() => {
                       handleLinkClick();
-                      plausible('menu-click', { props: { label: subItem.name } });
+                      plausible(subItem.href);
                     }}
                   >
                     {subItem.name}

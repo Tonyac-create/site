@@ -1,3 +1,5 @@
+'use client';
+
 import { catsAdopt, dogsAdopt } from "@/app/utils/animalsAdopt";
 import MiniCardAnimals from "../AdoptPage/MiniCardAnimals";
 import Button from "../Button";

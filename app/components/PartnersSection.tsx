@@ -1,3 +1,5 @@
+'use client';
+
 import { partners } from "../utils/partners";
 import CardPartners from "./CardPartners";
 
