@@ -1,15 +1,15 @@
 'use client'
 
 import Image from "next/image";
-import { useRef, RefObject } from "react";
+import { useRef } from "react";
 import { useInView } from "@/app/hooks/useInView";
 import Button from "../Button";
 
 export default function HistorySection() {
     const firstImageRef = useRef<HTMLDivElement>(null);
     const secondImageRef = useRef<HTMLDivElement>(null);
-    const isFirstImageInView = useInView({ ref: firstImageRef as RefObject<Element> });
-    const isSecondImageInView = useInView({ ref: secondImageRef as RefObject<Element> });
+    const isFirstImageInView = useInView({ ref: firstImageRef });
+    const isSecondImageInView = useInView({ ref: secondImageRef });
 
     return (
         <section className="mx-6 pt-16 lg:mx-28">
