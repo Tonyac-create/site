@@ -25,7 +25,7 @@ const MissionItem = ({ mission, index, onOpenForm }: { mission: Mission, index: 
             <div
                 ref={ref}
                 className={`
-                flex flex-col md:flex-row items-center gap-8 
+                flex flex-col md:flex-row items-center md:mb-16 mb-8 gap-8 
                 ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}
                 transition-all duration-1000 ease-out
                 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}
