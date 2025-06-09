@@ -2,8 +2,10 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePlausible } from "next-plausible";
 
 export default function LPOSection() {
+    const plausible = usePlausible();
 
     return (
         <section className="mx-6 pt-16 lg:mx-28 flex flex-col 2xl:flex-row 2xl:gap-5">
@@ -19,7 +21,8 @@ export default function LPOSection() {
                 <Link
                     href="https://www.facebook.com/secours.francais.pour.animaux"
                     target="_blank"
-                    className="flex gap-2 text-[#0866FF] text-lg mt-3 mb-8 underline underline-offset-4 hover:text-brown">
+                    className="flex gap-2 text-[#0866FF] text-lg mt-3 mb-8 underline underline-offset-4 hover:text-brown"
+                    onClick={() => plausible('lpo-facebook-button')}>
                     <Image
                         src="/icons/facebook.svg"
                         width={15}
