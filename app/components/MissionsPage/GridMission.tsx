@@ -1,5 +1,5 @@
 'use client';
-import { RefObject, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import Image from 'next/image';
 import { useInView } from '@/app/hooks/useInView';
 import { Mission, missions } from '@/app/utils/missions';
@@ -18,7 +18,7 @@ import ArrayFormules from './ArrayFormules';
  */
 const MissionItem = ({ mission, index, onOpenForm }: { mission: Mission, index: number, onOpenForm: () => void }) => {
     const ref = useRef<HTMLDivElement>(null);
-    const isInView = useInView({ ref: ref as RefObject<Element> });
+    const isInView = useInView({ ref: ref });
 
     return (
         <>

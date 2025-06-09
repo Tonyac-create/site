@@ -3,14 +3,14 @@
 import Image from "next/image";
 import Button from "../Button";
 import FootprintPath from './FootprintPath';
-import { RefObject, useRef } from "react";
+import { useRef } from "react";
 import { useCounter } from "@/app/hooks/useCounter";
 import { useInView } from "@/app/hooks/useInView";
 import { usePlausible } from "next-plausible";
 
 export default function HeroSection() {
     const counterRef = useRef<HTMLSpanElement>(null);
-    const isCounterInView = useInView({ ref: counterRef as RefObject<Element> });
+    const isCounterInView = useInView({ ref: counterRef });
     const plausible = usePlausible();
 
     const immediateCount = useCounter({
