@@ -1,7 +1,11 @@
+'use client';
+
 import Image from "next/image";
 import Button from "../Button";
+import { usePlausible } from "next-plausible";
 
 export default function TeamSectionHistory() {
+    const plausible = usePlausible();
     return (
         <section className="mx-6 pb-[200px] md:pb-[870px] lg:pb-[750px] xl:pb-[450px] pt-16 lg:mx-28 relative">
             <h2 className="text-green text-4xl font-lora font-semibold mb-6 drop-shadow-xl">{`Un mot sur l'équipe`}</h2>
@@ -74,7 +78,7 @@ export default function TeamSectionHistory() {
                 </ul>
                 <p className="text-white mt-6 mb-3">Nous travaillons également avec des associations partenaires et des municipalités pour renforcer notre impact.
                     Chaque personne impliquée dans Secours Français pour Animaux partage la même mission : protéger ceux qui ne peuvent pas se défendre.</p>
-                <Button href="/team" variant="secondary" className="w-1/2">{`L'équipe`}</Button>
+                <Button href="/team" variant="secondary" onClick={() => plausible('team-button-history')}>Voir l&apos;équipe</Button>
             </div>
         </section>
     )

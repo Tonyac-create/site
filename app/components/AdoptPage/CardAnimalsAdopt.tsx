@@ -1,8 +1,12 @@
+'use client';
+
 import Image from "next/image";
 import { CardAnimalsAdoptProps } from "../../types/typeCardAnimals";
 import Button from "../Button";
+import { usePlausible } from "next-plausible";
 
 export default function CardAnimalsAdopt({ name, type, age, genre, race, image, introduction, description, adopt }: CardAnimalsAdoptProps) {
+    const plausible = usePlausible();
     return (
         <article className="flex flex-col lg:flex-row justify-center gap-4">
             <div className="md:w-1/2">
@@ -33,7 +37,7 @@ export default function CardAnimalsAdopt({ name, type, age, genre, race, image, 
                 {
                     !adopt && (
                         type === "Chat" ? (
-                            <Button href="/pdf/Fiche_adoption_chat.pdf" variant="pdf" className="inline-flex gap-2">
+                            <Button href="/pdf/Fiche_adoption_chat.pdf" variant="pdf" className="inline-flex gap-2" onClick={() => plausible('download-cat-form', { props: { name } })}>
                                 <Image
                                     src="/icons/file_pdf.svg"
                                     width={20}
@@ -45,7 +49,7 @@ export default function CardAnimalsAdopt({ name, type, age, genre, race, image, 
                                 {`Remplir la fiche d'adoption pour un chat`}
                             </Button>
                         ) : (
-                            <Button href="/pdf/Fiche_adoption_chien.pdf" variant="pdf" className="inline-flex gap-2">
+                            <Button href="/pdf/Fiche_adoption_chien.pdf" variant="pdf" className="inline-flex gap-2" onClick={() => plausible('download-dog-form', { props: { name } })}>
                                 <Image
                                     src="/icons/file_pdf.svg"
                                     width={20}

@@ -1,7 +1,11 @@
+'use client';
+
 import Button from "../Button";
 import Image from "next/image";
+import { usePlausible } from "next-plausible";
 
 export default function HeroSectionAdopt() {
+    const plausible = usePlausible();
     return (
         <section>
             <div className="relative w-full mt-24">
@@ -25,7 +29,7 @@ export default function HeroSectionAdopt() {
                 vous aider.Notre engagement est simplement de vous trouver l'animal qui vous convient le mieux
                 afin de garantir son bien-être et que vous puissiez passer de belles années.`}</p>
             <div  className="text-xl mx-6 pt-8 lg:mx-28">
-                <Button href="/pdf/Fiche_adoption_chat.pdf" variant="pdf" className="inline-flex gap-2">
+                <Button href="/pdf/Fiche_adoption_chat.pdf" variant="pdf" className="inline-flex gap-2" onClick={() => plausible('download-cat-form')}>
                     <Image
                         src="/icons/file_pdf.svg"
                         width={20}
@@ -36,7 +40,7 @@ export default function HeroSectionAdopt() {
                     />
                     {`Remplir la fiche d'adoption pour un chat`}
                 </Button>
-                <Button href="/pdf/Fiche_adoption_chien.pdf" variant="pdf" className="inline-flex gap-2">
+                <Button href="/pdf/Fiche_adoption_chien.pdf" variant="pdf" className="inline-flex gap-2" onClick={() => plausible('download-dog-form')}>
                     <Image
                         src="/icons/file_pdf.svg"
                         width={20}
