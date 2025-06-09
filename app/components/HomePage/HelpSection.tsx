@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Button from "../Button";
+import { usePlausible } from "next-plausible";
 
 export default function HelpSection() {
+    const plausible = usePlausible();
     return (
         <section className="relative h-[1500px] md:h-[1400px] lg:h-[900px] xl:h-[750px] mt-14 px-6 pt-16 bg-gradient-to-br from-[#55AA66] to-[#9DE566] pattern lg:px-28">
             <h2 className="text-brown text-4xl font-lora font-semibold">Comment vous pouvez nous aider ?</h2>
@@ -26,7 +28,7 @@ export default function HelpSection() {
                         En apportant votre soutien, vous offrez à ces êtres vulnérables une seconde chance : un refuge sûr, des soins adaptés et surtout, l’amour qu’ils méritent.  
                         Ne restons pas spectateurs. Agissez dès maintenant et faites la différence !`}
                     </p>
-                    <Button href="/help" variant="primary" className="w-1/2 mx-auto">{`Nous soutenir`}</Button>
+                    <Button href="/help" variant="primary" className="w-1/2 mx-auto" onClick={() => plausible('help-button')}>{`Nous soutenir`}</Button>
                 </div>
                 <Image
                     src="/Chien_Help_3_SFPA.webp"

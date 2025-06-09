@@ -4,13 +4,14 @@ import Image from "next/image";
 import { useRef } from "react";
 import { useInView } from "@/app/hooks/useInView";
 import Button from "../Button";
+import { usePlausible } from "next-plausible";
 
 export default function HistorySection() {
     const firstImageRef = useRef<HTMLDivElement>(null);
     const secondImageRef = useRef<HTMLDivElement>(null);
     const isFirstImageInView = useInView({ ref: firstImageRef });
     const isSecondImageInView = useInView({ ref: secondImageRef });
-
+    const plausible = usePlausible();
     return (
         <section className="mx-6 pt-16 lg:mx-28">
             <div className="mb-12">
@@ -31,7 +32,7 @@ export default function HistorySection() {
                     <div className="flex flex-col justify-center lg:w-1/2">
                         <p className="text-xl mt-3 mb-8">Secours Francais pour Animaux est dédié au sauvetage des animaux en détresse.
                             Nous agissons pour offrir une seconde chance à ces animaux et les aider à trouver un foyer aimant.</p>
-                        <Button href="/history" variant="secondary" className="sm:w-[60%]">{`Découvrir toute l'histoire`}</Button>
+                        <Button href="/history" variant="secondary" className="sm:w-[60%]" onClick={() => plausible('history-button')}>{`Découvrir toute l'histoire`}</Button>
                     </div>
                 </div>
             </div>
@@ -54,7 +55,7 @@ export default function HistorySection() {
                         <p className="text-xl mt-3 mb-8">Nous nous engageons à protéger et accompagner les animaux en détresse à
                             travers des actions concrètes : sauvetage, soins, sensibilisation et éducation.
                             Découvrez comment nous œuvrons chaque jour pour le bien-être des animaux et la transmission de connaissances essentielles.</p>
-                        <Button href="/missions" variant="secondary" className="sm:w-[60%]">{`Toutes nos actions`}</Button>
+                        <Button href="/missions" variant="secondary" className="sm:w-[60%]" onClick={() => plausible('missions-button')}>{`Toutes nos actions`}</Button>
                     </div>
                 </div>
             </div>

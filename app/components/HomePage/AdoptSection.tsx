@@ -3,8 +3,10 @@ import MiniCardAnimals from "../AdoptPage/MiniCardAnimals";
 import Button from "../Button";
 import Image from "next/image";
 import Link from 'next/link';
+import { usePlausible } from "next-plausible";
 
 export default function AdoptSection() {
+    const plausible = usePlausible();
     return (
         <section className="px-6 pt-16 lg:px-28 mb-12">
             <h2 className="text-brown text-4xl font-lora font-semibold">Ils cherchent une famille</h2>
@@ -35,11 +37,11 @@ export default function AdoptSection() {
                         Si vous désirez le faire, la vaccination, qui n'est pas non plus obligatoire, sera à votre charge.`}</p>
                 </div>
             </div>
-            <Button href="/adopt" variant="secondary">{`Je veux adopter !`}</Button>
+            <Button href="/adopt" variant="secondary" onClick={() => plausible('adopt-button')}>{`Je veux adopter !`}</Button>
             <div className="flex flex-wrap gap-10 mt-4">
                 {catsAdopt.map((cat) => (
                     !cat.adopt &&
-                    <Link href={`/adopt?animal=${cat.id}`} key={cat.id}>
+                    <Link href={`/adopt?animal=${cat.id}`} key={cat.id} onClick={() => plausible('adopt-card-chat')}>
                         <MiniCardAnimals
                             name={cat.name}
                             age={cat.age}
@@ -50,7 +52,7 @@ export default function AdoptSection() {
                 ))}
                 {dogsAdopt.map((dog) => (
                     !dog.adopt &&
-                    <Link href={`/adopt?animal=${dog.id}`} key={dog.id}>
+                    <Link href={`/adopt?animal=${dog.id}`} key={dog.id} onClick={() => plausible('adopt-card-chien')}>
                         <MiniCardAnimals
                             name={dog.name}
                             age={dog.age}
