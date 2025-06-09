@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://sfpa-71.fr/sitemap.xml',
+    sitemap: 'https://sfpa71.fr/sitemap.xml',
   }
 }
