@@ -37,7 +37,7 @@ export const missions: Mission[] = [
         id: 4,
         title: "Visites pédagogiques",
         description: "Pour sensibiliser les enfants et les adultes à la question de l'abandon et de la maltraitance, nous prévoyons de faire des visites pédagogiques dans la structure qui accueille les animaux de la ferme et les NAC. Ils pourront prendre soin et nourrir les animaux.",
-        imageUrl: "/visites_educatives.webp",
+        imageUrl: "/Visites_educatives.jpg",
         btn: ["Je veux visiter"],
         pathBtn: "/visits"
     },
