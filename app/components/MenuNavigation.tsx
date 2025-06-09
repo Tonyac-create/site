@@ -98,7 +98,10 @@ export default function MenuNavigation({ setIsMenuOpen }: MenuNavigationProps) {
           )}
           
           {item.subItems && openSubmenu === item.name && (
-            <ul className="absolute top-6 left-0 mt-2 py-2 bg-white shadow-lg rounded-lg min-w-[200px] z-50">
+            <ul className="xl:absolute xl:top-6 xl:left-0 xl:mt-2 xl:shadow-lg xl:rounded-lg xl:min-w-[200px] z-50
+                         xl:bg-white bg-gray-50 
+                         mt-1 py-2 w-full
+                         transition-all duration-300 ease-in-out">
               {item.subItems.map((subItem) => (
                 <li key={subItem.name} className="px-4 py-2 hover:bg-gray-50">
                   <Link
