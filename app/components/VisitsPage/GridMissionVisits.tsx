@@ -1,5 +1,5 @@
 'use client';
-import { RefObject, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import Image from 'next/image';
 import { useInView } from '@/app/hooks/useInView';
 import { Visits, visits } from '@/app/utils/visits';
@@ -14,7 +14,7 @@ import GalleryModal from './GalleryModal';
  */
 const MissionItem = ({ visits, index }: { visits: Visits, index: number }) => {
     const ref = useRef<HTMLDivElement>(null);
-    const isInView = useInView({ ref: ref as RefObject<Element> });
+    const isInView = useInView({ ref });
     const [isGalleryOpen, setIsGalleryOpen] = useState(false);
 
     return (

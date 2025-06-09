@@ -1,8 +1,8 @@
 'use client';
 
 import { useEffect } from 'react';
-import Carousel from '../Carousel/Carousel';
-import Image from 'next/image';
+import GalleryCarousel from '../Carousel/GalleryCarousel';
+
 
 interface GalleryModalProps {
     isOpen: boolean;
@@ -30,19 +30,7 @@ export default function GalleryModal({ isOpen, onClose, images, title }: Gallery
 
     if (!isOpen) return null;
 
-    const carouselItems = images.map((image, index) => (
-        <div key={index} className="relative w-full aspect-video">
-            <Image
-                src={image}
-                alt={`${title} - Photo ${index + 1}`}
-                fill
-                quality={100}
-                className="object-contain"
-                sizes="(max-width: 768px) 100vw, 80vw"
-                priority={index === 0}
-            />
-        </div>
-    ));
+
 
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
@@ -57,13 +45,7 @@ export default function GalleryModal({ isOpen, onClose, images, title }: Gallery
                 </button>
                 <h3 className="text-2xl font-bold text-brown mb-4">{title}</h3>
                 <div className="relative">
-                    <Carousel
-                        items={carouselItems}
-                        itemsToShowDesktop={1}
-                        itemsToShowTablet={1}
-                        itemsToShowMobile={1}
-                        gap={0}
-                    />
+                    <GalleryCarousel images={images} title={title} />
                 </div>
             </div>
         </div>

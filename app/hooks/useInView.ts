@@ -1,7 +1,7 @@
 import { useState, useEffect, RefObject } from 'react';
 
 interface UseInViewProps {
-    ref: RefObject<Element>;
+    ref: RefObject<HTMLElement | null>;
     threshold?: number;
     rootMargin?: string;
     triggerOnce?: boolean;
