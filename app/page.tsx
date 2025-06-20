@@ -9,6 +9,7 @@ import LPOSection from "./components/HomePage/LPOSection";
 import TeamSection from "./components/HomePage/TeamSection";
 import PartnersSection from "./components/PartnersSection";
 import PlausibleProvider from "next-plausible";
+import NewsletterSection from "./components/NewsletterSection";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <AdoptSection />
         <TeamSection />
         <BlogSection />
+        <NewsletterSection />
         <PartnersSection />
       </main>
     </PlausibleProvider>
