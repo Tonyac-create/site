@@ -69,11 +69,24 @@ export default function AboutSection() {
                     Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi « Informatique et Libertés », vous disposez d’un droit d’accès, de rectification, de suppression, d’opposition, de limitation du traitement et de portabilité de vos données.
                 </p>
                 <p className="mb-6">
-                   {` Vous pouvez exercer ces droits en nous contactant à l'adresse suivante : secoursfrancaispouranimaux@gmail.com.`}
+                    {` Vous pouvez exercer ces droits en nous contactant à l'adresse suivante : secoursfrancaispouranimaux@gmail.com.`}
                 </p>
                 <p>
                     {`Vos données ne sont en aucun cas cédées à des tiers et sont conservées pour une durée n'excédant pas [indiquer la durée : ex. 3 ans après la dernière interaction].`}
                 </p>
+            </article>
+            <article>
+                <p className="text-2xl font-bold text-brown mb-4">{`Crédits icones "Nos besoins mensuels"`}</p>
+                <p>Fence by Pong Pong from <a href="https://thenounproject.com/browse/icons/term/fence/" target="_blank" title="Fence Icons" className="underline underline-offset-2 text-brown">Noun Project</a> (CC BY 3.0)</p>
+                <p>Trash by Kosong Tujuh from <a href="https://thenounproject.com/browse/icons/term/trash/" target="_blank" title="Trash Icons" className="underline underline-offset-2 text-brown">Noun Project</a> (CC BY 3.0)</p>
+                <p>Bird by Arkinasi from <a href="https://thenounproject.com/browse/icons/term/bird/" target="_blank" title="Bird Icons" className="underline underline-offset-2 text-brown">Noun Project</a> (CC BY 3.0)</p>
+                <p>Water by Aybige from <a href="https://thenounproject.com/browse/icons/term/water/" target="_blank" title="Water Icons" className="underline underline-offset-2 text-brown">Noun Project</a> (CC BY 3.0)</p>
+                <p>hamsters by Arya Icons from <a href="https://thenounproject.com/browse/icons/term/hamsters/" target="_blank" title="hamsters Icons" className="underline underline-offset-2 text-brown">Noun Project</a> (CC BY 3.0)</p>
+                <p>Cat by inmyheart from <a href="https://thenounproject.com/browse/icons/term/cat/" target="_blank" title="Cat Icons" className="underline underline-offset-2 text-brown">Noun Project</a> (CC BY 3.0)</p>
+                <p>Pig by Pong Pong from <a href="https://thenounproject.com/browse/icons/term/pig/" target="_blank" title="Pig Icons" className="underline underline-offset-2 text-brown">Noun Project</a> (CC BY 3.0)</p>
+                <p>Goat by Pong Pong from <a href="https://thenounproject.com/browse/icons/term/goat/" target="_blank" title="Goat Icons" className="underline underline-offset-2 text-brown">Noun Project</a> (CC BY 3.0)</p>
+                <p>Chicken by Adrien Coquet from <a href="https://thenounproject.com/browse/icons/term/chicken/" target="_blank" title="Chicken Icons" className="underline underline-offset-2 text-brown">Noun Project</a> (CC BY 3.0)</p>
+                <p>turtle by Cuputo from <a href="https://thenounproject.com/browse/icons/term/turtle/" target="_blank" title="turtle Icons" className="underline underline-offset-2 text-brown">Noun Project</a> (CC BY 3.0)</p>
             </article>
         </section>
     )
