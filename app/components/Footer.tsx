@@ -39,7 +39,7 @@ export default function Footer() {
                         Facebook
                     </Link>
                     <Link
-                        href="https://www.facebook.com/secours.francais.pour.animaux"
+                        href="https://www.youtube.com/@SecoursFran%C3%A7aisPourAnimaux"
                         target="_blank"
                         className="flex gap-2 text-[#0866FF] text-lg my-4 lg:my-0 lg:mt-4 underline underline-offset-4 hover:text-brown">
                         <Image
