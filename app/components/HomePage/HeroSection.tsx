@@ -14,7 +14,7 @@ export default function HeroSection() {
     const plausible = usePlausible();
 
     const immediateCount = useCounter({
-        end: 62,
+        end: 76,
         start: 0,
         duration: 2000,
         shouldStart: true
