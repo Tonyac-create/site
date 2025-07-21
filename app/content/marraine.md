@@ -12,6 +12,6 @@ text3: |
   Un grand merci à vous de soutenir notre association.
 text4: |
 text5: |
-  Rejoignez le Secours Français pour Animaux et donnez à Capucine la maison qu’elle mérite.
+  Rejoignez le Secours Français pour Animaux.
 text6: |
 ---
