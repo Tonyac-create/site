@@ -72,7 +72,7 @@ export default function HeroSection() {
                             Rejoignez-nous pour protéger et sauver encore plus d'animaux !`}</p>
                             <div className="flex flex-col gap-5 mx-6 sm:flex-row sm:gap-10 sm:justify-center lg:flex-col lg:gap-5">
                                 <Button href="/adopt" variant="primary" className="w-full sm:w-1/2 lg:w-full xl:w-[60%] mt-10" onClick={() => plausible('adopt')}>Donnez une seconde chance</Button>
-                                <Button href="/help" variant="secondary" className="w-full sm:w-1/2 lg:w-full xl:w-[60%] sm:mt-10 lg:mt-0" onClick={() => plausible('help')}>Je deviens adhérent</Button>
+                                <Button href="/help" variant="secondary" className="w-full sm:w-1/2 lg:w-full xl:w-[60%] sm:mt-10 lg:mt-0" onClick={() => plausible('help')}>Soutenez notre association</Button>
                             </div>
                         </div>
                     </div>
