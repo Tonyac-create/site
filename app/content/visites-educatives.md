@@ -3,7 +3,7 @@ title: "Découvrez nos visites éducatives au plus près des animaux !"
 slug: "visites-educatives"
 date: "15-02-2025"
 author: "Secours Français Pour Animaux"
-image: "/visites_2.webp"
+image: "/Visites_educatives.jpg"
 text1: |
   Dès le début du mois de mars, si les conditions météorologiques le permettent, nous aurons le plaisir d'ouvrir nos portes pour des visites éducatives uniques. Une expérience immersive qui vous permettra de découvrir des animaux fascinants et d'en apprendre davantage sur leur histoire et leur mode de vie.
 text2: |
