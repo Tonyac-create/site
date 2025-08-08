@@ -3,7 +3,7 @@ title: "Un mini-film publicitaire pour sensibiliser à la cause animale : retour
 slug: "cause-animale"
 date: "28-02-2025"
 author: "Secours Français Pour Animaux"
-image: "/elvis_sensibilisation.webp"
+image: "/Elvis_sensibilisation.webp"
 text1: |
   Un projet créatif pour défendre les animaux
   Au Secours Français pour Animaux, nous avons toujours cherché à innover pour sensibiliser le public à la protection animale. Cette fois, nous avons décidé de réaliser un mini-film publicitaire qui mettra en lumière notre mission et l’importance de l’engagement associatif.
