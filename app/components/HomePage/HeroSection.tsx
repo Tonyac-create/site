@@ -14,14 +14,14 @@ export default function HeroSection() {
     const plausible = usePlausible();
 
     const immediateCount = useCounter({
-        end: 76,
+        end: 120,
         start: 0,
         duration: 2000,
         shouldStart: true
     });
 
     const scrollCount = useCounter({
-        end: 18,
+        end: 120,
         start: 0,
         duration: 2000,
         shouldStart: isCounterInView
