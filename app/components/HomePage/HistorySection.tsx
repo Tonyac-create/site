@@ -59,20 +59,26 @@ export default function HistorySection() {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col justify-center items-center">
-                <div className="flex flex-row justify-center items-center gap-2">
-                    <Image
-                        src="/icons/SOS.webp"
-                        width={100}
-                        height={100}
-                        priority={true}
-                        quality={100}
-                        alt='SOS'
-                        className="animate-pulse"
-                    />
-                    <p className="text-2xl">Vous êtes témoin de maltraitance ?</p>
+            <div className="flex flex-col">
+                <h2 className="text-brown text-4xl font-lora font-semibold mb-12">Abandon et maltraitance</h2>
+                <div className="flex flex-col lg:flex-row gap-20">
+                    <div className="flex flex-col items-center">
+                        <div className="flex flex-row justify-center items-center gap-2">
+                            <Image
+                                src="/icons/SOS.webp"
+                                width={100}
+                                height={100}
+                                priority={true}
+                                quality={100}
+                                alt='SOS'
+                                className="animate-pulse"
+                            />
+                            <p className="text-2xl">Vous êtes témoin de maltraitance ?</p>
+                        </div>
+                        <Button href="/pdf/Signalement_maltraitance.pdf" variant="pdf">Signaler un cas de maltraitance (pdf)</Button>
+                    </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/a71SxWjZPGo?si=k-6a8Y_bEvYAAyp4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                 </div>
-                <Button href="/pdf/Signalement_maltraitance.pdf" variant="pdf">Signaler un cas de maltraitance (pdf)</Button>
             </div>
         </section>
     )

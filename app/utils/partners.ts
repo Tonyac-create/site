@@ -64,5 +64,11 @@ export const partners = [
         name: "Bar-tabac Le Cracovie - Mars(42)",
         url: "https://bureautabac.fr/42/mars/le-cracovie-d6a",
         image: "/partners/enseigne_tabac.jpg"
-    }
+    },
+    {
+        id: 12,
+        name: "Boulangerie Saint Julien de Civry",
+        url: "https://www.pagesjaunes.fr/pros/62332062",
+        image: "/partners/Boulangerie_civry.jpg"
+    },
 ]
