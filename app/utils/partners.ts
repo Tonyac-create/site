@@ -71,4 +71,10 @@ export const partners = [
         url: "https://www.pagesjaunes.fr/pros/62332062",
         image: "/partners/Boulangerie_civry.jpg"
     },
+    {
+        id: 13,
+        name: "La Vie Claire",
+        url: "https://www.lavieclaire.com/",
+        image: "/partners/vie_claire.webp"
+    },
 ]
