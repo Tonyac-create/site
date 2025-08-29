@@ -67,7 +67,7 @@ export default function ArticleBlog({ limit }: ArticleBlogProps) {
                 <div className="flex-grow flex flex-col items-center">
                     <div className="flex flex-wrap gap-8 justify-center mt-5 mb-9">
                         {displayedArticles.map((article) => (
-                            <article key={article.slug} className="w-[300px]">
+                            <article key={article.slug} className="w-[300px] flex flex-col h-[650px]">
                                 <div className="relative w-[300px] h-[300px]">
                                     <Image
                                         src={article.image}
@@ -85,7 +85,7 @@ export default function ArticleBlog({ limit }: ArticleBlogProps) {
                                 <p>{truncateText(article.text1)}</p>
                                 <button 
                                     onClick={() => setSelectedArticle(article)}
-                                    className="mt-4 px-4 py-2 bg-brown text-white rounded-md hover:bg-brown/80 transition-colors"
+                                    className="px-4 py-2 bg-brown text-white rounded-md hover:bg-brown/80 transition-colors mt-auto w-3/4"
                                 >
                                     Lire la suite
                                 </button>
