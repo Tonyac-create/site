@@ -19,7 +19,7 @@ export default function LPOSection() {
                     <span className="bg-gradient-to-r from-brown to-amber-700 inline-block text-transparent bg-clip-text font-semibold drop-shadow-sm"> construction dun hôtel à insectes </span>
                     {` au mois d'avril 2025.`}</p>
                 <Link
-                    href="https://www.facebook.com/secours.francais.pour.animaux"
+                    href="https://www.facebook.com/profile.php?id=61579633427832"
                     target="_blank"
                     className="flex gap-2 text-[#0866FF] text-lg mt-3 mb-8 underline underline-offset-4 hover:text-brown"
                     onClick={() => plausible('lpo-facebook-button')}>

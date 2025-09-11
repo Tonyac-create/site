@@ -24,7 +24,7 @@ export default function Footer() {
                 <p className='text-brown font-semibold font-lora text-xl'>Suivez nous</p>
                 <div className='flex flex-col items-center gap-4 lg:gap-8 lg:flex-row'>
                     <Link
-                        href="https://www.facebook.com/secours.francais.pour.animaux"
+                        href="https://www.facebook.com/profile.php?id=61579633427832"
                         target="_blank"
                         className="flex gap-2 text-[#0866FF] text-lg mt-4 underline underline-offset-4 hover:text-brown">
                         <Image

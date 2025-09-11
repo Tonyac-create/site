@@ -46,7 +46,7 @@ export default function InformationsSection() {
                     <div>
                         <h3 className="text-xl font-semibold mb-2">Suivez-nous</h3>
                         <div className="flex space-x-4">
-                            <a href="https://www.facebook.com/lesphenatres" className="text-blue-600 hover:underline">Facebook</a>
+                            <a href="https://www.facebook.com/profile.php?id=61579633427832" className="text-blue-600 hover:underline">Facebook</a>
                         </div>
                     </div>
                 </div>
