@@ -103,9 +103,9 @@ export const catsAdopt = [
         age: "2 mois",
         genre: "Femelle ou male",
         race: "",
-        image: "/animalsAdopt/Chatons_adopt.webp",
+        image: "/animalsAdopt/Chatons_adopt_aout.png",
         introduction: "🐾 Adoptez un petit cœur abandonné 🐾\n\n Comme chaque année à cette période, les abandons de chatons se multiplient… Notre association recueille de nombreux bébés chatons trouvés seuls, vulnérables et en quête d’un foyer aimant.",
-        description: "Ces petites boules de poils, âgées de quelques semaines, attendent aujourd’hui une famille pour la vie. \n\n Vous pouvez réserver dès aujourd'hui, et le récupérer quand il aura l'âge de 2 mois minimum. En cette période estivale, nous pouvons les garder jusqu'à votre retour. \n\nFournis : contrat d'adoption, attestation vétérinaire, certificat d'engagement et de reconnaissance, carte d'identification Icad. 💕🏡",
+        description: "Ces petites boules de poils, âgées de quelques semaines, attendent aujourd’hui une famille pour la vie. \n\n Vous pouvez réserver dès aujourd'hui, et le récupérer quand il aura l'âge de 2 mois minimum. En cette période estivale, nous pouvons les garder jusqu'à votre retour. \n\n5 chatons tout noir, 1 tricolore, 1 gris et blanc, 2 noir et blanc, 1 tigré marron, 1 blanc tacheté de noir \n\nFournis : contrat d'adoption, attestation vétérinaire, certificat d'engagement et de reconnaissance, carte d'identification Icad. 💕🏡",
         adopt: false
     },
 ]
