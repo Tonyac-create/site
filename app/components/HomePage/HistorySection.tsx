@@ -19,7 +19,7 @@ export default function HistorySection() {
                 <div className="flex flex-col md:flex-row gap-5 mt-3">
                     <div className="flex flex-col md:w-1/2">
                         <p className="text-xl font-semibold my-4">
-                            {`Evenement caritatif du 20 septembre au 30 octobre 2025.`}
+                            {`Evenement caritatif du 20 septembre au 20 octobre 2025.`}
                         </p>
                         <p className="text-xl mb-1">
                             {`La Marche de l'Espoir est lancée !`}
