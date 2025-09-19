@@ -51,12 +51,12 @@ export default function ArticleDetails({ article, onBack }: ArticleDetailsProps)
                 </div>
                 <div className="bg-green h-1 w-3/4 mx-auto my-6"></div>
                 <div className="space-y-4">
-                    <p>{article.text1}</p>
-                    {article.text2 && <p>{article.text2}</p>}
-                    {article.text3 && <p>{article.text3}</p>}
-                    {article.text4 && <p>{article.text4}</p>}
-                    {article.text5 && <p>{article.text5}</p>}
-                    {article.text6 && <p>{article.text6}</p>}
+                    <p className="whitespace-pre-line">{article.text1}</p>
+                    {article.text2 && <p className="whitespace-pre-line">{article.text2}</p>}
+                    {article.text3 && <p className="whitespace-pre-line">{article.text3}</p>}
+                    {article.text4 && <p className="whitespace-pre-line">{article.text4}</p>}
+                    {article.text5 && <p className="whitespace-pre-line">{article.text5}</p>}
+                    {article.text6 && <p className="whitespace-pre-line">{article.text6}</p>}
                 </div>
             </article>
         </section>
