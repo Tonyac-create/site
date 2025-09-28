@@ -37,7 +37,7 @@ export default function CardAnimalsAdopt({ name, type, age, genre, race, image, 
                 {
                     !adopt && (
                         type === "Chat" ? (
-                            <Button href="/pdf/Fiche_adoption_chat.pdf" variant="pdf" className="inline-flex gap-2" onClick={() => plausible('download-cat-form', { props: { name } })}>
+                            <Button href="/pdf/Dossier_candidature_adoption_chat.pdf" variant="pdf" className="inline-flex gap-2" onClick={() => plausible('download-cat-form', { props: { name } })}>
                                 <Image
                                     src="/icons/file_pdf.svg"
                                     width={20}
@@ -46,10 +46,10 @@ export default function CardAnimalsAdopt({ name, type, age, genre, race, image, 
                                     priority={true}
                                     alt=""
                                 />
-                                {`Remplir la fiche d'adoption pour un chat`}
+                                {`Dossier de candidature d'adoption pour un chat`}
                             </Button>
                         ) : (
-                            <Button href="/pdf/Fiche_adoption_chien.pdf" variant="pdf" className="inline-flex gap-2" onClick={() => plausible('download-dog-form', { props: { name } })}>
+                            <Button href="/pdf/Dossier_candidature_adoption_chien.pdf" variant="pdf" className="inline-flex gap-2" onClick={() => plausible('download-dog-form', { props: { name } })}>
                                 <Image
                                     src="/icons/file_pdf.svg"
                                     width={20}
@@ -58,7 +58,7 @@ export default function CardAnimalsAdopt({ name, type, age, genre, race, image, 
                                     priority={true}
                                     alt=""
                                 />
-                                {`Remplir la fiche d'adoption pour un chien`}
+                                {`Dossier de candidature d'adoption pour un chien`}
                             </Button>
                         )
                     )

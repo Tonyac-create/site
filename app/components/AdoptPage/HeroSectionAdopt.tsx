@@ -3,6 +3,7 @@
 import Button from "../Button";
 import Image from "next/image";
 import { usePlausible } from "next-plausible";
+import PriceTable from "../PriceTable";
 
 export default function HeroSectionAdopt() {
     const plausible = usePlausible();
@@ -29,7 +30,7 @@ export default function HeroSectionAdopt() {
                 vous aider.Notre engagement est simplement de vous trouver l'animal qui vous convient le mieux
                 afin de garantir son bien-être et que vous puissiez passer de belles années.`}</p>
             <div  className="text-xl mx-6 pt-8 lg:mx-28">
-                <Button href="/pdf/Fiche_adoption_chat.pdf" variant="pdf" className="inline-flex gap-2" onClick={() => plausible('download-cat-form')}>
+                <Button href="/pdf/Dossier_candidature_adoption_chat.pdf" variant="pdf" className="inline-flex gap-2" onClick={() => plausible('download-cat-form')}>
                     <Image
                         src="/icons/file_pdf.svg"
                         width={20}
@@ -38,9 +39,9 @@ export default function HeroSectionAdopt() {
                         priority={true}
                         alt=""
                     />
-                    {`Remplir la fiche d'adoption pour un chat`}
+                    {`Dossier de candidature d'adoption pour un chat`}
                 </Button>
-                <Button href="/pdf/Fiche_adoption_chien.pdf" variant="pdf" className="inline-flex gap-2" onClick={() => plausible('download-dog-form')}>
+                <Button href="/pdf/Dossier_candidature_adoption_chien.pdf" variant="pdf" className="inline-flex gap-2" onClick={() => plausible('download-dog-form')}>
                     <Image
                         src="/icons/file_pdf.svg"
                         width={20}
@@ -49,11 +50,11 @@ export default function HeroSectionAdopt() {
                         priority={true}
                         alt=""
                     />
-                    {`Remplir la fiche d'adoption pour un chien`}
+                    {`Dossier de candidature d'adoption pour un chien`}
                 </Button>
             </div>
-            <p className="text-xl mx-6 pt-6 lg:mx-28"><span className="font-semibold">{`Frais d'adoption : `}</span>Chat : min. 30 € | Chien : min. 50 €</p>
-            <p className="text-xl mx-6 pt-6 lg:mx-28"><span className="font-semibold">{`Identification : `}</span>Participation de 50 €(tarif association) à la place de 100€</p>
+            <p className="mx-6 pt-8 lg:mx-28 text-xl font-bold">! Pour bénéficier de ces tarifs, une adhésion est obligatoire. À partir de 10 € / an.</p>
+            <PriceTable className="mx-6 pt-8 lg:mx-28" />
             <p className="text-xl mx-6 pt-6 lg:mx-28">{`Peu importe si vous êtes en ville, à la campagne, en maison ou en appartement, cela n'aura aucun effet sur votre demande,
                  mais nous sommes là pour vous aider.Notre engagement est simplement de vous trouver l'animal qui vous convient le mieux
                 afin de garantir son bien-être et que vous puissiez passer de belles années.`}</p>

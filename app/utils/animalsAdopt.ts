@@ -145,6 +145,6 @@ export const dogsAdopt = [
         image: "/animalsAdopt/Vox.jpg",
         introduction: "Salut, moi c’est Vox, plein de vie et d'amour à donner ! 🐾🐕.\n\n Ce magnifique Malinois d’un an cherche une nouvelle famille pour la vie. Affectueux, vif et intelligent, il est plein d’énergie et a besoin d’un cadre structurant pour s’épanouir pleinement.",
         description: "Il est à l’adoption car, en raison de problèmes de santé, son propriétaire actuel ne peut plus lui offrir l’éducation et l’attention dont il a besoin. C’est une décision difficile, prise dans l’intérêt du chien. Le Berger Belge Malinois est une race exceptionnelle, connue pour sa loyauté, sa vivacité et sa grande capacité d’apprentissage. Mais ce sont aussi des chiens qui demandent du temps, de la disponibilité, de l’exercice physique quotidien et une stimulation mentale régulière. Ce n’est pas un chien 'de canapé' : il a besoin d’un environnement actif, stable et cohérent.🏡❤️",
-        adopt: false
+        adopt: true
     },
 ]
