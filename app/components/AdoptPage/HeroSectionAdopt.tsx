@@ -53,7 +53,7 @@ export default function HeroSectionAdopt() {
                     {`Dossier de candidature d'adoption pour un chien`}
                 </Button>
             </div>
-            <p className="mx-6 pt-8 lg:mx-28 text-xl font-bold">! Pour bénéficier de ces tarifs, une adhésion est obligatoire. À partir de 10 € / an.</p>
+            <p className="mx-6 pt-8 lg:mx-28 text-xl font-bold">{`! Pour l'abandon d'un animal, une adhésion est obligatoire. À partir de 10 € / an.`}</p>
             <PriceTable className="mx-6 pt-8 lg:mx-28" />
             <p className="text-xl mx-6 pt-6 lg:mx-28">{`Peu importe si vous êtes en ville, à la campagne, en maison ou en appartement, cela n'aura aucun effet sur votre demande,
                  mais nous sommes là pour vous aider.Notre engagement est simplement de vous trouver l'animal qui vous convient le mieux

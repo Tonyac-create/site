@@ -15,14 +15,14 @@ export default function AdoptSection() {
             <div className="flex flex-col lg:flex-row gap-14">
                 <div className="lg:w-3/4">
                     <p className="text-xl my-5">{`Chaque animal a une histoire, un passé parfois difficile, mais surtout un immense amour à donner.
-                        Chez Secours Français pour Animaux, nous aidons des compagnons en quête d’un foyer chaleureux et
+                        Au Secours Français pour Animaux, nous aidons des compagnons en quête d’un foyer chaleureux et
                         d’une famille bienveillante.`}</p>
                     <p className="text-xl my-5">{`Chiens, chats… Tous attendent avec impatience leur nouvelle maison,
                         celle où ils pourront enfin poser leurs pattes en toute confiance. En adoptant, vous sauvez
                         une vie et offrez une nouvelle page à écrire, pleine de bonheur et de tendresse.
                         Peut-être que votre futur compagnon vous attend déjà… Découvrez nos animaux à l’adoption et laissez votre cœur parler !`}</p>
                     <p className="text-xl mt-5">Tarifs :</p>
-                    <p className="my-2 text-xl font-bold">! Pour bénéficier de ces tarifs, une adhésion est obligatoire. À partir de 10 € / an.</p>
+                    <p className="my-2 text-xl font-bold">{`! Pour l'abandon d'un animal, une adhésion est obligatoire. À partir de 10 € / an.`}</p>
                     <PriceTable className="mb-5" />
                     <p className="text-xl my-5">{`Chaque personne aura la possibilité de faire stériliser ou castrer son animal, ce processus n'étant pas obligatoire , il est interdit de vous l'imposer.
                         Malheureusement, beaucoup d'associations ne s'y conforment pas.
