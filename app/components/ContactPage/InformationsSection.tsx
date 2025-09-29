@@ -38,7 +38,7 @@ export default function InformationsSection() {
                     <div>
                         <h3 className="text-xl font-semibold mb-2">Nous contacter</h3>
                         <p className="text-gray-700">
-                            📧 secoursfrancaispouranimaux@gmail.com<br />
+                            📧 secoursfrancaispouranimaux@sfpa71.fr<br />
                             📞 06 69 97 76 41
                         </p>
                     </div>

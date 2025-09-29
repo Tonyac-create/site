@@ -13,7 +13,7 @@ export default function AboutSection() {
                         <p>Responsable editorial : Nanou Dupuis</p>
                         <p>{`7 Place de l'hôtel de ville 71170 Chauffailles`}</p>
                         <p>Téléphone : 06 69 97 76 41</p>
-                        <p>Email : secoursfrancaispouranimaux@gmail.com</p>
+                        <p>Email : secoursfrancaispouranimaux@sfpa71.fr</p>
                         <p>Association loi 1901 enregistrée sous le numéro W713007887</p>
                         <p>Directeur de publication : Angélique Copéré</p>
                     </article>
@@ -69,7 +69,7 @@ export default function AboutSection() {
                     Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi « Informatique et Libertés », vous disposez d’un droit d’accès, de rectification, de suppression, d’opposition, de limitation du traitement et de portabilité de vos données.
                 </p>
                 <p className="mb-6">
-                    {` Vous pouvez exercer ces droits en nous contactant à l'adresse suivante : secoursfrancaispouranimaux@gmail.com.`}
+                    {` Vous pouvez exercer ces droits en nous contactant à l'adresse suivante : secoursfrancaispouranimaux@sfpa71.fr.`}
                 </p>
                 <p>
                     {`Vos données ne sont en aucun cas cédées à des tiers et sont conservées pour une durée n'excédant pas [indiquer la durée : ex. 3 ans après la dernière interaction].`}

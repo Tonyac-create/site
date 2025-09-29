@@ -19,7 +19,7 @@ export default function Confidentialite() {
             <br />
             {`Adresse : 7 Place de l'hôtel de ville 71170 Chauffailles `} 
             <br />
-            Email : secoursfrancaispouranimaux@gmail.com
+            Email : secoursfrancaispouranimaux@sfpa71.fr
           </p>
         </article>
   
@@ -73,7 +73,7 @@ export default function Confidentialite() {
           <p className="mt-4">
             Pour exercer vos droits, vous pouvez nous contacter à l’adresse suivante :
             <br />
-            <strong>secoursfrancaispouranimaux@gmail.com</strong>
+            <strong>secoursfrancaispouranimaux@sfpa71.fr</strong>
           </p>
         </article>
   

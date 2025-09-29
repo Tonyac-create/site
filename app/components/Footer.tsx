@@ -17,7 +17,7 @@ export default function Footer() {
                     <h1 className='text-brown font-semibold font-lora text-xl'>{`Secours Français Pour Animaux`}</h1>
                     <p>{`7 place de l'hotel de ville 71170 Chauffailles`}</p>
                     <p>Tél: 06 69 97 76 41</p>
-                    <p>Email : secoursfrancaispouranimaux@gmail.com</p>
+                    <p>Email : secoursfrancaispouranimaux@sfpa71.fr</p>
                 </div>
             </div>
             <div className='flex flex-col gap-5 mt-5 xl:mt-0'>
