@@ -6,12 +6,6 @@ export const partners = [
         image: "/partners/carrefour_market.png"
     },
     {
-        id: 2,
-        name: "La toutounière Chauffailles",
-        url: "https://www.facebook.com/p/La-Toutouni%C3%A8re-Chauffailles-100054730541469/",
-        image: "/partners/toutouniere.jpg"
-    },
-    {
         id: 3,
         name: "R Spa Coiffure Bien-être Charlieu",
         url: "https://www.facebook.com/profile.php?id=61558944477677",
@@ -37,44 +31,38 @@ export const partners = [
     },
     {
         id: 7,
-        name: "La petit atelier by jess Yerville(76)",
-        url: "https://www.facebook.com/jessicasylvialgd/",
-        image: "/partners/atelier_jess.jpg"
-    },
-    {
-        id: 8,
         name: "Ets Lapalus La Clayette",
         url: "https://www.pagesjaunes.fr/pros/00799948",
         image: "/partners/Lapalus.png"
     },
     {
-        id: 9,
-        name: "CNPA",
-        url: "https://www.cnpa-asso.fr/",
-        image: "/partners/CNPA.png"
-    },
-    {
-        id: 10,
+        id: 8,
         name: "FreeDev",
         url: "https://www.free-dev.fr/",
         image: "/partners/free.png"
     },
     {
-        id: 11,
+        id: 9,
         name: "Bar-tabac Le Cracovie - Mars(42)",
         url: "https://bureautabac.fr/42/mars/le-cracovie-d6a",
         image: "/partners/enseigne_tabac.jpg"
     },
     {
-        id: 12,
+        id: 10,
         name: "Boulangerie Saint Julien de Civry",
         url: "https://www.pagesjaunes.fr/pros/62332062",
         image: "/partners/Boulangerie_civry.jpg"
     },
     {
-        id: 13,
-        name: "La Vie Claire",
+        id: 11,
+        name: "BioCoop",
         url: "https://www.lavieclaire.com/",
         image: "/partners/vie_claire.webp"
+    },
+    {
+        id: 12,
+        name: "Clinique Vétérinaire de l'Érable Rouge",
+        url: "https://www.vetalliance-du-brionnais.fr/",
+        image: "/partners/clinique_veterinaire.jpeg"
     },
 ]
