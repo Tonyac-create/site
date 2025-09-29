@@ -84,20 +84,20 @@ export const catsAdopt = [
         description: "Je pèse 7 kg, j'ai toujours vécu dans la rue. Je suis castré et identifié, et je cherche une nouvelle famille. Je suis très calin et propre. Il ne reste plus qu'à vous pour des instants de ronronnements. 💕🏡",
         adopt: true
     },
+    // {
+    //     id: 8,
+    //     name: "Side",
+    //     type: "Chat",
+    //     age: "18 mois",
+    //     genre: "Femelle",
+    //     race: "Tigrée",
+    //     image: "/animalsAdopt/Side.webp",
+    //     introduction: "Coucou, je m'appelle Side... douce et caline ! 🐾🐱.\n\n Side est une adorable chatte arrivée récemment chez une dame bienveillante qui l’a recueillie. Malheureusement, nous n’avons aucun historique sur cette petite boule de poils : nous ne connaissons ni son âge exact, ni son passé.",
+    //     description: "Ce que nous savons en revanche : c’est une minette pleine de tendresse, qui aime les caresses et est à l'aise avec les autres animaux et les enfants. Douce, discrète et attachante, elle saura faire fondre le cœur de la personne qui lui offrira une seconde chance. Elle mérite un foyer stable, calme et aimant, où elle pourra s’épanouir en toute confiance. Que vous viviez en appartement ou en maison, tant qu’elle est entourée de douceur, Side sera comblée. 💕🏡",
+    //     adopt: false
+    // },
     {
         id: 8,
-        name: "Side",
-        type: "Chat",
-        age: "18 mois",
-        genre: "Femelle",
-        race: "Tigrée",
-        image: "/animalsAdopt/Side.webp",
-        introduction: "Coucou, je m'appelle Side... douce et caline ! 🐾🐱.\n\n Side est une adorable chatte arrivée récemment chez une dame bienveillante qui l’a recueillie. Malheureusement, nous n’avons aucun historique sur cette petite boule de poils : nous ne connaissons ni son âge exact, ni son passé.",
-        description: "Ce que nous savons en revanche : c’est une minette pleine de tendresse, qui aime les caresses et est à l'aise avec les autres animaux et les enfants. Douce, discrète et attachante, elle saura faire fondre le cœur de la personne qui lui offrira une seconde chance. Elle mérite un foyer stable, calme et aimant, où elle pourra s’épanouir en toute confiance. Que vous viviez en appartement ou en maison, tant qu’elle est entourée de douceur, Side sera comblée. 💕🏡",
-        adopt: false
-    },
-    {
-        id: 9,
         name: "Chatons",
         type: "Chat",
         age: "2 mois",
@@ -139,7 +139,7 @@ export const dogsAdopt = [
         id: 300,
         name: "Vox",
         type: "Chien",
-        age: "1 an",
+        age: "1 an et demi",
         genre: "Mâle",
         race: "Malinois",
         image: "/animalsAdopt/Vox.jpg",

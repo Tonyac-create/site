@@ -5,6 +5,7 @@ import { useRef } from "react";
 import { useInView } from "@/app/hooks/useInView";
 import Button from "../Button";
 import { usePlausible } from "next-plausible";
+import PostEvents from "./PostEvents";
 
 export default function HistorySection() {
     const firstImageRef = useRef<HTMLDivElement>(null);
@@ -14,45 +15,7 @@ export default function HistorySection() {
     const plausible = usePlausible();
     return (
         <section className="mx-6 pt-16 lg:mx-28">
-            <div>
-                <h2 className="text-brown text-4xl font-lora font-semibold">{`Marche de l'espoir`}</h2>
-                <div className="flex flex-col md:flex-row gap-5 mt-3">
-                    <div className="flex flex-col md:w-1/2">
-                        <p className="text-xl font-semibold my-4">
-                            {`Evenement caritatif du 20 septembre au 20 octobre 2025.`}
-                        </p>
-                        <p className="text-xl mb-1">
-                            {`La Marche de l'Espoir est lancée !`}
-                        </p>
-                        <p className="text-xl mb-1">
-                            {`Marchez contre la maltraitance animale. 1 pas = 1 espoir.`}
-                        </p>
-                        <p className="text-xl mb-4">
-                            {`Inscrivez-vous et devenez leur voix.`}
-                        </p>
-                        <p className="text-xl mb-9">
-                            {`Aujourd'hui, nous vous invitons à nous rejoindre dans une nouvelle bataille : "La Marche de l'Espoir", une marche solidaire pour un avenir sans souffrance.`}
-                        </p>
-                        <iframe
-                            id="haWidget"
-                            src="https://www.helloasso.com/associations/secours-francais-pour-animaux/collectes/marche-de-l-espoir/widget-bouton"
-                            style={{ width: '100%', height: '70px', border: 'none' }}
-                            onLoad={() => {
-                                window.addEventListener('message', (e: MessageEvent) => {
-                                    // Type assertion for the data structure
-                                    const data = e.data as { height?: number };
-                                    if (data.height) {
-                                        const haWidgetElement = document.getElementById('haWidget') as HTMLIFrameElement;
-                                        if (haWidgetElement) {
-                                            haWidgetElement.style.height = `${data.height}px`;
-                                        }
-                                    }
-                                });
-                            }}
-                        />
-                    </div>
-                </div>
-            </div>
+            <PostEvents />
             <div className="my-12">
                 <h2 className="text-brown text-4xl font-lora font-semibold">Notre histoire </h2>
                 <div

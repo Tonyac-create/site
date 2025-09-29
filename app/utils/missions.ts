@@ -15,7 +15,7 @@ export const missions: Mission[] = [
         description: "En partenariat avec les communes, nous prendrons en charge les chats errants en les stérilisant, les identifiant. Remis ensuite sur leur territoire, ils deviendront ainsi des chats libres. Des bénévoles seront indispensables pour nourrir et prendre soin de ces chats. N’hésitez pas à proposer votre aide.",
         imageUrl: "/Chat_cage.webp",
         btn: ["Document pour la gestion des chats errants", "Convention des communes sur la prise en charge"],
-        pdf: ["/pdf/Gestion_chats_errants.pdf", "/pdf/Convention_chats_errants.pdf"]
+        pdf: ["/pdf/Gestion_chats_errants.pdf", "/pdf/Convention_Commune.pdf"]
     },
     {
         id: 2,
@@ -23,7 +23,7 @@ export const missions: Mission[] = [
         description: "Les chats et les chiens restent en famille d'accueil jusqu'à l'adoption. Les petits animaux de la ferme ainsi que les NAC seront regroupés au sein d'une structure d'accueil unique. Ils resteront là jusqu'à la fin de leur vie. Dans cette structure, il sera envisageable de mettre en place des visites au sein des familles d'accueil. Les autres animaux seront maintenus chez leurs propriétaires ou en famille d'accueil, afin de trouver d'autres maîtres lors des abandons. ",
         imageUrl: "/animalsAdopt/Jazz.webp",
         btn: ["Chat - Formulaire d'adoption", "Chien - Formulaire d'adoption"],
-        pdf: ["/pdf/Fiche_adoption_chat.pdf", "/pdf/Fiche_adoption_chien.pdf"]
+        pdf: ["/pdf/Dossier_candidature_adoption_chat.pdf", "/pdf/Dossier_candidature_adoption_chien.pdf"]
     },
     {
         id: 3,

@@ -1,7 +1,7 @@
-import { DonationForm } from "../components/forms/DonationForm";
 import HeroSectionHelp from "../components/HelpPage/HeroSectionHelp";
 import WhyHelpSection from "../components/HelpPage/WhyHelpSection";
 import FoodSection from "../components/HelpPage/FoodSection";
+import HelloAssoSection from "../components/HelpPage/HelloAssoSection";
 
 export default function HelpPage() {
     return (
@@ -9,7 +9,7 @@ export default function HelpPage() {
             <HeroSectionHelp />
             <WhyHelpSection />
             <FoodSection />
-            <DonationForm />
+            <HelloAssoSection />
         </main>
     )
 }
