@@ -51,65 +51,6 @@ export default function HistorySection() {
                             }}
                         />
                     </div>
-                    {/* <div> */}
-                    {/* </div> */}
-                    {/* <div>
-                        <iframe
-                            id="haWidget"
-                            src="https://www.helloasso.com/associations/secours-francais-pour-animaux/collectes/marche-de-l-espoir/widget-compteur"
-                            style={{ width: '350px', height: '450px', border: 'none' }}
-                            onLoad={() => {
-                                window.addEventListener('message', (e: MessageEvent) => {
-                                    // Type assertion for the data structure
-                                    const data = e.data as { height?: number };
-                                    if (data.height) {
-                                        const haWidgetElement = document.getElementById('haWidget') as HTMLIFrameElement;
-                                        if (haWidgetElement) {
-                                            haWidgetElement.style.height = `${data.height}px`;
-                                        }
-                                    }
-                                });
-                            }}
-                        />
-                    </div>
-                    <div>
-                        <iframe
-                            id="haWidget"
-                            src="https://www.helloasso.com/associations/secours-francais-pour-animaux/collectes/marche-de-l-espoir/widget-vignette"
-                            style={{ width: '350px', height: '550px', border: 'none' }}
-                            onLoad={() => {
-                                window.addEventListener('message', (e: MessageEvent) => {
-                                    // Type assertion for the data structure
-                                    const data = e.data as { height?: number };
-                                    if (data.height) {
-                                        const haWidgetElement = document.getElementById('haWidget') as HTMLIFrameElement;
-                                        if (haWidgetElement) {
-                                            haWidgetElement.style.height = `${data.height}px`;
-                                        }
-                                    }
-                                });
-                            }}
-                        />
-                    </div>
-                    <div>
-                        <iframe
-                            id="haWidget"
-                            src="https://www.helloasso.com/associations/secours-francais-pour-animaux/collectes/marche-de-l-espoir/widget"
-                            style={{ width: '100%', height: '2050px', border: 'none' }}
-                            onLoad={() => {
-                                window.addEventListener('message', (e: MessageEvent) => {
-                                    // Type assertion for the data structure
-                                    const data = e.data as { height?: number };
-                                    if (data.height) {
-                                        const haWidgetElement = document.getElementById('haWidget') as HTMLIFrameElement;
-                                        if (haWidgetElement) {
-                                            haWidgetElement.style.height = `${data.height}px`;
-                                        }
-                                    }
-                                });
-                            }}
-                        />
-                    </div> */}
                 </div>
             </div>
             <div className="my-12">
@@ -173,7 +114,7 @@ export default function HistorySection() {
                             />
                             <p className="text-2xl">Vous êtes témoin de maltraitance ?</p>
                         </div>
-                        <Button href="/pdf/Signalement_maltraitance.pdf" variant="pdf">Signaler un cas de maltraitance (pdf)</Button>
+                        <Button href="/pdf/Fiche_signalement_maltraitance.pdf" variant="pdf">Signaler un cas de maltraitance (pdf)</Button>
                     </div>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/a71SxWjZPGo?si=k-6a8Y_bEvYAAyp4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                 </div>
