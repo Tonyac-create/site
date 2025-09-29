@@ -5,7 +5,7 @@ import { allTeam } from '@/app/utils/allTeam';
 
 export default function ArchitectureTeam() {
     const leadership = allTeam.filter(member =>
-        ["Fondatrice", "Présidente", "Secrétaires", "Trésorière"].includes(member.role)
+        ["Fondatrice", "Présidente", "Secrétaire", "Trésorière"].includes(member.role)
     );
 
     const operations = allTeam.filter(member =>
