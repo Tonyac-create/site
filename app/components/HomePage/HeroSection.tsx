@@ -42,7 +42,7 @@ export default function HeroSection() {
                                 {immediateCount}
                             </span>
                             <p className="text-white text-2xl font-bold">animaux recueillis</p>
-                            <p className="text-white text-lg">dont plus d’une centaine de chatons errants ou abandonnés</p>
+                            <p className="text-white text-lg text-center">dont plus d’une centaine de chatons errants ou abandonnés</p>
                         </div>
                     </div>
                     <div className="flex flex-col lg:flex-row-reverse lg:gap-14">
@@ -84,7 +84,7 @@ export default function HeroSection() {
                         {isCounterInView ? scrollCount : 0}
                     </span>
                     <p className="text-white text-2xl font-bold">animaux recueillis</p>
-                    <p className="text-white text-lg">dont plus d’une centaine de chatons errants ou abandonnés</p>
+                    <p className="text-white text-lg text-center">dont plus d’une centaine de chatons errants ou abandonnés</p>
                 </div>
             </div>
         </section>

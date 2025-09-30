@@ -41,7 +41,7 @@ export const events: Event[] = [
         title: "Veillée villageoise - Les Santons d’autrefois",
         date: "2025-12-01",
         hours: "17h à 19h",
-        description: "Du 01 décembre 2025 au 06 janvier 2026.\n\nVisite dans la structure d’accueil à Maizilly 34 rue de l’auberge :\n\n5 € la 1ère personne ensuite 2 € par personne\n\nCloture de l’exposition par un événement galette des rois à salle des fêtes de Maizilly le mercredi 07/01/26",
+        description: "Du 01 décembre 2025 au 06 janvier 2026.\n\nVisite dans la structure d’accueil à Maizilly 34 rue de l’auberge :\n\n5 € la 1ère personne ensuite 2 € par personne\n\nCette exposition unique vous offrira une immersion totale : les santons prendront vie dans une mise en scène lumineuse et animée pour recréer la magie de Noël d'antan.",
         image: "events/santons.jpg",
         hasIframe: true
     },

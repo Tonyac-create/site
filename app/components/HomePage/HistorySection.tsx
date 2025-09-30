@@ -62,7 +62,7 @@ export default function HistorySection() {
                 </div>
             </div>
             <div className="flex flex-col">
-                <h2 className="text-brown text-4xl font-lora font-semibold mb-12">Abandon et maltraitance</h2>
+                <h2 className="text-brown text-4xl font-lora font-semibold mt-6 mb-12">Abandon et maltraitance</h2>
                 <div className="flex flex-col lg:flex-row gap-20">
                     <div className="flex flex-col items-center">
                         <div className="flex flex-row justify-center items-center gap-2">
@@ -79,7 +79,9 @@ export default function HistorySection() {
                         </div>
                         <Button href="/pdf/Fiche_signalement_maltraitance.pdf" variant="pdf">Signaler un cas de maltraitance (pdf)</Button>
                     </div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/a71SxWjZPGo?si=k-6a8Y_bEvYAAyp4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                    <div className="w-full max-w-xl mx-auto aspect-video">
+                        <iframe className="w-full h-full" src="https://www.youtube.com/embed/a71SxWjZPGo?si=k-6a8Y_bEvYAAyp4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                    </div>
                 </div>
             </div>
         </section>
