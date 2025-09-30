@@ -3,7 +3,7 @@ title: "Un nouvel outil pour nous soutenir : HelloAsso"
 slug: "helloasso"
 date: "29-09-2025"
 author: "Secours Français Pour Animaux"
-image: "/article_news.jpg"
+image: "/events/helloasso.webp"
 text1: |
   Depuis peu, notre association utilise HelloAsso, une plateforme sécurisée et gratuite dédiée aux associations. Grâce à elle, vous pouvez désormais adhérer ou faire un don en ligne en toute simplicité.
 text2: |

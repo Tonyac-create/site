@@ -9,7 +9,7 @@ export default function BlogSection() {
     return (
         <section className="my-14 px-6 pt-16 lg:px-28">
             <h2 className="text-brown text-4xl font-lora font-semibold">Nos dernières actualités</h2>
-            <ArticleBlog limit={5}/>
+            <ArticleBlog limit={7}/>
             <Button href="/blog" variant="secondary" onClick={() => plausible('blog-button')}>{`Voir tous nos articles`}</Button>
         </section>
     )

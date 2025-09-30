@@ -44,7 +44,7 @@ export default function PostEvents() {
                                     <span>{event.hours}</span>
                                 </div>
                             ) : (
-                                <div className="h-6"></div>
+                                <div className="h-12"></div>
                             )}
                         </div>
                     </div>
