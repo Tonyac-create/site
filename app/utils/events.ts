@@ -27,15 +27,15 @@ export const events: Event[] = [
         description: "L'esprit des fêtes approche à grands pas, et comme chaque année, notre association est ravie de vous convier à un événement féerique à Maizilly : la grande Pastorale Exposition de Santons. Cet événement sera à voir dans la structure d'accueil de la Ferme d'Antan du SFPA.\n\nPrix d'entrée : 5 € pour la première personne, puis 3 € par personne supplémentaire.\n\nDu 1er décembre au 6 janvier, venez vous immerger dans la poésie de cette tradition. Notre Pastorale Exposition est une scénographie immersive et sensorielle conçue pour éveiller vos sens :\n\n- Les Sons : Laissez-vous envelopper par un mélange harmonieux de bruitages, chants et musiques de fond qui vous transporteront.\n\n- Les Odeurs : Découvrez des parfums subtils et naturels qui évoqueront le cœur des traditions de Noël.\n\n- Les Sensations : Ressentez l'atmosphère unique de cette installation, jouant sur le contraste entre le froid de l'hiver et les zones de chaleur réconfortantes.\n\nVotre Générosité pour Enrichir la Pastorale !\n\nPour que notre Pastorale Exposition de Santons puisse prendre toute son ampleur et émerveiller nos visiteurs, nous lançons un appel exceptionnel aux dons ou aux prêts d'objets. Nous avons besoin de vous pour créer un décor authentique et grandiose !\n\nNous recherchons spécifiquement :\n\n- Anges : Nous acceptons volontiers les anges, toutes formes, toutes tailles, et tous matériaux (pour l'installation au plafond).\n\n- Santons : De grande taille (entre 25 cm et 30 cm) pour donner du relief à notre exposition.\n\n- Grands Sujets : Animaux (bœufs, ânes, moutons, etc.) pour la crèche, qui donneront de l'échelle à notre décor.\n\n- Lumières : Guirlandes lumineuses (en bon état), et éclairages d'ambiance.\n\n- Végétation : Sapins artificiels (même abîmés, car nous les découperons pour les décors) et branches décoratives.\n\nChaque objet, prêté ou donné, enrichira la magie de cet événement.\n\nVenez mettre la main à la patte !\n\nSi vous souhaitez participer à la construction de cette magie et à l'installation des décors, vous êtes les bienvenus à partir du 17 novembre ! Venez nous aider tous les après-midi, de 14h à 16h.",
         image: "events/santons.jpg",
     },
-    {
-        id: 3,
-        title: "Marche de l'espoir",
-        date: "2025-09-20",
-        hours: "",
-        description: "Evenement caritatif du 20 septembre au 20 octobre 2025. La Marche de l'Espoir est lancée !\n\nMarchez contre la maltraitance animale. 1 pas = 1 espoir.\nInscrivez-vous et devenez leur voix.\n\nAujourd'hui, nous vous invitons à nous rejoindre dans une nouvelle bataille : 'La Marche de l'Espoir', une marche solidaire pour un avenir sans souffrance.\n\n",
-        image: "events/helloasso.webp",
-        hasIframe: true
-    },
+    // {
+    //     id: 3,
+    //     title: "Marche de l'espoir",
+    //     date: "2025-09-20",
+    //     hours: "",
+    //     description: "Evenement caritatif du 20 septembre au 20 octobre 2025. La Marche de l'Espoir est lancée !\n\nMarchez contre la maltraitance animale. 1 pas = 1 espoir.\nInscrivez-vous et devenez leur voix.\n\nAujourd'hui, nous vous invitons à nous rejoindre dans une nouvelle bataille : 'La Marche de l'Espoir', une marche solidaire pour un avenir sans souffrance.\n\n",
+    //     image: "events/helloasso.webp",
+    //     hasIframe: true
+    // },
     // {
     //     id: 4,
     //     title: "Veillée villageoise - Les Santons d’autrefois",
