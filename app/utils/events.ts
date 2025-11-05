@@ -10,15 +10,15 @@ export interface Event {
 }
 
 export const events: Event[] = [
-    {
-        id: 1,
-        title: "Concours d'Halloween : Les animaux à l'honneur !",
-        date: "2025-10-31",
-        hours: "14h00 à 17h00",
-        link: "https://forms.gle/cZcRrgCCRNEn6s5P9",
-        description: "Préparez vos plus beaux déguisements et vos créations les plus effrayantes : l'association organise un double concours spécial Halloween le vendredi 31 octobre !\n\nVenez passer une après-midi de frissons et de créativité à nos côtés. Les meilleurs costumes et les plus belles œuvres seront récompensés.\n\nLa participation est de 5€ par personne. Cela comprend la visite libre auprès des animaux, le goûter et l'animation.\n\nPour les Enfants : le Concours de Pâte à Modeler. Amis des animaux en herbe, c'est à vous de jouer !\n\nVenez sur place, le vendredi 31 octobre, pour participer à notre atelier de pâte à modeler. Votre mission, si vous l'acceptez : créer la créature d'Halloween la plus originale et effrayante, avec une petite touche animale !\n\nPour les Adultes : le Concours de Citrouilles Hantées. Maîtres sculpteurs, ce défi est pour vous !\n\n1. Créez à la maison : Décorez ou sculptez votre citrouille chez vous, en la transformant en l'œuvre la plus créative, la plus drôle ou la plus effrayante. L'inspiration est libre !\n\n2. Apportez-la : Venez déposer votre chef-d'œuvre le vendredi 31 octobre à l'association pour qu'il soit présenté au jury.\n\nUne Règle d'Or pour Tous !\n\nPetits et grands, il faudra obligatoirement venir déguisé ! Si vous choisissez de rendre hommage à nos animaux, ce sera encore mieux : fantôme de chat, vampire-chien ou chauve-souris, laissez libre cours à votre imagination !\n\nRendez-vous à Maizilly le vendredi 31 octobre de 14h à 17h pour un moment de partage inoubliable !",
-        image: "events/Halloween.jpg",
-    },
+    // {
+    //     id: 1,
+    //     title: "Concours d'Halloween : Les animaux à l'honneur !",
+    //     date: "2025-10-31",
+    //     hours: "14h00 à 17h00",
+    //     link: "https://forms.gle/cZcRrgCCRNEn6s5P9",
+    //     description: "Préparez vos plus beaux déguisements et vos créations les plus effrayantes : l'association organise un double concours spécial Halloween le vendredi 31 octobre !\n\nVenez passer une après-midi de frissons et de créativité à nos côtés. Les meilleurs costumes et les plus belles œuvres seront récompensés.\n\nLa participation est de 5€ par personne. Cela comprend la visite libre auprès des animaux, le goûter et l'animation.\n\nPour les Enfants : le Concours de Pâte à Modeler. Amis des animaux en herbe, c'est à vous de jouer !\n\nVenez sur place, le vendredi 31 octobre, pour participer à notre atelier de pâte à modeler. Votre mission, si vous l'acceptez : créer la créature d'Halloween la plus originale et effrayante, avec une petite touche animale !\n\nPour les Adultes : le Concours de Citrouilles Hantées. Maîtres sculpteurs, ce défi est pour vous !\n\n1. Créez à la maison : Décorez ou sculptez votre citrouille chez vous, en la transformant en l'œuvre la plus créative, la plus drôle ou la plus effrayante. L'inspiration est libre !\n\n2. Apportez-la : Venez déposer votre chef-d'œuvre le vendredi 31 octobre à l'association pour qu'il soit présenté au jury.\n\nUne Règle d'Or pour Tous !\n\nPetits et grands, il faudra obligatoirement venir déguisé ! Si vous choisissez de rendre hommage à nos animaux, ce sera encore mieux : fantôme de chat, vampire-chien ou chauve-souris, laissez libre cours à votre imagination !\n\nRendez-vous à Maizilly le vendredi 31 octobre de 14h à 17h pour un moment de partage inoubliable !",
+    //     image: "events/Halloween.jpg",
+    // },
     {
         id: 2,
         title: "Noêl : Le Voyage des Sens",
