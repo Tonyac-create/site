@@ -55,9 +55,18 @@ export default function PostEvents() {
                                     <div className="h-6"></div>
                                 )}
                             </div>
+
                         </div>
                     </Link>
                 ))}
+                <div className="relative w-[500px] h-[600px]">
+                    <Image
+                        src="/events/voyage_sens_SFPA.jpg"
+                        alt="voyages des sens"
+                        fill
+                        className="object-contain"
+                    />
+                </div>
             </div>
         </div>
     );
