@@ -1,14 +1,14 @@
 import Image from 'next/image';
 import { events } from '@/app/utils/events';
-import { format } from 'date-fns';
-import { fr } from 'date-fns/locale';
+// import { format } from 'date-fns';
+// import { fr } from 'date-fns/locale';
 import Link from 'next/link';
 
 export default function PostEvents() {
     // Trier les événements du plus proche au plus éloigné dans le temps
-    const sortedEvents = [...events].sort((a, b) => {
-        return new Date(a.date).getTime() - new Date(b.date).getTime();
-    });
+    // const sortedEvents = [...events].sort((a, b) => {
+    //     return new Date(a.date).getTime() - new Date(b.date).getTime();
+    // });
 
     return (
         <div className="py-10">
@@ -23,7 +23,7 @@ export default function PostEvents() {
             <h2 className="text-brown text-4xl font-lora font-semibold mb-8">{`Prochains événements`}</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {sortedEvents.map((event) => (
+                {events.map((event) => (
                     <Link href={`/blog#event-${event.id}`} key={event.id} className="block">
                         <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 cursor-pointer">
                             <div className="relative h-48 w-full">
@@ -41,7 +41,7 @@ export default function PostEvents() {
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                                     </svg>
                                     <span>
-                                        {format(new Date(event.date), 'dd MMMM yyyy', { locale: fr })}
+                                        {event.date}
                                     </span>
                                 </div>
                                 {event.hours ? (

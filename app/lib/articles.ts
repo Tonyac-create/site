@@ -10,6 +10,11 @@ export type Article = {
   text4: string;
   text5: string;
   text6: string;
+  text7: string;
+  text8: string;
+  text9: string;
+  text10: string;
+  link: string
 }
 
 export const getSortedArticles = async (): Promise<Article[]> => {

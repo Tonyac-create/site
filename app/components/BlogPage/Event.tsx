@@ -17,15 +17,15 @@ export default function Event() {
     };
 
     // Trier les événements du plus proche au plus éloigné dans le temps
-    const sortedEvents = [...events].sort((a, b) => {
-        return new Date(a.date).getTime() - new Date(b.date).getTime();
-    });
+    // const sortedEvents = [...events].sort((a, b) => {
+    //     return new Date(a.date).getTime() - new Date(b.date).getTime();
+    // });
 
     return (
         <section id="events" className="pt-8 scroll-mt-16">
             <h3 className="text-brown text-2xl font-lora font-semibold mb-6">Prochains événements</h3>
             <div className="flex flex-col gap-10 mb-12">
-                {sortedEvents.map((event) => (
+                {events.map((event) => (
                     <div id={`event-${event.id}`} key={event.id} className="flex flex-col lg:flex-row gap-6 border-b border-gray-200 pb-8 pt-16 scroll-mt-16">
                         <div className="lg:w-1/3 my-auto">
                             <Image 
@@ -38,7 +38,7 @@ export default function Event() {
                         </div>
                         <div className="lg:w-2/3">
                             <h4 className="text-xl font-bold mb-2">{event.title}</h4>
-                            <p className="text-gray-600 mb-4 font-semibold">Date: {new Date(event.date).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })}</p>
+                            <p className="text-gray-600 mb-4 font-semibold">Date: {event.date}</p>
                             {event.hours && <p className="text-gray-600 mb-4 font-semibold">Heures: {event.hours}</p>}
                             {event.link && <p className="text-gray-600 mb-4 font-semibold">Inscription ici: <a href={event.link} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">{event.link}</a></p>}
                             <div className="text-gray-700">

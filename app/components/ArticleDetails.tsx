@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import type { Article } from "../lib/articles";
+import Link from "next/link";
 
 interface ArticleDetailsProps {
     article: Article;
@@ -57,6 +58,11 @@ export default function ArticleDetails({ article, onBack }: ArticleDetailsProps)
                     {article.text4 && <p className="whitespace-pre-line">{article.text4}</p>}
                     {article.text5 && <p className="whitespace-pre-line">{article.text5}</p>}
                     {article.text6 && <p className="whitespace-pre-line">{article.text6}</p>}
+                    {article.text7 && <p className="whitespace-pre-line">{article.text7}</p>}
+                    {article.text8 && <p className="whitespace-pre-line">{article.text8}</p>}
+                    {article.text10 && <p className="whitespace-pre-line">{article.text10}</p>}
+                    {article.text9 && <p className="whitespace-pre-line">{article.text9}</p>}
+                    {article.link && <Link href={article.link} target="_blank" className="text-red-500 font-semibold hover:underline hover:underline-offset-2">{`--> Visitez la page`}</Link>}
                 </div>
             </article>
         </section>

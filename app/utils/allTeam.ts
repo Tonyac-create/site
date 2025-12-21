@@ -20,13 +20,13 @@ export const allTeam: Team[] = [
     },
     {
         id: 3,
-        name: "Nadine",
+        name: "Véronique",
         role: "Secrétaire",
-        otheRoles: ["Assistante pour les visites pédagogiques"]
+        otheRoles: [""]
     },
     {
         id: 4,
-        name: "Angélique",
+        name: "Manu",
         role: "Trésorière",
         otheRoles: [""]
     },
@@ -44,13 +44,13 @@ export const allTeam: Team[] = [
     },
     {
         id: 7,
-        name: "Manu, Damien, Manou et Lou",
+        name: "Manu, Damien, Aurore, Véro. et Lou",
         role: "Soigneurs animalier",
         otheRoles: ["Dans la structure pédagogique, il nourrit les animaux, nettoit les enclos et controle les équipements et clôtures"]
     },
     {
         id: 8,
-        name: "Karine et Charles",
+        name: "Karine, Stéphanie, Hadrien, Laura et Bernard",
         role: "Bénévoles",
         otheRoles: ["Responsables des collectes"]
     },
