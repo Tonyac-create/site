@@ -57,7 +57,7 @@ export default function WelcomeSection() {
                     className={`transition-opacity duration-2000 ease-in-out ${isFirstImageInView ? 'opacity-100' : 'opacity-0'}`}
                 >
                     <Image
-                        src="/Lapin_SFPA.webp"
+                        src="/Poules_table.jpg"
                         width={500}
                         height={500}
                         priority={true}

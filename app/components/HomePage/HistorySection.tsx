@@ -45,7 +45,7 @@ export default function HistorySection() {
                     className={`sm:flex sm:flex-row-reverse sm:gap-4 sm:mb-8 transition-opacity duration-2000 ease-in-out ${isSecondImageInView ? 'opacity-100' : 'opacity-0'}`}
                 >
                     <Image
-                        src="/Elvis_Homme_SFPA.webp"
+                        src="/Kim_fille.jpg"
                         width={500}
                         height={400}
                         quality={100}
