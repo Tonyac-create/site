@@ -22,8 +22,8 @@ text7: |
 text8: |
   🎤 et parfois… des invités ou des sujets spéciaux
 text9: |
-  Les replay seront eux disponibles dès le lendemain sur la page dédiée :
+  Les vidéos sont disponibles sur la page dédiée.
 text10: |
   Merci à tous pour votre soutien, et rendez-vous très bientôt pour cette nouvelle expérience avec vous 🐾🌿
-link: "https://www.facebook.com/profile.php?id=61584209580748"
+link: "https://www.youtube.com/watch?v=aNIaZgm-pIQ&list=PL9TcI8k_ojq3B4jOK0lWpVW7ESdXLzg9n"
 ---
