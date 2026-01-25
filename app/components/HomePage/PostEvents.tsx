@@ -82,8 +82,8 @@ export default function PostEvents() {
                 ))}
                 <div className="relative w-[500px] h-[600px]">
                     <Image
-                        src="/events/voyage_sens_SFPA.jpg"
-                        alt="voyages des sens"
+                        src="/events/WE_musique.jpg"
+                        alt="week-end musique"
                         fill
                         className="object-contain"
                     />
