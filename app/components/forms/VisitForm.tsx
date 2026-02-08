@@ -2,33 +2,33 @@
 
 import React, { useState } from 'react';
 import { BaseFormFields } from './BaseFormFields';
-import DatePicker from 'react-datepicker';
+// import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 
 // Jours fériés 2025
 // Fonction pour formater une date en YYYY-MM-DD sans décalage horaire
-const formatDate = (date: Date): string => {
-  const year = date.getFullYear();
-  const month = String(date.getMonth() + 1).padStart(2, '0');
-  const day = String(date.getDate()).padStart(2, '0');
-  return `${year}-${month}-${day}`;
-};
+// const formatDate = (date: Date): string => {
+//   const year = date.getFullYear();
+//   const month = String(date.getMonth() + 1).padStart(2, '0');
+//   const day = String(date.getDate()).padStart(2, '0');
+//   return `${year}-${month}-${day}`;
+// };
 
 // Jours fériés 2025 avec les dates exactes
-const JOURS_FERIES_2025 = [
-  '2025-05-29', // Ascension
-  '2025-06-09', // Lundi de Pentecôte
-  '2025-07-14', // Fête nationale
-  '2025-08-15', // Assomption
-  '2025-11-01', // Toussaint
-  '2025-11-11', // Armistice 1918
-  '2025-12-25', // Noël
-].map(date => {
-  const [year, month, day] = date.split('-').map(Number);
-  return formatDate(new Date(year, month - 1, day));
-});
+// const JOURS_FERIES_2025 = [
+//   '2025-05-29', // Ascension
+//   '2025-06-09', // Lundi de Pentecôte
+//   '2025-07-14', // Fête nationale
+//   '2025-08-15', // Assomption
+//   '2025-11-01', // Toussaint
+//   '2025-11-11', // Armistice 1918
+//   '2025-12-25', // Noël
+// ].map(date => {
+//   const [year, month, day] = date.split('-').map(Number);
+//   return formatDate(new Date(year, month - 1, day));
+// });
 
-import Link from 'next/link';
+// import Link from 'next/link';
 import Image from 'next/image';
 
 const VISITE_TYPES = [
@@ -96,9 +96,9 @@ export const VisitForm = () => {
   return (
     <form action="https://formsubmit.co/secoursfrancaispouranimaux@gmail.com" method="POST" className="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-md">
       <h2 className="text-2xl font-bold mb-6">Réserver une visite</h2>
-      <Link href="/contact" className="flex gap-2 text-[#0866FF] text-lg mt-3 mb-5 underline underline-offset-4 hover:text-brown">
+      {/* <Link href="/contact" className="flex gap-2 text-[#0866FF] text-lg mt-3 mb-5 underline underline-offset-4 hover:text-brown">
         En espèce sur place, prendre rendez-vous par téléphone ou envoyer un message
-      </Link>
+      </Link> */}
       <p>
         <Image
           src="/icons/triangle.svg"
@@ -139,7 +139,7 @@ export const VisitForm = () => {
           </select>
         </div>
 
-        <div>
+        {/* <div>
           <label className="block text-sm font-medium text-gray-700">Dates de visite *<span className="text-red-500 font-semibold">(mercredi, dimanche ou jours fériés)</span></label>
           <div className="space-y-2">
             {formData.dateVisite.map((date, index) => (
@@ -192,7 +192,7 @@ export const VisitForm = () => {
               Ajouter une date
             </button>
           </div>
-        </div>
+        </div> */}
 
         <div>
           <label className="block text-sm font-medium text-gray-700">{`Nombre d'adultes *`}</label>
@@ -248,7 +248,7 @@ export const VisitForm = () => {
           type="submit"
           className="w-full bg-brown text-green py-2 px-4 rounded-md hover:bg-primary-dark transition-colors"
         >
-          Evoyer la demande
+          Envoyer la demande
         </button>
       </div>
     </form>

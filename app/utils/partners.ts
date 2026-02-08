@@ -38,7 +38,7 @@ export const partners = [
     {
         id: 8,
         name: "FreeDev",
-        url: "https://www.free-dev.fr/",
+        url: "",
         image: "/partners/free.png"
     },
     {
@@ -53,12 +53,12 @@ export const partners = [
         url: "https://www.pagesjaunes.fr/pros/62332062",
         image: "/partners/Boulangerie_civry.jpg"
     },
-    {
-        id: 11,
-        name: "BioCoop",
-        url: "https://www.lavieclaire.com/",
-        image: "/partners/vie_claire.webp"
-    },
+    // {
+    //     id: 11,
+    //     name: "BioCoop",
+    //     url: "https://www.lavieclaire.com/",
+    //     image: "/partners/vie_claire.webp"
+    // },
     {
         id: 12,
         name: "Clinique Vétérinaire de l'Érable Rouge",

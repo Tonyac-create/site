@@ -1,4 +1,4 @@
-import { VisitForm } from "../components/forms/VisitForm";
+// import { VisitForm } from "../components/forms/VisitForm";
 import GridMission from "../components/VisitsPage/GridMissionVisits";
 import HeroSectionVisits from "../components/VisitsPage/HeroSectionVisits";
 
@@ -7,7 +7,7 @@ export default function VisitsPage() {
         <main>
             <HeroSectionVisits />
             <GridMission />
-            <VisitForm />
+            {/* <VisitForm /> */}
         </main>
     )
 }

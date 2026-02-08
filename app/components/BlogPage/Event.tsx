@@ -40,7 +40,7 @@ export default function Event() {
                             <h4 className="text-xl font-bold mb-2">{event.title}</h4>
                             <p className="text-gray-600 mb-4 font-semibold">Date: {event.date}</p>
                             {event.hours && <p className="text-gray-600 mb-4 font-semibold">Heures: {event.hours}</p>}
-                            {event.link && <p className="text-gray-600 mb-4 font-semibold">Inscription ici: <a href={event.link} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">{event.link}</a></p>}
+                            {event.link && <p className="text-gray-600 mb-4 font-semibold">Inscription ici : <a href={event.link} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">HelloAsso</a></p>}
                             <div className="text-gray-700">
                                 {formatDescription(event.description)}
                             </div>

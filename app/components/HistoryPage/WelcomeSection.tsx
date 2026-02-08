@@ -19,7 +19,7 @@ export default function WelcomeSection() {
                 Sous le n° W713007887
                 Siret : 938 534 476 00016
                 Entièrement autonome par rapport à tout autre organisme.`}</p>
-            <Button href="/pdf/Statut.pdf" variant="pdf" className="inline-flex gap-2">
+            <Button href="/pdf/Statuts.pdf" variant="pdf" className="inline-flex gap-2">
                 <Image
                     src="/icons/file_pdf.svg"
                     width={20}

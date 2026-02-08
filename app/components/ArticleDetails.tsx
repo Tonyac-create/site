@@ -62,7 +62,7 @@ export default function ArticleDetails({ article, onBack }: ArticleDetailsProps)
                     {article.text8 && <p className="whitespace-pre-line">{article.text8}</p>}
                     {article.text10 && <p className="whitespace-pre-line">{article.text10}</p>}
                     {article.text9 && <p className="whitespace-pre-line">{article.text9}</p>}
-                    {article.link && <Link href={article.link} target="_blank" className="text-red-500 font-semibold hover:underline hover:underline-offset-2">{`--> Visitez la page`}</Link>}
+                    {article.link && <Link href={article.link} target="_blank" className="text-red-500 font-semibold hover:underline hover:underline-offset-2">{`--> Voir la chanson`}</Link>}
                 </div>
             </article>
         </section>

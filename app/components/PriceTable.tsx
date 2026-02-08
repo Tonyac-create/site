@@ -23,7 +23,7 @@ export default function PriceTable({ className = '' }: PriceTableProps) {
     },
     {
       designation: "Frais d'abandon femelle (+ de 3 mois)",
-      cat: "125 €",
+      cat: "125 € + 30 € pour la stérilisation",
       dog: ""
     },
     {

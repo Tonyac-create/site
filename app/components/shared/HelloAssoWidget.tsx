@@ -31,6 +31,18 @@ export function HelloAssoDonation() {
 }
 
 /**
+ * Composant pour l'iframe de tous les événements HelloAsso
+ */
+// export function HelloAssoEvents() {
+//     return (
+//         <HelloAssoIframe 
+//             src="https://www.helloasso.com/associations/secours-francais-pour-animaux/"
+//             uniqueId="events"
+//         />
+//     );
+// }
+
+/**
  * Composant de base pour les iframes HelloAsso
  */
 export function HelloAssoIframe({ src, uniqueId }: { src: string, uniqueId: string }) {

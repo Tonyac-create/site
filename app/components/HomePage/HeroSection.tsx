@@ -14,14 +14,14 @@ export default function HeroSection() {
     const plausible = usePlausible();
 
     const immediateCount = useCounter({
-        end: 385,
+        end: 12,
         start: 0,
         duration: 2000,
         shouldStart: true
     });
 
     const scrollCount = useCounter({
-        end: 385,
+        end: 12,
         start: 0,
         duration: 2000,
         shouldStart: isCounterInView
@@ -37,12 +37,14 @@ export default function HeroSection() {
                             <h2 className="text-green text-4xl md:text-5xl lg:text-6xl font-lora font-semibold mb-10">sauvons des vies</h2>
                         </div>
                         <div className="hidden lg:flex lg:flex-col lg:justify-center lg:items-center lg:mx-auto">
-                            <p className="text-white text-center text-2xl">Depuis le 1er janvier 2025</p>
+                            <p className="text-white text-center text-2xl">Depuis le 1er janvier 2026</p>
                             <span className="text-green my-2 text-6xl font-bold">
                                 {immediateCount}
                             </span>
                             <p className="text-white text-2xl font-bold">animaux recueillis</p>
-                            <p className="text-white text-lg text-center">dont plus d’une centaine de chatons errants ou abandonnés</p>
+                            <p className="text-white text-xl text-center">En 2025,
+                                <span className="text-green font-bold"> 408 </span>
+                                animaux sauvés</p>
                         </div>
                     </div>
                     <div className="flex flex-col lg:flex-row-reverse lg:gap-14">

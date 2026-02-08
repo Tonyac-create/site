@@ -56,6 +56,14 @@ const MissionItem = ({ visits, index }: { visits: Visits, index: number }) => {
                 </div>
                 <div className="w-full md:w-1/2 space-y-4 mb-12">
                     <h2 className="text-3xl font-bold text-brown">{visits.title}</h2>
+
+                    <button
+                        onClick={() => window.open('https://calendly.com/secoursfrancaispouranimaux-visites-pedagogiques/30min', '_blank')}
+                        className="w-full md:w-auto inline-flex items-center justify-center px-6 py-3 bg-brown text-white rounded-lg hover:bg-brown/90 active:bg-brown/80 transition-colors text-sm md:text-base"
+                    >
+                        Réserver cette visite
+                    </button>
+
                     <p className="text-xl text-gray-600 whitespace-pre-line">{visits.description}</p>
                     <p className="text-xl font-semibold">{visits.price}</p>
                     {visits.galleryImages && visits.galleryImages.length > 0 && (
@@ -70,6 +78,8 @@ const MissionItem = ({ visits, index }: { visits: Visits, index: number }) => {
                         </button>
                     )}
                 </div>
+
+
             </section>
             <GalleryModal
                 isOpen={isGalleryOpen}

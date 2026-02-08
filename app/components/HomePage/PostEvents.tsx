@@ -12,38 +12,10 @@ export default function PostEvents() {
 
     return (
         <div className="py-10">
-            <div className="flex flex-col lg:flex-row lg:gap-4 w-full mb-8">
-                <div className="w-full lg:w-1/2">
-                    <h2 className="text-brown text-4xl font-lora font-semibold mb-8">{` ✨ Vœux 2026 : Garder la flamme allumée`}</h2>
-                    <p className="text-xl mt-3 mb-5">{`L'année 2025 s'en est allée, emportant avec elle Brigitte Bardot, celle qui a tant fait pour la protection animale. Son départ nous laisse tous un peu orphelins, mais il nous rappelle surtout l’importance de ne jamais baisser les bras.`}</p>
-                    <p className="text-xl mt-3 mb-5">{`Pour la Fondatrice, ce combat est celui d’une vie entière. Après 40 ans d'engagement sur le terrain, le Secours Français pour Animaux (SFPA) à été créer en janvier 2025. Nous avons démarré cette aventure avec zéro budget, mais une volonté immense. En un an, nous avons pu mettre à l'abri plus de 400 animaux.
-                    Ce bilan, nous le portons avec fierté, mais aussi avec beaucoup d'humilité. Nous avons traversé des moments difficiles, car nous refusons de voir l'argent avant l'animal. Notre seule richesse, c'est la vie que nous sauvons.
-                    Aujourd'hui, pour que l'œuvre de toute une vie ne s'éteigne pas avec BB, nous avons besoin de forces vives. Le SFPA n'est pas une grande structure, c'est une association de terrain qui a besoin de votre soutien pour continuer d'exister et d'agir :
-                    Que ce soit par une adhésion, un don ou un peu de votre temps en tant que bénévole, chaque geste compte pour eux.`}</p>
-                    <p className="text-xl mt-3 mb-5">{`Ensemble, faisons en sorte que 2026 soit une année de courage et de tendresse pour tous nos protégés.
-                    Très belle année à tous.`}</p>
-                </div>
-                <div className="relative w-full lg:w-1/2 min-h-[300px]">
-                    <Image
-                        src="/Bardot_animaux.webp"
-                        alt="Brigitte Bardot"
-                        fill
-                        className="object-contain h-full w-full max-w-xl"
-                        sizes="(max-width: 1024px) 100vw, 50vw"
-                    />
-                </div>
-            </div>
-            <div className="flex flex-col lg:flex-row lg:gap-4">
-                <div className="w-1/2">
-                    <h2 className="text-brown text-4xl font-lora font-semibold mb-8">{`Chanson officielle du SFPA 71`}</h2>
-                    <p className="text-xl mt-3 mb-8">{`Écoutez notre chanson officielle ! Elle a été composée pour soutenir notre association et donner une voix à notre mission. Si cette mélodie vous plaît, vous pouvez nous demander le lien pour la télécharger : pour seulement 5 €, cette somme sera intégralement reversée au SFPA pour financer les soins de nos protégés. C'est une belle façon de nous aider en musique !  
-                    Envoyez un mail à : secoursfrancaispouranimaux@sfpa71.fr `}</p>
-                </div>
-                <iframe className="h-full w-full max-w-xl aspect-video mb-8" src="https://www.youtube.com/embed/v08R5mz7Tdo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-            </div>
+
             <h2 className="text-brown text-4xl font-lora font-semibold mb-8">{`Prochains événements`}</h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
                 {events.map((event) => (
                     <Link href={`/blog#event-${event.id}`} key={event.id} className="block">
                         <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 cursor-pointer">
@@ -88,6 +60,14 @@ export default function PostEvents() {
                         className="object-contain"
                     />
                 </div>
+            </div>
+            <div className="flex flex-col lg:flex-row lg:gap-4">
+                <div className="w-1/2">
+                    <h2 className="text-brown text-4xl font-lora font-semibold mb-8">{`Chanson officielle du SFPA 71`}</h2>
+                    <p className="text-xl mt-3 mb-8">{`Écoutez notre chanson officielle ! Elle a été composée pour soutenir notre association et donner une voix à notre mission. Si cette mélodie vous plaît, vous pouvez nous demander le lien pour la télécharger : pour seulement 5 €, cette somme sera intégralement reversée au SFPA pour financer les soins de nos protégés. C'est une belle façon de nous aider en musique !  
+                    Envoyez un mail à : secoursfrancaispouranimaux@sfpa71.fr `}</p>
+                </div>
+                <iframe className="h-full w-full max-w-xl aspect-video mb-8" src="https://www.youtube.com/embed/RkBNGVYHIUY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
             </div>
         </div>
     );

@@ -10,7 +10,7 @@ export const allTeam: Team[] = [
         id: 1,
         name: "Nanou",
         role: "Fondatrice",
-        otheRoles: ["Educatrice comportementaliste", "Sapiteur Canin", "Formatrice", "Diplômée de l'état"]
+        otheRoles: ["Educatrice comportementaliste", "Sapiteur Canin", "Formatrice", "Diplômée de l'état", "Administration"]
     },
     {
         id: 2,
@@ -20,7 +20,7 @@ export const allTeam: Team[] = [
     },
     {
         id: 3,
-        name: "Véronique",
+        name: "Agnes",
         role: "Secrétaire",
         otheRoles: [""]
     },
@@ -38,7 +38,7 @@ export const allTeam: Team[] = [
     },
     {
         id: 6,
-        name: "Catherine et Nanou",
+        name: "Catherine, Alain et Nanou",
         role: "Enquêteurs",
         otheRoles: [""]
     },
@@ -62,13 +62,37 @@ export const allTeam: Team[] = [
     },
     {
         id: 10,
+        name: "Cynthia",
+        role: "Evénement caisse",
+        otheRoles: [""]
+    },
+    {
+        id: 11,
+        name: "Hadrien",
+        role: "Evénement chef barman",
+        otheRoles: [""]
+    },
+    {
+        id: 12,
+        name: "Karine et Bernard",
+        role: "Evénement polyvalente",
+        otheRoles: [""]
+    },
+    {
+        id: 13,
+        name: "Laurence",
+        role: "Gestion des logiciels",
+        otheRoles: [""]
+    },
+    {
+        id: 14,
         name: "Nemo et Manu",
         role: "Chef des travaux et structures",
         otheRoles: ["Spécialisé dans les constructions des divers enclos et les travaux"]
     },
     {
-        id: 11,
-        name: "Sandrine, Nanou, Kim et Manu",
+        id: 15,
+        name: "Sandrine et Nanou",
         role: "Familles d'accueil",
         otheRoles: [""]
     }

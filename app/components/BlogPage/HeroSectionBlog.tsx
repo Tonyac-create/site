@@ -10,14 +10,14 @@ export default function HeroSectionBlog() {
     return (
         <section>
             <div className="relative w-full">
-                <div className="hidden sm:block w-full h-[500px] bg-[url(/Troupe_Elvis.jpeg)] bg-fixed bg-center bg-cover bg-no-repeat"></div>
+                <div className="hidden sm:block w-full h-[500px] bg-[url(/Coulisses_sfpa.jpg)] bg-fixed bg-center bg-cover bg-no-repeat"></div>
                 <Image
-                    src="/Troupe_Elvis.jpeg"
+                    src="/Coulisses_sfpa.jpg"
                     width={1024}
                     height={500}
                     quality={100}
                     priority={true}
-                    alt="Troupe Elvis"
+                    alt="Coulisses SFPA"
                     className="block sm:hidden w-full h-auto object-cover"
                 />
             </div>

@@ -13,7 +13,7 @@ export default function ArchitectureTeam() {
     );
 
     const support = allTeam.filter(member =>
-        ["Développeuse web", "Chargée de communication", "Bénévoles", "Familles d'accueil"].includes(member.role)
+        ["Développeuse web", "Chargée de communication", "Evénement caisse", "Gestion des logiciels", "Evénement chef barman", "Evénement polyvalente", "Bénévoles", "Familles d'accueil"].includes(member.role)
     );
 
     return (

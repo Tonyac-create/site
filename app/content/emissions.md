@@ -5,7 +5,7 @@ date: "01-12-2025"
 author: "Secours Français Pour Animaux"
 image: "/Sfpa_page.jpg"
 text1: |
-  Notre association lance sa propre petite « émission télé » diffusée en direct chaque dimanche à 11h00.
+  Notre association lance sa propre petite « émission télé » diffusée en direct le 1er dimanche de chaque mois à 11h00.
   L’objectif : vous emmener au cœur de notre quotidien et vous montrer l’envers du décor.
 text2: |
   📅 Premier direct : dimanche 4 janvier 2026 à 11h00 sur cette page officiel du sfpa. Au programme :
