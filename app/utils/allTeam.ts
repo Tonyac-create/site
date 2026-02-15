@@ -44,7 +44,7 @@ export const allTeam: Team[] = [
     },
     {
         id: 7,
-        name: "Manu, Damien, Aurore, Véro. et Lou",
+        name: "Manu, Damien, Aurore et Lou",
         role: "Soigneurs animalier",
         otheRoles: ["Dans la structure pédagogique, il nourrit les animaux, nettoit les enclos et controle les équipements et clôtures"]
     },
