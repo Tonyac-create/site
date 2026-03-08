@@ -52,7 +52,7 @@ export default function PostEvents() {
                         </div>
                     </Link>
                 ))}
-                <div className="relative w-[500px] h-[600px]">
+                <div className="relative h-[600px]">
                     <Image
                         src="/events/WE_musique.jpg"
                         alt="week-end musique"
@@ -62,7 +62,7 @@ export default function PostEvents() {
                 </div>
             </div>
             <div className="flex flex-col lg:flex-row lg:gap-4">
-                <div className="w-1/2">
+                <div className="lg:w-1/2">
                     <h2 className="text-brown text-4xl font-lora font-semibold mb-8">{`Chanson officielle du SFPA 71`}</h2>
                     <p className="text-xl mt-3 mb-8">{`Écoutez notre chanson officielle ! Elle a été composée pour soutenir notre association et donner une voix à notre mission. Si cette mélodie vous plaît, vous pouvez nous demander le lien pour la télécharger : pour seulement 5 €, cette somme sera intégralement reversée au SFPA pour financer les soins de nos protégés. C'est une belle façon de nous aider en musique !  
                     Envoyez un mail à : secoursfrancaispouranimaux@sfpa71.fr `}</p>
