@@ -3,6 +3,7 @@ import { events } from '@/app/utils/events';
 // import { format } from 'date-fns';
 // import { fr } from 'date-fns/locale';
 import Link from 'next/link';
+import { help } from '@/app/utils/help';
 
 export default function PostEvents() {
     // Trier les événements du plus proche au plus éloigné dans le temps
@@ -12,6 +13,25 @@ export default function PostEvents() {
 
     return (
         <div className="py-10">
+            <h2 className="text-brown text-4xl font-lora font-semibold mb-5">{`Comment nous aider ?`}</h2>
+
+            <Link href="https://www.helloasso.com/associations/secours-francais-pour-animaux" target="_blank" className="text-xl font-semibold underline underline-offset-4 hover:text-brown">Voici toutes les façon de nous soutenir et un seul lien : HelloAsso</Link>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-8">
+                {help.map((help) => (
+                    <div className="overflow-hidden" key={help.id}>
+                        <h3 className="text-xl font-semibold text-brown mb-4">{help.title}</h3>
+                        <div className="relative h-[650px] w-full">
+                            <Image
+                                src={`/${help.image}`}
+                                alt={help.title}
+                                fill
+                                className="object-cover"
+                            />
+                        </div>
+                        <p className="text-gray-600 text-lg my-4 font-semibold whitespace-pre-line">{help.description}</p>
+                    </div>
+                ))}
+            </div>
 
             <h2 className="text-brown text-4xl font-lora font-semibold mb-8">{`Prochains événements`}</h2>
 

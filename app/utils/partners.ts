@@ -55,7 +55,7 @@ export const partners = [
     },
     {
         id: 11,
-        name: "Mon Passion Poule",
+        name: "Mon Passion Poule Cuinzier",
         url: "https://monpassionpoule.square.site/",
         image: "/partners/Passion_poule.webp"
     },
