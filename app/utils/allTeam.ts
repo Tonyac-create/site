@@ -56,7 +56,7 @@ export const allTeam: Team[] = [
     },
     {
         id: 9,
-        name: "Manou",
+        name: "Laurine",
         role: "Chargée de communication",
         otheRoles: [""]
     },

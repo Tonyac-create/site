@@ -37,9 +37,9 @@ export const partners = [
     },
     {
         id: 8,
-        name: "FreeDev",
-        url: "",
-        image: "/partners/free.png"
+        name: "Proo'poil",
+        url: "https://www.proopoil.fr/devis?p=bmFub3UtMQ",
+        image: "/partners/Proopoil.webp"
     },
     {
         id: 9,

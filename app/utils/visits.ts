@@ -48,15 +48,15 @@ export const visits: Visits[] = [
     {
         id: 3,
         title: "Journée anniversaire 3h",
-        description: "Êtes-vous à la recherche d'une fête d'anniversaire unique et spéciale pour votre enfant et ses amis ? Nous ferons tout notre possible pour rendre cette journée mémorable, divertissante et éducative à la fois ! La formule que nous proposons inclut une invitation électronique (à envoyer ou à imprimer), une visite du refuge pour chaque participant, une assistance du groupe par un animateur, une visite guidée à la rencontre de nos pensionnaires, un moment divertissant lors de la mini-ferme, un goûter d'anniversaire (une part de gâteau, une boisson et des bonbons), ainsi qu'un cadeau pour le roi ou la reine de la fête. Informations utiles au 06 69 97 76 41.",
-        list : [
-            "Une réservation d'un mois à l'avance est requise.",
-            "Enfant âgé de 4 à 12 ans.",
-            "Il est nécessaire d'avoir au moins 5 enfants / au maximum 10 enfants et d'avoir un accompagnant adulte.",
-            "Périodicité : les mercredis et les samedis, dans la mesure du possible.",
-            "Les horaires sont fixés à 14h.",
-            "Encadrement de 14h à 17h."
-        ],
+        description: "Vous cherchez une fête d'anniversaire unique, éducative et mémorable ? Nous faisons tout pour que cette journée soit magique, joyeuse... et porteuse de sens !\n\n La formule comprend :\n * une invitation électronique (à envoyer ou à imprimer)\n* l'accueil et l'accompagnement du groupe par un animateur\n* une visite guidée à la rencontre de nos pensionnaires\n* un moment 'mini-ferme / découverte' au coeur du refuge\n* un goûter d'anniversaire (une part de gâteau, une boisson, des bonbons)\n* un cadeau pour le roi ou la reine de la fête",
+        // list : [
+        //     "Une réservation d'un mois à l'avance est requise.",
+        //     "Enfant âgé de 4 à 12 ans.",
+        //     "Il est nécessaire d'avoir au moins 5 enfants / au maximum 10 enfants et d'avoir un accompagnant adulte.",
+        //     "Périodicité : les mercredis et les samedis, dans la mesure du possible.",
+        //     "Les horaires sont fixés à 14h.",
+        //     "Encadrement de 14h à 17h."
+        // ],
         price: "Le coût est de 20 euros par enfant.",
         imageURL: "/anniversaire.webp",
     },
