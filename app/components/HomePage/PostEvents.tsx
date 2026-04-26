@@ -20,11 +20,12 @@ export default function PostEvents() {
                 {help.map((help) => (
                     <div className="overflow-hidden" key={help.id}>
                         <h3 className="text-xl font-semibold text-brown mb-4">{help.title}</h3>
-                        <div className="relative h-[650px] w-full">
+                        <div className="relative w-full">
                             <Image
                                 src={`/${help.image}`}
                                 alt={help.title}
-                                fill
+                                width={1024}
+                                height={650}
                                 className="object-cover"
                             />
                         </div>
