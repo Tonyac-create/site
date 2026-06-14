@@ -35,8 +35,35 @@ export default function PostEvents() {
             </div>
 
             <h2 className="text-brown text-4xl font-lora font-semibold mb-8">{`Prochains événements`}</h2>
+            {events.length > 0 ? (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                    {events.map((event) => (
+                        <Link href={`/blog#event-${event.id}`} key={event.id} className="block">
+                            {/* ton contenu */}
+                        </Link>
+                    ))}
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                    <div className="relative h-[600px]">
+                        <Image
+                            src="/events/WE_musique.jpg"
+                            alt="week-end musique"
+                            fill
+                            className="object-contain"
+                        />
+                    </div>
+                </div>
+            ) : (
+                <div className="bg-white rounded-lg shadow-md p-8 text-center mb-8">
+                    <h3 className="text-2xl font-semibold text-brown mb-4">
+                        Aucun événement pour le moment
+                    </h3>
+                    <p className="text-gray-600">
+                        Nous préparons de nouveaux événements avec enthousiasme.
+                        Rien n&apos;est annoncé pour l&apos;instant, mais restez à l&apos;écoute !
+                    </p>
+                </div>
+            )}
+            {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
                 {events.map((event) => (
                     <Link href={`/blog#event-${event.id}`} key={event.id} className="block">
                         <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 cursor-pointer">
@@ -81,7 +108,7 @@ export default function PostEvents() {
                         className="object-contain"
                     />
                 </div>
-            </div>
+            </div> */}
             <div className="flex flex-col lg:flex-row lg:gap-4">
                 <div className="lg:w-1/2">
                     <h2 className="text-brown text-4xl font-lora font-semibold mb-8">{`Chanson officielle du SFPA 71`}</h2>
